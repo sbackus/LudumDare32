@@ -1,0 +1,13 @@
+body{
+	font-family: sans-serif;
+}
+
+div{
+	float: left;
+	margin: 10px;
+}
+
+#gameCanvas {
+	background-color: #bbb;
+	float: left;
+}
