@@ -1,11 +1,11 @@
 (dp0
 S'buildDestination'
 p1
-V/Users/sbackus/Code/twine_test.html
+V/Users/sbackus/Code/LudumDare32/index.html
 p2
 sS'saveDestination'
 p3
-V/Users/sbackus/Code/LudumDare32/javascripttest.tws
+V/Users/sbackus/Code/LudumDare32/game.tws
 p4
 sS'metadata'
 p5
@@ -167,7 +167,7 @@ Tiddler
 p62
 (dp63
 g21
-VThis is the second passage.\u000a\u000a<<if $my_var is 0>>\u000a	my_var is 0\u000a\u000a\u000a\u000a<<else>>\u000a\u000a	my_var is not zero\u000a	<<if $my_var is 1>>\u000a		my_var is 1\u000a	<<endif>>\u000a\u000a\u000a<<endif>>\u000a\u000a<canvas id="gameCanvas" style="background-color: blue;"> </canvas>\u000a\u000a<<loadJS level1.js>>\u000a\u000a[[test]]
+VThis is the second passage.\u000a\u000a<<if $my_var is 0>>\u000a	my_var is 0\u000a\u000a\u000a\u000a<<else>>\u000a\u000a	my_var is not zero\u000a	<<if $my_var is 1>>\u000a		my_var is 1\u000a	<<endif>>\u000a\u000a\u000a<<endif>>\u000a\u000a<canvas id="gameCanvas"> </canvas>\u000a\u000a<<loadJS scripts/level1.js>>\u000a\u000a[[test]]
 p64
 sg23
 Vflip
@@ -177,9 +177,9 @@ g26
 ((I2015
 I4
 I18
-I15
-I15
-I11
+I16
+I27
+I9
 I5
 I108
 I1
@@ -356,10 +356,62 @@ tp117
 (dp118
 tp119
 Rp120
+sbsa(dp121
+g14
+I00
+sg15
+(lp122
+F135.0
+aF226.0
+asg17
+(itiddlywiki
+Tiddler
+p123
+(dp124
+g21
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000abody {\u000a	#gameCanvas{\u000a		background-color: red;\u000a		height: 500px;\u000a		width: 400px;\u000a	}\u000a}\u000a	\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}
+p125
+sg23
+VUntitled Stylesheet 1
+p126
+sg25
+g26
+((I2015
+I4
+I18
+I16
+I29
+I20
+I5
+I108
+I1
+tp127
+(dp128
+tp129
+Rp130
+sg31
+(lp131
+Vstylesheet
+p132
+asg33
+g26
+((I2015
+I4
+I18
+I16
+I19
+I53
+I5
+I108
+I1
+tp133
+(dp134
+tp135
+Rp136
 sbsasS'scale'
-p121
+p137
 I1
 sS'snapping'
-p122
+p138
 I00
 ss.
