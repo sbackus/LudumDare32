@@ -5,6 +5,28 @@
 // alert(state.history[0].variables.my_var);
 // state.history[0].variables.my_var = 1;
 
+window.requestAnimFrame = (function(){
+	return  window.requestAnimationFrame ||
+			window.webkitRequestAnimationFrame ||
+			window.mozRequestAnimationFrame ||
+			window.oRequestAnimationFrame ||
+			window.msRequestAnimationFrame ||
+			function(callback){
+				window.setTimeout(callback, 1000/60);
+			};
+})();
+
+
+
+function loop(){
+	requestAnimFrame(function(){
+		loop();
+	});
+	// update();
+	// render();
+}
+loop();
+
 var canvas = document.getElementById("gameCanvas");
 var context = canvas.getContext("2d");
 
