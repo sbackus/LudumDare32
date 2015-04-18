@@ -156,7 +156,7 @@ sg33
 g58
 sbsa(dp60
 g14
-I00
+I01
 sg15
 (lp61
 F149.0
@@ -167,7 +167,7 @@ Tiddler
 p62
 (dp63
 g21
-VThis is the second passage.\u000a\u000a<<if $my_var is 0>>\u000a	my_var is 0\u000a\u000a\u000a\u000a<<else>>\u000a\u000a	my_var is not zero\u000a	<<if $my_var is 1>>\u000a		my_var is 1\u000a	<<endif>>\u000a\u000a\u000a<<endif>>\u000a\u000a<canvas id="gameCanvas"> </canvas>\u000a\u000a<<loadJS scripts/level1.js>>\u000a\u000a[[test]]
+VThis is the second passage.\u000a\u000a<<if $my_var is 0>>\u000a	my_var is 0\u000a\u000a\u000a\u000a<<else>>\u000a\u000a	my_var is not zero\u000a	<<if $my_var is 1>>\u000a		my_var is 1\u000a	<<endif>>\u000a\u000a\u000a<<endif>>\u000a\u000a<canvas id="gameCanvas" width="500px" height="400px" style=" position: absolute; left: 5px; top: 0px; z-index: 2;"> </canvas>\u000a\u000a<canvas id="backgroundCanvas" width="500px" height="400px" style=" position: absolute; left: 5px; top: 0px; z-index: 1; background-color: red; " > </canvas>\u000a\u000a<<loadJS scripts/level1.js>>\u000a\u000a[[test]]
 p64
 sg23
 Vflip
@@ -177,9 +177,9 @@ g26
 ((I2015
 I4
 I18
-I16
-I27
-I9
+I18
+I0
+I33
 I5
 I108
 I1
@@ -362,14 +362,14 @@ I00
 sg15
 (lp122
 F135.0
-aF226.0
+aF227.0
 asg17
 (itiddlywiki
 Tiddler
 p123
 (dp124
 g21
-V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000abody {\u000a	#gameCanvas{\u000a		background-color: red;\u000a		height: 500px;\u000a		width: 400px;\u000a	}\u000a}\u000a	\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000abody {\u000a	#gameCanvas{\u000a		background-color: green;\u000a		height: 500px;\u000a		width: 400px;\u000a	}\u000a}\u000a	\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}
 p125
 sg23
 VUntitled Stylesheet 1
@@ -380,8 +380,8 @@ g26
 I4
 I18
 I16
-I29
-I20
+I46
+I44
 I5
 I108
 I1
