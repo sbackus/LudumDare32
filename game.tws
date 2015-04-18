@@ -1,11 +1,11 @@
 (dp0
 S'buildDestination'
 p1
-S''
+V/Users/sbackus/Code/twine_test.html
 p2
 sS'saveDestination'
 p3
-VC:\u005cUsers\u005cDave\u005cDocuments\u005cGitHub\u005cLudumDare32\u005cjavascripttest.tws
+V/Users/sbackus/Code/LudumDare32/javascripttest.tws
 p4
 sS'metadata'
 p5
@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V<<if $realstart is 0>><<set $level to 1>>This is the real start of the game.\u000a\u000a[[flip]]\u000a\u000a<<else>>/%Sam, drop javascript here.%/<<endif>>
+V<<if $my_var is 0>>This is the real start of the game.\u000a\u000a[[flip]]\u000a\u000a\u000a\u000a\u000a\u000a<<else>>\u000a\u000a\u000a\u000a<<endif>>
 p22
 sS'title'
 p23
@@ -51,9 +51,9 @@ p26
 ((I2015
 I4
 I18
-I12
-I40
-I34
+I15
+I13
+I2
 I5
 I108
 I1
@@ -167,7 +167,7 @@ Tiddler
 p62
 (dp63
 g21
-V<<set $realstart to 1>>This is the second passage.\u000a\u000a[[test]]
+VThis is the second passage.\u000a\u000a<<if $my_var is 0>>\u000a	my_var is 0\u000a\u000a\u000a\u000a<<else>>\u000a\u000a	my_var is not zero\u000a	<<if $my_var is 1>>\u000a		my_var is 1\u000a	<<endif>>\u000a\u000a\u000a<<endif>>\u000a\u000a<canvas id="gameCanvas" style="background-color: blue;"> </canvas>\u000a\u000a<<loadJS level1.js>>\u000a\u000a[[test]]
 p64
 sg23
 Vflip
@@ -177,9 +177,9 @@ g26
 ((I2015
 I4
 I18
-I12
-I37
-I55
+I15
+I15
+I11
 I5
 I108
 I1
@@ -217,7 +217,7 @@ Tiddler
 p77
 (dp78
 g21
-V<<display Start>>\u000a\u000a[[testcomplete]]
+V<<if $my_var is 0>>\u000a	my_var is 0\u000a\u000a\u000a\u000a<<else>>\u000a\u000a	my_var is not zero\u000a	<<if $my_var is 1>>\u000a		my_var is 1\u000a	<<endif>>\u000a\u000a\u000a<<endif>>
 p79
 sg23
 Vtest
@@ -227,9 +227,9 @@ g26
 ((I2015
 I4
 I18
-I12
-I39
-I30
+I14
+I29
+I50
 I5
 I108
 I1
@@ -256,7 +256,7 @@ tp88
 Rp89
 sbsa(dp90
 g14
-I01
+I00
 sg15
 (lp91
 I436
@@ -304,10 +304,62 @@ tp101
 (dp102
 tp103
 Rp104
+sbsa(dp105
+g14
+I00
+sg15
+(lp106
+F262.0
+aF150.0
+asg17
+(itiddlywiki
+Tiddler
+p107
+(dp108
+g21
+Vmacros['loadJS'] =\u000a{\u000a	handler: function(place, object, parameters)\u000a	{\u000a		var se = document.createElement("script");\u000a		se.type = 'text/javascript';\u000a		se.src = parameters[0];\u000a		var hT = document.getElementsByTagName("HEAD")[0];\u000a		hT.appendChild(se);\u000a		if(se.innerText) {eval(se.innerText);}\u000a		else {eval(se.textContent);}\u000a	}\u000a}
+p109
+sg23
+Vscript.js
+p110
+sg25
+g26
+((I2015
+I4
+I18
+I14
+I23
+I47
+I5
+I108
+I1
+tp111
+(dp112
+tp113
+Rp114
+sg31
+(lp115
+Vscript
+p116
+asg33
+g26
+((I2015
+I4
+I18
+I12
+I58
+I29
+I5
+I108
+I1
+tp117
+(dp118
+tp119
+Rp120
 sbsasS'scale'
-p105
+p121
 I1
 sS'snapping'
-p106
+p122
 I00
 ss.
