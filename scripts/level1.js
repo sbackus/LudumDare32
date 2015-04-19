@@ -88,9 +88,7 @@ function Caroler(image,x,y) {
 	this.drawn = false;
 	this.speed = 0.25;
 	this.draw =  function(){
-		console.log("drawing caroler");
 		if(!this.drawn){
-			console.log("drawing");
 			contextPlayer.clearRect(this.x,this.y,this.width,this.height);
 			contextPlayer.drawImage(this.image,this.x,this.y);
 			this.drawn = true;
@@ -137,7 +135,6 @@ function Wilderkind(image,x,y) {
 	this.speed = 7;
 	this.draw =  function(){
 		if(!this.drawn){
-			console.log("drawing");
 			contextPlayer.clearRect(this.x,this.y,this.width,this.height);
 			contextPlayer.drawImage(this.image,this.x,this.y);
 			this.drawn = true;
@@ -171,6 +168,13 @@ function update(){
 	projectiles.forEach(function(projectile) {
 	    projectile.update();
 	});
+
+	for (i = 0; i < projectiles.length; ++i) {
+	    if (projectiles[i].x > width+projectiles[i].width || projectiles[i].y > height+projectiles[i].height) {
+	        projectiles.splice(i--, 1);
+	        console.log(projectiles.length)
+	    }
+	};
 }
 
 function render(){
@@ -181,8 +185,6 @@ function render(){
 	});
 
 	carolers.forEach(function(caroler) {
-		console.log("rendering carolers");
-
 	    caroler.draw();
 	});
 }
