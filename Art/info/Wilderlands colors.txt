@@ -1,0 +1,6 @@
+Purple, dark - 4F0D5E
+Purple, light - 8E6169
+Pink, dark - AD1838
+Pink, light - BE6555
+Teal (accent color) - 3C6954
+Green (accent color) - 659B3E
