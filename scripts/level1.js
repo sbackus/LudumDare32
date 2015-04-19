@@ -51,18 +51,28 @@ $(document).keyup(function(e){
 });
 
 
-function Player(image) {
-	this.image = image;
+function Player() {
+	this.shielded_image = images[0];
+	this.unshieled_image = images[1];
 	this.x =  width/2;
 	this.y =  height/2;
 	this.width =  40;
 	this.height =  40;
 	this.drawn = false;
 	this.speed = 7;
+	this.shielded=false;
+	this.shield_timer=0;
+	this.shield_duration=10;
+	this.shield_cooldown=10;
+	this.health=3;
 	this.draw =  function(){
 		if(!this.drawn){
 			contextPlayer.clearRect(this.x-10,this.y-10,this.width+20,this.height+30);
-			contextPlayer.drawImage(this.image,this.x,this.y);
+			if (this.shielded){
+				contextPlayer.drawImage(this.shielded_image,this.x,this.y);
+			} else {
+				contextPlayer.drawImage(this.unshieled_image,this.x,this.y);
+			}
 			this.drawn = true;
 		}
 	};
@@ -76,6 +86,11 @@ function Player(image) {
 		if(this.y < 0) this.y = 0;
 		if(this.x > width-this.width) this.x = width-this.width;
 		if(this.y > height-this.height) this.y = height-this.height;
+
+		if(keys[key.space]&&this.shield_timer == 0){
+			this.shielded = true; 
+			this.drawn = false;
+		}
 	};
 };
 
@@ -97,31 +112,34 @@ function Caroler(image,x,y) {
 	};
 	this.update = function(){
 		if( Math.random() <= 0.0006){
-			projectiles = projectiles.concat(new Projectile(this.x,this.y,0,5))
+			projectiles = projectiles.concat(new Projectile(this.x,this.y,180))
 		}
 		this.y += this.speed;
 		this.drawn = false;
 	};
 };
 
-function Projectile(x,y,x_speed,y_speed){
+function Projectile(x,y,direction){
 	// this.image = image;
 	this.x =  x;
 	this.y =  y;
-	this.width =  50;
-	this.height =  50;
-	this.x_speed = x_speed;
-	this.y_speed = y_speed;
+	this.width =  6;
+	this.height =  6;
+	this.size = 3;
+	this.speed = 5;
+	this.direction = direction;
 	this.draw = function(){
 			contextBackground.clearRect(this.x-this.width,this.y-this.height,this.width*2,this.height*2);
 			contextBackground.beginPath();
-	    	contextBackground.arc(this.x, this.y, 3, 0, 2 * Math.PI, false);
+	    	contextBackground.arc(this.x, this.y, this.size, 0, 2 * Math.PI, false);
 	    	contextBackground.fillStyle = 'red';
 	    	contextBackground.fill();
 	};
 	this.update = function(){
-		this.x += x_speed;
-		this.y += y_speed;
+		this.x += offset_x(this.direction,this.speed);
+		this.y += 0.25
+		this.y += offset_y(this.direction,this.speed);
+		this.direction += 0.04;
 	};
 };
 
@@ -146,14 +164,21 @@ function Wilderkind(image,x,y) {
 	};
 };
 
+function offset_x(direction,distance){
+	return Math.sin(direction) * distance;
+}
+function offset_y(direction,distance){
+	return Math.cos(direction) * distance;
+}
+
 var carolers = []
 var wilderkin = []
 var projectiles = []
 
 function init(){
-	player = new Player(images[0]);
-	for(var i=0; i < 10; i++){
-	    carolers = carolers.concat(new Caroler(images[0], i*45, 10));
+	player = new Player();
+	for(var i=0; i < 5; i++){
+	    carolers = carolers.concat(new Caroler(images[0], i*85+40, 10));
 	}
 	loop();
 	// Don't put anything after the loop starts!
@@ -169,19 +194,33 @@ function update(){
 	    projectile.update();
 	});
 
-	for (i = 0; i < projectiles.length; ++i) {
-	    if (projectiles[i].x > width+projectiles[i].width || projectiles[i].y > height+projectiles[i].height) {
-	        projectiles.splice(i--, 1);
-	        console.log(projectiles.length)
-	    }
-	};
+	//delete references to offscreen objects
+	[projectiles,carolers].forEach(function(list){  
+		for (i = 0; i < list.length; ++i) {
+		    if (list[i].x > width+list[i].width || list[i].y > height+list[i].height) {
+		        list.splice(i--, 1);
+		    }
+		};
+	});
 }
 
 function render(){
-	contextBackground.clearRect(0,0,width,height)
+	contextBackground.clearRect(0,0,width,height);
 	player.draw();
 	projectiles.forEach(function(projectile) {
 	    projectile.draw();
+	    if(collision(projectile,player)){
+	    	console.log("collision");
+	    	if(player.shielded){
+	    		projectile.y_speed = projectile.y_speed * -1;
+	    		projectile.y = projectile.y - 20
+
+	    		projectile.x_speed = projectile.x_speed * -1;
+	    	}else{
+	    		player.health --;
+	    		console.log(player.health);
+	    	}
+	    }
 	});
 
 	carolers.forEach(function(caroler) {
