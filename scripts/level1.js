@@ -23,6 +23,10 @@ var images = [];
 var doneImages = 0;
 var requiredImages = 0;
 
+var contextPlayer = document.getElementById("gameCanvas").getContext("2d");
+var contextBackground = document.getElementById("backgroundCanvas").getContext("2d");
+
+
 function init(){
 	loop();
 	contextPlayer.drawImage(images[0],10,10)
@@ -65,12 +69,10 @@ function checkImages(){
 		}, 10);
 	}
 }
-// game.contextBackground.font = "bold 50px monaco"
+contextBackground.font = "bold 50px monaco";
+contextBackground.fillStyle = "white";
+contextBackground.fillText("loading",width/2-100,height/2);
 
 loadImages(["Art/test_ship_shields_up.png", "Art/test_ship_shields_down.png"]);
 
 checkImages();
-
-var backgroundCanvas = document.getElementById("backgroundCanvas");
-var contextBackground = backgroundCanvas.getContext("2d");
-var contextPlayer = document.getElementById("backgroundCanvas").getContext("2d");
