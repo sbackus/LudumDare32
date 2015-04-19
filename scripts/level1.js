@@ -16,7 +16,25 @@ window.requestAnimFrame = (function(){
 			};
 })();
 
+var width = 550;
+var height = 600;
 
+var images = [];
+var doneImages = 0;
+var requiredImages = 0;
+
+function init(){
+	loop();
+	contextPlayer.drawImage(images[0],10,10)
+}
+
+function update(){
+
+}
+
+function render(){
+	contextBackground.clearRect(0,0,width,height)
+}
 
 function loop(){
 	requestAnimFrame(function(){
@@ -25,42 +43,34 @@ function loop(){
 	// update();
 	// render();
 }
-loop();
 
-var canvas = document.getElementById("gameCanvas");
-var context = canvas.getContext("2d");
-
-var keys = [];
-
-var message = ""
-
-var width = 500, height = 400, speed = 5
-
-window.addEventListener("keydown", function(e){
-	keys[e.keyCode] = true;
-}, false);
-
-window.addEventListener("keyup", function(e){
-	delete keys[e.keyCode];
-}, false);
-
-
-function game(){
-	update();
-	render();
+function loadImages(paths){
+	requiredImages = paths.length;
+	for(i in paths){
+		var img = new Image();
+		img.src = paths[i];
+		images[i] = img;
+		images[i].onload = function(){
+			doneImages++;
+		}
+	}
 }
 
-function update(){
-
+function checkImages(){
+	if(doneImages>=requiredImages){
+		init();
+	}else{
+		setTimeout(function(){
+			checkImages();
+		}, 10);
+	}
 }
+// game.contextBackground.font = "bold 50px monaco"
 
-function render(){
-	context.clearRect(0, 0, width, height);
-	
-	context.fillStyle = "red"
-	context.fillRect(40, 40, 40, 40)
-}
+loadImages(["Art/test_ship_shields_up.png", "Art/test_ship_shields_down.png"]);
 
-setInterval(function(){
-	game();
-}, 1000/60)
+checkImages();
+
+var backgroundCanvas = document.getElementById("backgroundCanvas");
+var contextBackground = backgroundCanvas.getContext("2d");
+var contextPlayer = document.getElementById("backgroundCanvas").getContext("2d");
