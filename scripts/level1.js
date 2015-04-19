@@ -50,24 +50,77 @@ $(document).keyup(function(e){
 	delete keys[e.keyCode ? e.keyCode : e.which];
 });
 
+function Shield(){
+	this.max_power = 100;
+	this.power = this.max_power;
+	this.on = false;
+	this.recharging = false
+	this.switched = false;
+	this.draw = function(){
+		contextBackground.clearRect(player.x, player.y+player.height +10,30,10);
+		contextBackground.fillStyle = "green"
+		contextBackground.fillRect(player.x+9, player.y+player.height +10, this.power/5, 5);
+	}
+	this.update = function(){
+		if(keys[key.space]&&this.power >= 0 && !this.recharging){
+			if(!this.on){
+				this.switched = true;
+			}else{
+				this.switched = false;
+			}
+			this.on = true;
+			this.power--;
+			if(this.power <= 0){
+				this.recharging = true;
+			}
+		} else {
+			if(this.on){
+				this.switched = true;
+			}else{
+				this.switched = false;
+			}
+			this.on = false;
+			if (this.power< this.max_power){
+				this.power++;
+			}
+			if(this.power >= this.max_power/2){
+				this.recharging = false;
+			}
+		}
+		if (this.switched){
+			console.log("switched");
+		}
+	return this.switched;
+	}
+}
+
 function Player() {
 	this.shielded_image = images[0];
 	this.unshieled_image = images[1];
 	this.x =  width/2;
 	this.y =  height/2;
-	this.width =  40;
-	this.height =  40;
+	this.width = this.shielded_image.width;
+	this.height =  this.shielded_image.width;
 	this.drawn = false;
 	this.speed = 7;
-	this.shielded=false;
-	this.shield_timer=0;
-	this.shield_duration=10;
-	this.shield_cooldown=10;
-	this.health=3;
+	this.shield = new Shield();
+	this.health=20;
 	this.draw =  function(){
+		this.shield.draw();
+
+		//draw health bar
+		contextBackground.clearRect(this.x, this.y+this.height + 15,30,10);
+		if (this.health>5){
+			contextBackground.fillStyle = "green";
+		}else{
+			contextBackground.fillStyle = "red";
+		}
+		contextBackground.fillRect(this.x+9, this.y+this.height +15, this.health, 5);
+
 		if(!this.drawn){
 			contextPlayer.clearRect(this.x-10,this.y-10,this.width+20,this.height+30);
-			if (this.shielded){
+			console.log("drawing");
+			if (this.shield.on){
 				contextPlayer.drawImage(this.shielded_image,this.x,this.y);
 			} else {
 				contextPlayer.drawImage(this.unshieled_image,this.x,this.y);
@@ -80,16 +133,14 @@ function Player() {
 		if(keys[key.down]) {this.y+=this.speed; this.drawn = false;}
 		if(keys[key.left]) {this.x-=this.speed; this.drawn = false;}
 		if(keys[key.right]) {this.x+=this.speed; this.drawn = false;}
-
+		this.shield.update();
+		if(this.shield.switched) {this.drawn = false;}
 		if(this.x < 0) this.x = 0;
 		if(this.y < 0) this.y = 0;
 		if(this.x > width-this.width) this.x = width-this.width;
 		if(this.y > height-this.height) this.y = height-this.height;
 
-		if(keys[key.space]&&this.shield_timer == 0){
-			this.shielded = true; 
-			this.drawn = false;
-		}
+		
 	};
 };
 
@@ -101,23 +152,23 @@ function Caroler(image,x,y) {
 	this.height =  50;
 	this.drawn = false;
 	this.speed = 0.25;
-	this.projectile = new Projectile(this.x,this.y,320)
+	this.bolas = new Bolas(this.x,this.y,320)
 	this.draw =  function(){
 		if(!this.drawn){
 			contextPlayer.clearRect(this.x,this.y,this.width,this.height);
 			contextPlayer.drawImage(this.image,this.x,this.y);
 			this.drawn = true;
 		}
-		this.projectile.draw();
+		this.bolas.draw();
 	};
 	this.update = function(){
-		this.projectile.update();
+		this.bolas.update();
 		this.y += this.speed;
 		this.drawn = false;
 	};
 };
 
-function Projectile(x,y,direction){
+function Bolas(x,y,direction){
 	// this.image = image;
 	this.x =  x;
 	this.y =  y;
@@ -125,6 +176,7 @@ function Projectile(x,y,direction){
 	this.height =  6;
 	this.size = 3;
 	this.speed = 6;
+	this.rotation = 2;
 	this.direction = direction;
 	this.draw = function(){
 			contextBackground.clearRect(this.x-this.width,this.y-this.height,this.width*2,this.height*2);
@@ -137,7 +189,7 @@ function Projectile(x,y,direction){
 		this.x += offset_x(this.direction,this.speed);
 		this.y += 0.25
 		this.y += offset_y(this.direction,this.speed);
-		this.direction += 2;
+		this.direction += this.rotation;
 	};
 };
 
@@ -169,8 +221,9 @@ function offset_x(direction,distance){
 		return Math.cos((direction/180)*Math.PI) * distance;
 	}
 
-var carolers = []
-var wilderkin = []
+var carolers = [];
+var wilderkin = [];
+var game_over = false;
 
 function init(){
 	player = new Player();
@@ -178,7 +231,7 @@ function init(){
 	    carolers = carolers.concat(new Caroler(images[0], i*85+40, 10));
 	}
 	loop();
-	// Don't put anything after the loop starts!
+	// DON'T PUT ANYTHING AFTER THE GAME LOOP STARTS!
 }
 
 function update(){
@@ -194,6 +247,17 @@ function update(){
 		        list.splice(i--, 1);
 		    }
 		};
+	});
+
+	carolers.forEach(function(caroler){
+		if(collision(caroler.bolas,player)){
+			if (player.shield.on){
+				caroler.bolas.direction = caroler.bolas.direction * -1
+			} else{
+				player.health--;
+				console.log(player.health);
+			}
+		}
 	});
 }
 
