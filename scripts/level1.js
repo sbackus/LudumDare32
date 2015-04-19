@@ -88,7 +88,7 @@ function Shield(){
 			}
 		}
 		if (this.switched){
-			console.log("switched");
+			
 		}
 	return this.switched;
 	}
@@ -119,7 +119,7 @@ function Player() {
 
 		if(!this.drawn){
 			contextPlayer.clearRect(this.x-10,this.y-10,this.width+20,this.height+30);
-			console.log("drawing");
+			
 			if (this.shield.on){
 				contextPlayer.drawImage(this.shielded_image,this.x,this.y);
 			} else {
@@ -154,16 +154,34 @@ function Caroler(image,x,y) {
 	this.height =  this.image.height;
 	this.drawn = false;
 	this.speed = 0.25;
-	this.bolas = new Bolas(this.x,this.y,320)
+	this.bolas = new Bolas(this.x,this.y+15,290)
+	this.destroyed = false;
+	this.destroyed_count = 0;
 	this.draw =  function(){
-		if(!this.drawn){
-			contextPlayer.clearRect(this.x,this.y,this.width,this.height);
-			contextPlayer.drawImage(this.image,this.x,this.y);
-			this.drawn = true;
+		if(this.destroyed){
+			
+			if(this.destroyed_count%4==1||this.destroyed_count%4==2){
+				contextPlayer.clearRect(this.x,this.y,this.width,this.height);
+				contextPlayer.drawImage(this.image,this.x,this.y);
+			}else{
+				contextPlayer.clearRect(this.x,this.y,this.width,this.height);
+			}
+		} else {
+			if(!this.drawn){
+				contextPlayer.clearRect(this.x,this.y,this.width,this.height);
+				contextPlayer.drawImage(this.image,this.x,this.y);
+				this.drawn = true;
+			}
+			this.bolas.draw();
 		}
-		this.bolas.draw();
+	};
+	this.cleanup = function(){
+		return (this.x > width+this.width || this.y > height+this.height) || (this.destroyed && this.destroyed_count > 100)
 	};
 	this.update = function(){
+		if (this.destroyed){
+			this.destroyed_count++;
+		}
 		this.bolas.update();
 		this.y += this.speed;
 		this.drawn = false;
@@ -178,8 +196,9 @@ function Bolas(x,y,direction){
 	this.height = 6;
 	this.size = 3;
 	this.speed = 6;
-	this.rotation = 2;
+	this.rotation = 4;
 	this.direction = direction;
+	this.reversed = false;
 	this.draw = function(){
 			contextBackground.clearRect(this.x-this.width,this.y-this.height,this.width*2,this.height*2);
 			contextBackground.beginPath();
@@ -229,15 +248,19 @@ var game_over = false;
 
 function init(){
 	player = new Player();
-	for(var i=0; i < 5; i++){
-	    carolers = carolers.concat(new Caroler(images[0], i*85+40, 10));
-	}
+	// for(var i=0; i < 5; i++){
+	//     carolers = carolers.concat(new Caroler(images[0], i*85+40, 10));
+	// }
 	loop();
 	// DON'T PUT ANYTHING AFTER THE GAME LOOP STARTS!
 }
 
 function update(){
 	player.update();
+	// console.log(carolers.length)
+	if (Math.random()<=0.003 ){
+		carolers = carolers.concat(new Caroler(images[0], Math.random()*width, -10));
+	}
 
 	carolers.forEach(function(caroler) {
 	    caroler.update();
@@ -245,20 +268,26 @@ function update(){
 	//delete references to offscreen objects
 	[carolers].forEach(function(list){  
 		for (i = 0; i < list.length; ++i) {
-		    if (list[i].x > width+list[i].width || list[i].y > height+list[i].height) {
+		    if (list[i].cleanup()) {
 		        list.splice(i--, 1);
+		        console.log("cleaning");
 		    }
 		};
 	});
 
 	carolers.forEach(function(caroler){
+		if(collision(caroler,caroler.bolas) && caroler.bolas.reversed){
+			caroler.destroyed = true;
+			
+		}
 		if(collision(caroler.bolas,player)){
 			if (player.shield.on){
 				caroler.bolas.rotation = caroler.bolas.rotation * -1
 				caroler.bolas.direction = caroler.bolas.direction * -1
+				caroler.bolas.reversed = true;
 			} else{
 				player.health--;
-				console.log(player.health);
+				
 			}
 		}
 	});
