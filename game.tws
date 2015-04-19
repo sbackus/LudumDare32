@@ -5,7 +5,7 @@ V/Users/sbackus/Code/LudumDare32/index.html
 p2
 sS'saveDestination'
 p3
-V/Users/sbackus/Code/LudumDare32/game.tws
+S'E:\\Git\\LudumDare\\LudumDare32\\game.tws'
 p4
 sS'metadata'
 p5
@@ -361,15 +361,15 @@ g14
 I00
 sg15
 (lp122
-F135.0
-aF227.0
+F262.0
+aF505.0
 asg17
 (itiddlywiki
 Tiddler
 p123
 (dp124
 g21
-V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000abody {\u000a	#gameCanvas{\u000a		background-color: green;\u000a		height: 500px;\u000a		width: 400px;\u000a	}\u000a}\u000a	\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000a\u000a\u000abody {\u000a\u000a}\u000a\u000a\u000a.passage {\u000a	/* This only affects passages */\u000a	float: right;\u000a	left: 261px;\u000a\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}
 p125
 sg23
 VUntitled Stylesheet 1
@@ -379,9 +379,9 @@ g26
 ((I2015
 I4
 I18
-I16
-I46
-I44
+I23
+I53
+I9
 I5
 I108
 I1
@@ -408,10 +408,60 @@ tp133
 (dp134
 tp135
 Rp136
+sbsa(dp137
+g14
+I00
+sg15
+(lp138
+I435
+aI148
+asg17
+(itiddlywiki
+Tiddler
+p139
+(dp140
+g21
+V<html>\u000a	<!-- Image does not need to be imported into twine but it does need to be in a path relative to index.html and that path needs to be used for src="path" -->\u000a	<img src="Art/TestDontUse.png" style="position:absolute; top:5px; left:10px;" >\u000a	<div style="position:absolute; top:5px; Left:285px;">\u000aI was all of history's great robot actors - Acting Unit 0.8; Thespomat; David Duchovny! I've got to find a way to escape the horrible ravages of youth. Suddenly, I'm going to the bathroom like clockwork, every three hours. And those jerks at Social Security stopped sending me checks. Now 'I'' have to pay ''them'! Calculon is gonna kill us and it's all everybody else's fault! This is the worst part. The calm before the battle. I am the man with no name, Zapp Brannigan! \u000a	<div>\u000a</html>\u000a
+p141
+sg23
+VImage Test Passage
+p142
+sg25
+g26
+((I2015
+I4
+I19
+I0
+I13
+I7
+I6
+I109
+I1
+tp143
+(dp144
+tp145
+Rp146
+sg31
+(lp147
+sg33
+g26
+((I2015
+I4
+I18
+I23
+I3
+I57
+I5
+I108
+I1
+tp148
+(dp149
+tp150
+Rp151
 sbsasS'scale'
-p137
+p152
 I1
 sS'snapping'
-p138
+p153
 I00
 ss.
