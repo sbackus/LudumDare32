@@ -61,12 +61,10 @@ function Player(image) {
 	this.speed = 7;
 	this.draw =  function(){
 		if(!this.drawn){
-			console.log("drawing");
-			contextPlayer.clearRect(player.x-10,player.y-10,player.width+20,player.height+30);
+			contextPlayer.clearRect(this.x-10,this.y-10,this.width+20,this.height+30);
 			contextPlayer.drawImage(this.image,this.x,this.y);
 			this.drawn = true;
 		}
-
 	};
 	this.update = function(){
 		if(keys[key.up]) {this.y-=this.speed; this.drawn = false;}
@@ -79,26 +77,114 @@ function Player(image) {
 		if(this.x > width-this.width) this.x = width-this.width;
 		if(this.y > height-this.height) this.y = height-this.height;
 	};
-	this.touching =  function(other){
-		return !(this.x > other.x + other.width ||
-			this.x + this.width < other.x ||
-			this.y > other.y + other.height ||
-			this.y + this.height < other.y);
+};
+
+function Caroler(image,x,y) {
+	this.image = image;
+	this.x =  x;
+	this.y =  y;
+	this.width =  50;
+	this.height =  50;
+	this.drawn = false;
+	this.speed = 0.25;
+	this.draw =  function(){
+		console.log("drawing caroler");
+		if(!this.drawn){
+			console.log("drawing");
+			contextPlayer.clearRect(this.x,this.y,this.width,this.height);
+			contextPlayer.drawImage(this.image,this.x,this.y);
+			this.drawn = true;
+		}
+
+	};
+	this.update = function(){
+		if( Math.random() <= 0.0006){
+			projectiles = projectiles.concat(new Projectile(this.x,this.y,0,5))
+		}
+		this.y += this.speed;
+		this.drawn = false;
 	};
 };
 
+function Projectile(x,y,x_speed,y_speed){
+	// this.image = image;
+	this.x =  x;
+	this.y =  y;
+	this.width =  50;
+	this.height =  50;
+	this.x_speed = x_speed;
+	this.y_speed = y_speed;
+	this.draw = function(){
+			contextBackground.clearRect(this.x-this.width,this.y-this.height,this.width*2,this.height*2);
+			contextBackground.beginPath();
+	    	contextBackground.arc(this.x, this.y, 3, 0, 2 * Math.PI, false);
+	    	contextBackground.fillStyle = 'red';
+	    	contextBackground.fill();
+	};
+	this.update = function(){
+		this.x += x_speed;
+		this.y += y_speed;
+	};
+};
+
+function Wilderkind(image,x,y) {
+	this.image = image;
+	this.x =  x;
+	this.y =  y;
+	this.width =  50;
+	this.height =  50;
+	this.drawn = false;
+	this.speed = 7;
+	this.draw =  function(){
+		if(!this.drawn){
+			console.log("drawing");
+			contextPlayer.clearRect(this.x,this.y,this.width,this.height);
+			contextPlayer.drawImage(this.image,this.x,this.y);
+			this.drawn = true;
+		}
+
+	};
+	this.update = function(){
+
+	};
+};
+
+var carolers = []
+var wilderkin = []
+var projectiles = []
+
 function init(){
 	player = new Player(images[0]);
+	for(var i=0; i < 10; i++){
+	    carolers = carolers.concat(new Caroler(images[0], i*45, 10));
+	}
 	loop();
+	// Don't put anything after the loop starts!
 }
 
 function update(){
 	player.update();
+
+	carolers.forEach(function(caroler) {
+	    caroler.update();
+	});
+	projectiles.forEach(function(projectile) {
+	    projectile.update();
+	});
 }
 
 function render(){
 	contextBackground.clearRect(0,0,width,height)
 	player.draw();
+	projectiles.forEach(function(projectile) {
+	    projectile.draw();
+	});
+
+	carolers.forEach(function(caroler) {
+		console.log("rendering carolers");
+
+	    caroler.draw();
+	});
 }
 
 function loop(){
