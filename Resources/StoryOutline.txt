@@ -1,0 +1,46 @@
+Prologue
+-	Raids for the City Are New
+-	Describe Outskirts settlement, touch on way of life
+Scene 1
+-	Caught up in raid 
+-	Protect old neighbor lady and mysterious visitor
+Action Game 1
+-	Formations of Bell Wielding Summoners (Top Screen)
+-	Projectiles from behind you
+-	Shield Powers GO
+-	Game over on fail
+Scene 2
+-	Talk to neighbor and envoy from city
+-	Get recruited for the peace effort
+-	Escort neighbor and envoy to the volcanic crater to meet with the wilderkind leaders
+Scene 3
+-	Run into wilderfolk
+-	Get into disagreement over envoy
+
+Action Game 2
+-	Survive angry wilderkind attack
+-	“bullets” from all directions
+-	Defeat wilderkind waves with timely dodges and shield power
+-	Game over on fail
+Action Game 2 Alt
+-	Survive angry wilderkind attack
+-	“bullets” from all directions
+-	Defeat wilderkind via redirection power (the old lady has a bell)
+-	Nudge “bullets” so they run into each other
+Scene 4
+-	Meet with wilderkind leaders
+-	envoy is successful
+-	leaders mention the army is already on the way however
+
+Scene 5 
+-	Rush to city ahead of the army
+-	Send the envoy to talk to the council
+-	Head out to stop the wilderkind army
+-	Get between the city and wilderkind armies
+Scene 6 
+-	Neighbor lady gives you the bell 
+Action Game 3
+-	Delay the battle using shield and redirection powers
+-	Keep both sides from taking too much damage
+Epilog
+-	Peace talks, puppies, and rainbows
