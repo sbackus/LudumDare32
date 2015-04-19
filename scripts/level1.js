@@ -139,7 +139,9 @@ function Player() {
 		if(this.y < 0) this.y = 0;
 		if(this.x > width-this.width) this.x = width-this.width;
 		if(this.y > height-this.height) this.y = height-this.height;
-
+		if(this.health<=0){
+			game_over = true;
+		}
 		
 	};
 };
@@ -148,8 +150,8 @@ function Caroler(image,x,y) {
 	this.image = image;
 	this.x =  x;
 	this.y =  y;
-	this.width =  50;
-	this.height =  50;
+	this.width =  this.image.width;
+	this.height =  this.image.height;
 	this.drawn = false;
 	this.speed = 0.25;
 	this.bolas = new Bolas(this.x,this.y,320)
@@ -274,8 +276,14 @@ function loop(){
 	requestAnimFrame(function(){
 		loop();
 	});
-	update();
-	render();
+	if (!game_over){
+		update();
+		render();
+	}else{
+		contextBackground.font = "bold 50px monaco";
+		contextBackground.fillStyle = "white";
+		contextBackground.fillText("Game Over",(width/2)-165,(height/2)-80);
+	}
 }
 
 function loadImages(paths){
