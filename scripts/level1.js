@@ -28,7 +28,7 @@ var contextBackground = document.getElementById("backgroundCanvas").getContext("
 
 var keys = [];
 
-var avatar = null;
+var player = null;
 
 var key = {
 	up: 38,
@@ -51,21 +51,28 @@ $(document).keyup(function(e){
 });
 
 
-function player(image) {
+function Player(image) {
 	this.image = image;
 	this.x =  width/2;
 	this.y =  height/2;
 	this.width =  40;
 	this.height =  40;
+	this.drawn = false;
 	this.speed = 7;
 	this.draw =  function(){
-		contextPlayer.drawImage(this.image,this.x,this.y)
+		if(!this.drawn){
+			console.log("drawing");
+			contextPlayer.clearRect(player.x-10,player.y-10,player.width+20,player.height+30);
+			contextPlayer.drawImage(this.image,this.x,this.y);
+			this.drawn = true;
+		}
+
 	};
 	this.update = function(){
-		if(keys[key.up]) this.y-=this.speed;
-		if(keys[key.down]) this.y+=this.speed;
-		if(keys[key.left]) this.x-=this.speed;
-		if(keys[key.right]) this.x+=this.speed;
+		if(keys[key.up]) {this.y-=this.speed; this.drawn = false;}
+		if(keys[key.down]) {this.y+=this.speed; this.drawn = false;}
+		if(keys[key.left]) {this.x-=this.speed; this.drawn = false;}
+		if(keys[key.right]) {this.x+=this.speed; this.drawn = false;}
 
 		if(this.x < 0) this.x = 0;
 		if(this.y < 0) this.y = 0;
@@ -81,19 +88,17 @@ function player(image) {
 };
 
 function init(){
-	avatar = new player(images[0]);
+	player = new Player(images[0]);
 	loop();
 }
 
 function update(){
-	avatar.update();
+	player.update();
 }
 
 function render(){
 	contextBackground.clearRect(0,0,width,height)
-	contextPlayer.clearRect(0,0,width,height)
-
-	avatar.draw();
+	player.draw();
 }
 
 function loop(){
