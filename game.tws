@@ -413,8 +413,8 @@ g14
 I00
 sg15
 (lp138
-I214
-aI503
+I543
+aI254
 asg17
 (itiddlywiki
 Tiddler
@@ -432,8 +432,8 @@ g26
 I4
 I19
 I12
-I4
-I38
+I8
+I12
 I6
 I109
 I1
@@ -458,60 +458,10 @@ tp148
 (dp149
 tp150
 Rp151
-sbsa(dp152
-g14
-I01
-sg15
-(lp153
-I404
-aI254
-asg17
-(itiddlywiki
-Tiddler
-p154
-(dp155
-g21
-V<html>\u000a	<!-- \u000a	\u000a	Image does not need to be imported into twine but it does need to be in a path relative to index.html and that path needs to be used for src="path" \u000a	\u000a	The following example will place TestDontUse.png into the passage and place the first paragraph of text to the right of the image\u000a	The second paragraph will be placed below the image\u000a	Image is assumed to be 256 x 256px\u000a	\u000a	-->\u000a	<img src="Art/TestDontUse.png" style="position:absolute; top:5px; left:10px;" >\u000a	<div style="position:absolute; top:5px; Left:285px;">\u000a		I was all of history's great robot actors - Acting Unit 0.8; Thespomat; David Duchovny! I've got to find a way to escape the horrible ravages of youth. Suddenly, I'm going to the bathroom like clockwork, every three hours. And those jerks at Social Security stopped sending me checks. Now 'I'' have to pay ''them'! Calculon is gonna kill us and it's all everybody else's fault! This is the worst part. The calm before the battle. I am the man with no name, Zapp Brannigan! \u000a	<div>\u000a	<div style="position:absolute; top:290px; Left:5px;">\u000a		Come, Comrade Bender! We must take to the streets! Spare me your space age technobabble, Attila the Hun! In your time, yes, but nowadays shut up! Besides, these are adult stemcells, harvested from perfectly healthy adults whom I killed for their stemcells. Why, those are the Grunka-Lunkas! They work here in the Slurm factory. And I'd do it again! And perhaps a third time! But that would be it. Calculon is gonna kill us and it's all everybody else's fault!\u000a	</div>\u000a</html>
-p156
-sg23
-VImage Test Passag
-p157
-sg25
-g26
-((I2015
-I4
-I19
-I11
-I47
-I4
-I6
-I109
-I1
-tp158
-(dp159
-tp160
-Rp161
-sg31
-(lp162
-sg33
-g26
-((I2015
-I4
-I19
-I11
-I46
-I52
-I6
-I109
-I1
-tp163
-(dp164
-tp165
-Rp166
 sbsasS'scale'
-p167
+p152
 I1
 sS'snapping'
-p168
+p153
 I00
 ss.
