@@ -50,7 +50,6 @@ $(document).keyup(function(e){
 	delete keys[e.keyCode ? e.keyCode : e.which];
 });
 
-
 function Player() {
 	this.shielded_image = images[0];
 	this.unshieled_image = images[1];
@@ -102,18 +101,17 @@ function Caroler(image,x,y) {
 	this.height =  50;
 	this.drawn = false;
 	this.speed = 0.25;
+	this.projectile = new Projectile(this.x,this.y,320)
 	this.draw =  function(){
 		if(!this.drawn){
 			contextPlayer.clearRect(this.x,this.y,this.width,this.height);
 			contextPlayer.drawImage(this.image,this.x,this.y);
 			this.drawn = true;
 		}
-
+		this.projectile.draw();
 	};
 	this.update = function(){
-		if( Math.random() <= 0.0006){
-			projectiles = projectiles.concat(new Projectile(this.x,this.y,180))
-		}
+		this.projectile.update();
 		this.y += this.speed;
 		this.drawn = false;
 	};
@@ -126,7 +124,7 @@ function Projectile(x,y,direction){
 	this.width =  6;
 	this.height =  6;
 	this.size = 3;
-	this.speed = 5;
+	this.speed = 6;
 	this.direction = direction;
 	this.draw = function(){
 			contextBackground.clearRect(this.x-this.width,this.y-this.height,this.width*2,this.height*2);
@@ -139,7 +137,7 @@ function Projectile(x,y,direction){
 		this.x += offset_x(this.direction,this.speed);
 		this.y += 0.25
 		this.y += offset_y(this.direction,this.speed);
-		this.direction += 0.04;
+		this.direction += 2;
 	};
 };
 
@@ -165,15 +163,14 @@ function Wilderkind(image,x,y) {
 };
 
 function offset_x(direction,distance){
-	return Math.sin(direction) * distance;
+	return Math.sin((direction/180)*Math.PI) * distance;
 }
-function offset_y(direction,distance){
-	return Math.cos(direction) * distance;
-}
+	function offset_y(direction,distance){
+		return Math.cos((direction/180)*Math.PI) * distance;
+	}
 
 var carolers = []
 var wilderkin = []
-var projectiles = []
 
 function init(){
 	player = new Player();
@@ -190,12 +187,8 @@ function update(){
 	carolers.forEach(function(caroler) {
 	    caroler.update();
 	});
-	projectiles.forEach(function(projectile) {
-	    projectile.update();
-	});
-
 	//delete references to offscreen objects
-	[projectiles,carolers].forEach(function(list){  
+	[carolers].forEach(function(list){  
 		for (i = 0; i < list.length; ++i) {
 		    if (list[i].x > width+list[i].width || list[i].y > height+list[i].height) {
 		        list.splice(i--, 1);
@@ -207,21 +200,6 @@ function update(){
 function render(){
 	contextBackground.clearRect(0,0,width,height);
 	player.draw();
-	projectiles.forEach(function(projectile) {
-	    projectile.draw();
-	    if(collision(projectile,player)){
-	    	console.log("collision");
-	    	if(player.shielded){
-	    		projectile.y_speed = projectile.y_speed * -1;
-	    		projectile.y = projectile.y - 20
-
-	    		projectile.x_speed = projectile.x_speed * -1;
-	    	}else{
-	    		player.health --;
-	    		console.log(player.health);
-	    	}
-	    }
-	});
 
 	carolers.forEach(function(caroler) {
 	    caroler.draw();
