@@ -1,0 +1,16 @@
+<html>
+	<!-- 
+	Image does not need to be imported into twine but it does need to be in a path relative to index.html and that path needs to be used for src="path" 
+	The following example will place TestDontUse.png into the passage and wrap the three paragraphs around the image
+	-->
+	<p>
+		<img src="Art/TestDontUse.png" align="left" style="margin: 0px 10px" >
+I was all of history's great robot actors - Acting Unit 0.8; Thespomat; David Duchovny! I've got to find a way to escape the horrible ravages of youth. Suddenly, I'm going to the bathroom like clockwork, every three hours. And those jerks at Social Security stopped sending me checks. Now 'I'' have to pay ''them'! Calculon is gonna kill us and it's all everybody else's fault! This is the worst part. The calm before the battle. I am the man with no name, Zapp Brannigan! 
+		<br>
+		<br>		
+Why, those are the Grunka-Lunkas! They work here in the Slurm factory. Soon enough. Spare me your space age technobabble, Attila the Hun! Incidentally, you have a dime up your nose. And I'd do it again! And perhaps a third time! But that would be it. Professor, make a woman out of me.
+		<br>
+		<br>
+Come, Comrade Bender! We must take to the streets! Spare me your space age technobabble, Attila the Hun! In your time, yes, but nowadays shut up! Besides, these are adult stemcells, harvested from perfectly healthy adults whom I killed for their stemcells. Why, those are the Grunka-Lunkas! They work here in the Slurm factory. And I'd do it again! And perhaps a third time! But that would be it. Calculon is gonna kill us and it's all everybody else's fault!
+	</p>
+</html>
