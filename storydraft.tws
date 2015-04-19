@@ -417,7 +417,7 @@ Tiddler
 p137
 (dp138
 g21
-VBut that's still far away, for now. For now you have a field, and a crop you're counting on, and too little water. You contemplate the ditch. Perhaps you could dig it deeper to draw more water out to your field? Or perhaps you should resort to getting water by the bucket field and watering the crops by hand?\u000a\u000a[[...|unalda]]
+VBut that's still far away, for now. For now you have a field, and a crop you're counting on, and too little water. You contemplate the ditch. Perhaps you could dig it deeper to draw more water out to your field? Or perhaps you should resort to getting water by the bucket field and watering the crops by hand?\u000a\u000a[[...|Alda]]
 p139
 sg23
 Vhereandnow
@@ -467,7 +467,7 @@ Tiddler
 p152
 (dp153
 g21
-VYou go to the edge of the field and watch them approach. One of them is Unalda: she's an older woman, grey-haired and wrinkled but still healthy and strong, and she's running like a young woman now. With her is a young man that you don't know. He wears light clothes of silver and blue - Carillon clothes. \u000a\u000a[[...|the others]]
+VYou go to the edge of the field and watch them approach. One of them is Alda: she's an older woman, grey-haired and wrinkled but still healthy and strong, and she's running like a young woman now. With her is a young man that you don't know. He wears light clothes of silver and blue - Carillon clothes. \u000a\u000a[[...|the others]]
 p154
 sg23
 Vmeet them
@@ -517,7 +517,7 @@ Tiddler
 p167
 (dp168
 g21
-V"Unalda," you cry out as they get closer. "What's going on?" \u000a\u000a"Raiders!" Unalda cries, pulling to a stop next to you. "Raiders from Carillon City!" \u000a\u000a[[...|wtf]]\u000a\u000a
+V"Alda," you cry out as they get closer. "What's going on?" \u000a\u000a"Raiders!" Alda cries, pulling to a stop next to you. "Raiders from Carillon City!" \u000a\u000a[[...|wtf]]\u000a\u000a
 p169
 sg23
 Vhelp
@@ -567,7 +567,7 @@ Tiddler
 p182
 (dp183
 g21
-V<<set $sendoff to "Nothing">>"There's no time to explain now," Unalda says. "I need to keep Curot away from them." She indicates the Caroler. "I'm sorry to ask, but please. You're a strong Singer; for the good of all the Wilderkind, hold them off until we get to the caves. Join us there when you can." \u000a\u000a[["I need more than that, Unalda."|demand explanation]]\u000a\u000a[["I can't hold off so many."|doubt]]\u000a\u000a[["Go."|thank you][$sendoff to "Go."]]\u000a\u000a
+V<<set $sendoff to "Nothing">>"There's no time to explain now," Alda says. "I need to keep Orcut away from them." She indicates the Caroler. "I'm sorry to ask, but please. You're a strong Singer; for the good of all the Wilderkind, hold them off until we get to the caves. Join us there when you can." \u000a\u000a[["I need more than that, Alda."|demand explanation]]\u000a\u000a[["I can't hold off so many."|doubt]]\u000a\u000a[["Go."|thank you][$sendoff to "Go."]]\u000a\u000a
 p184
 sg23
 Vhold them
@@ -617,7 +617,7 @@ Tiddler
 p197
 (dp198
 g21
-V"<<print $sendoff>>"\u000a\u000a"//Thank you//", Unalda says. She puts a hand on your shoulder and looks you straight in the face. "If I had any other choice, I wouldn't drag you into this," she says. \u000a\u000a"But this is bigger than either of us."\u000a\u000a[[...|fight1]] \u000a\u000a
+V"<<print $sendoff>>"\u000a\u000a"//Thank you//", Alda says. She puts a hand on your shoulder and looks you straight in the face. "If I had any other choice, I wouldn't drag you into this," she says. \u000a\u000a"But this is bigger than either of us."\u000a\u000a[[...|fight1]] \u000a\u000a
 p199
 sg23
 Vthank you
@@ -667,7 +667,7 @@ Tiddler
 p212
 (dp213
 g21
-V"I can't hold off so many," you say. "They have bells, I assume they know how to use them..." \u000a\u000a"You must try," she says, desperation in her voice. "You know I wouldn't ask you for this if it wasn't of the highest importance. \u000a\u000a"You're one of the best Singers I've ever seen," Unalda insists. "You can do this." \u000a\u000a[["You're right. Go."|thank you][$sendoff = "You're right. Go."]]\u000a\u000a[["I'll... I'll do my best."|thank you][$sendoff = "I'll... I'll do my best."]]\u000a\u000a[["You owe me for this."|thank you][$sendoff = "You owe me for this."]]
+V"I can't hold off so many," you say. "They have bells, I assume they know how to use them..." \u000a\u000a"You must try," she says, desperation in her voice. "You know I wouldn't ask you for this if it wasn't of the highest importance. \u000a\u000a"You're one of the best Singers I've ever seen," Alda insists. "You can do this." \u000a\u000a[["You're right. Go."|thank you][$sendoff = "You're right. Go."]]\u000a\u000a[["I'll... I'll do my best."|thank you][$sendoff = "I'll... I'll do my best."]]\u000a\u000a[["You owe me for this."|thank you][$sendoff = "You owe me for this."]]
 p214
 sg23
 Vdoubt
@@ -717,7 +717,7 @@ Tiddler
 p227
 (dp228
 g21
-V"I need more than that, Unalda," you insist. "You're asking me to risk my life for a stranger..." \u000a\u000a"War is coming," she says. "Curot and I are trying to stop it. Please - I'll explain everything later, but for now that has to be enough." \u000a\u000a[["Of course. Go - I'll stop them."|thank you][$sendoff = "Of course. Go - I'll stop them."]]\u000a\u000a[["I'll hold you to that. Go."|thank you][$sendoff = "I'll hold you to that. Go."]]\u000a\u000a[["This better be worth it."|thank you][$sendoff = "This better be worth it."]]
+V"I need more than that, Alda," you insist. "You're asking me to risk my life for a stranger..." \u000a\u000a"War is coming," she says. "Orcut and I are trying to stop it. Please - I'll explain everything later, but for now that has to be enough." \u000a\u000a[["Of course. Go - I'll stop them."|thank you][$sendoff = "Of course. Go - I'll stop them."]]\u000a\u000a[["I'll hold you to that. Go."|thank you][$sendoff = "I'll hold you to that. Go."]]\u000a\u000a[["This better be worth it."|thank you][$sendoff = "This better be worth it."]]
 p229
 sg23
 Vdemand explanation
@@ -867,7 +867,7 @@ Tiddler
 p272
 (dp273
 g21
-VThe figures cresting the rise, and now running down it after Unalda and the Caroler, are dressed likewise, except they also wear white gloves - the pure white stands out at a distance - and carry bells, which chime as they run. \u000a\u000a[[...|help]]
+VThe figures cresting the rise, and now running down it after Alda and the Caroler, are dressed likewise, except they also wear white gloves - the pure white stands out at a distance - and carry bells, which chime as they run. \u000a\u000a[[...|help]]
 p274
 sg23
 Vthe others
@@ -969,10 +969,10 @@ Tiddler
 p303
 (dp304
 g21
-VBoth approaches are a lot of work. You'd probably need help from Unalda, your neighbor on the other side of the oasis. You look up at the rise that separates your property, and are surprised to see two figures cresting it, coming toward you.\u000a\u000a[[...|loudbells]]
+VBoth approaches are a lot of work. You'd probably need help from Alda, your neighbor on the other side of the oasis. You look up at the rise that separates your property, and are surprised to see two figures cresting it, coming toward you.\u000a\u000a[[...|loudbells]]
 p305
 sg23
-Vunalda
+VAlda
 p306
 sg25
 g26
@@ -1219,7 +1219,7 @@ Tiddler
 p378
 (dp379
 g21
-VDespite the echoes and the darkness you find you know exactly where the sound is coming from. \u000a\u000aFollowing the sound leads, in a few minutes, to Unalda and Curot, crouched in a narrow side passage. They are illuminated by a soft glow from a chime that Curot holds in his hands. \u000a\u000a[[...|cavern convo]]
+VDespite the echoes and the darkness you find you know exactly where the sound is coming from. \u000a\u000aFollowing the sound leads, in a few minutes, to Alda and Orcut, crouched in a narrow side passage. They are illuminated by a soft glow from a chime that Orcut holds in his hands. \u000a\u000a[[...|cavern convo]]
 p380
 sg23
 Vdirection
@@ -1269,7 +1269,7 @@ Tiddler
 p393
 (dp394
 g21
-V"Well done, Curot," Unalda says. "I told you they wouldn't capture her."\u000a\u000a"Yes," Curot says. "You are clearly a talented Singer," he says politely - but he watches you with suspicion.\u000a\u000a[[...|ringer]]
+V"Well done, Orcut," Alda says. "I told you they wouldn't capture her."\u000a\u000a"Yes," Orcut says. "You are clearly a talented Singer," he says politely - but he watches you with suspicion.\u000a\u000a[[...|ringer]]
 p395
 sg23
 Vcavern convo
@@ -1419,7 +1419,7 @@ Tiddler
 p438
 (dp439
 g21
-V"Unalda, what's going on?" you ask, turning back to her. "Where did those Carolers come from? Why are you //meeting// with a Caroler?" \u000a\u000a[[[...|answers]]
+V"Alda, what's going on?" you ask, turning back to her. "Where did those Carolers come from? Why are you //meeting// with a Caroler?" \u000a\u000a[[[...|answers]]
 p440
 sg23
 Vquestions
@@ -1469,7 +1469,7 @@ Tiddler
 p453
 (dp454
 g21
-V"Curot's mother is an old friend." She smiles. "A //very// old friend. I wasn't always an ornery old farm woman, you know." \u000a\u000aIndeed, she looks years younger in the dim light, with her eyes focused not on anything here in the cavern, but something years ago and miles away. \u000a\u000a[[...|curot came]]
+V"Orcut's mother is an old friend." She smiles. "A //very// old friend. I wasn't always an ornery old farm woman, you know." \u000a\u000aIndeed, she looks years younger in the dim light, with her eyes focused not on anything here in the cavern, but something years ago and miles away. \u000a\u000a[[...|Orcut came]]
 p455
 sg23
 Vanswers
@@ -1519,10 +1519,10 @@ Tiddler
 p468
 (dp469
 g21
-V"You mean she doesn't know about...?" Curot is so surprised that he lets the light of the chime go out for a moment, and fumbles in the dark the strike it again and bring back the light.\u000a\u000a[[...|not my place]]
+V"You mean she doesn't know about...?" Orcut is so surprised that he lets the light of the chime go out for a moment, and fumbles in the dark the strike it again and bring back the light.\u000a\u000a[[...|not my place]]
 p470
 sg23
-Vcurot came
+VOrcut came
 p471
 sg25
 g26
@@ -1569,7 +1569,7 @@ Tiddler
 p483
 (dp484
 g21
-V"Know about what?" you ask, looking back and forth between them.\u000a\u000aCurot looks to Unalda. "It's not my place to say," he says.\u000a\u000a[[...|no secret]]
+V"Know about what?" you ask, looking back and forth between them.\u000a\u000aOrcut looks to Alda. "It's not my place to say," he says.\u000a\u000a[[...|no secret]]
 p485
 sg23
 Vnot my place
@@ -1619,7 +1619,7 @@ Tiddler
 p498
 (dp499
 g21
-V"It's not a secret," Unalda says, shrugging. "It's just not something I talk about much." She turns to you. "I'm from Carillon City, originally. I used to be involved in the city government." \u000a\u000a[[...|involved]]
+V"It's not a secret," Alda says, shrugging. "It's just not something I talk about much." She turns to you. "I'm from Carillon City, originally. I used to be involved in the city government." \u000a\u000a[[...|involved]]
 p500
 sg23
 Vno secret
@@ -1669,7 +1669,7 @@ Tiddler
 p513
 (dp514
 g21
-V"'Involved?' You were one of the great masters!" Curot says. "She practically ran the city!"\u000a\u000a"That is a gross exaggeration," she says. "But, he's right. I had some power." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["Why is Curot here now?"|why curot]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]
+V"'Involved?' You were one of the great masters!" Orcut says. "She practically ran the city!"\u000a\u000a"That is a gross exaggeration," she says. "But, he's right. I had some power." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["Why is Orcut here now?"|why Orcut]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]
 p515
 sg23
 Vinvolved
@@ -1719,10 +1719,10 @@ Tiddler
 p528
 (dp529
 g21
-V"What is Curot doing here now?" you ask her. \u000a\u000a"There was an attack," he answers for himself. "A band of wilderkind attacked a bell choir calling the rains to the city. A lot of people were angry - very angry." \u000a\u000a[[...|mother]]
+V"What is Orcut doing here now?" you ask her. \u000a\u000a"There was an attack," he answers for himself. "A band of wilderkind attacked a bell choir calling the rains to the city. A lot of people were angry - very angry." \u000a\u000a[[...|mother]]
 p530
 sg23
-Vwhy curot
+Vwhy Orcut
 p531
 sg25
 g26
@@ -1769,7 +1769,7 @@ Tiddler
 p543
 (dp544
 g21
-V"Why did those raiders come here?" you ask.\u000a\u000aUnalda looks at Curot. "Actually, that's a good question. Why on earth did they come here, of all places?" \u000a\u000a[[...|idiots]]
+V"Why did those raiders come here?" you ask.\u000a\u000aAlda looks at Orcut. "Actually, that's a good question. Why on earth did they come here, of all places?" \u000a\u000a[[...|idiots]]
 p545
 sg23
 Vwhy raiders
@@ -1819,7 +1819,7 @@ Tiddler
 p558
 (dp559
 g21
-V"Why did you leave?" you ask Unalda. "Why walk away from something like that?"\u000a\u000aShe shrugs. "The truth is, I was always someone who liked the quiet. I used to envy the people out here, alone on their homesteads, without bells always ringing in their ears." \u000a\u000a[[...|myself]]
+V"Why did you leave?" you ask Alda. "Why walk away from something like that?"\u000a\u000aShe shrugs. "The truth is, I was always someone who liked the quiet. I used to envy the people out here, alone on their homesteads, without bells always ringing in their ears." \u000a\u000a[[...|myself]]
 p560
 sg23
 Vwhy leave
@@ -1869,7 +1869,7 @@ Tiddler
 p573
 (dp574
 g21
-V"And being a leader means living for others before yourself. I did that for a long time. I decided it was time to do something for myself." \u000a\u000a[["Why is Curot here now?"|why curot]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]
+V"And being a leader means living for others before yourself. I did that for a long time. I decided it was time to do something for myself." \u000a\u000a[["Why is Orcut here now?"|why Orcut]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]
 p575
 sg23
 Vmyself
@@ -1919,7 +1919,7 @@ Tiddler
 p588
 (dp589
 g21
-V"Curot's mother is one of the masters now," she continues. "And because she's not stupid, she wants to stop the violence now - before it goes any further. She sent Curot to find me, to see if I had any ideas to help. As it happens, I do." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]
+V"Orcut's mother is one of the masters now," she continues. "And because she's not stupid, she wants to stop the violence now - before it goes any further. She sent Orcut to find me, to see if I had any ideas to help. As it happens, I do." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]
 p590
 sg23
 Vmother
@@ -1969,7 +1969,7 @@ Tiddler
 p603
 (dp604
 g21
-VCurot scowls. "Because they're idiots," he said. "All Wilderkind are the same to them. They assume you're all in league, and they took it upon themselves to exact revenge for the attack on our choir." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["Why is Curot here now?"|why curot]]\u000a\u000a[["What now?"|what now]]
+VOrcut scowls. "Because they're idiots," he said. "All Wilderkind are the same to them. They assume you're all in league, and they took it upon themselves to exact revenge for the attack on our choir." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["Why is Orcut here now?"|why Orcut]]\u000a\u000a[["What now?"|what now]]
 p605
 sg23
 Vidiots
@@ -2019,7 +2019,7 @@ Tiddler
 p618
 (dp619
 g21
-V"What now?" you ask the both of them. \u000a\u000a"Curot came here to make peace," Unalda says. "There's a conclave meeting of wilderkind elders, at Echomount. I'm going to bring him there, lend him my voice, and let him plead his case." \u000a\u000a[[...|case]]
+V"What now?" you ask the both of them. \u000a\u000a"Orcut came here to make peace," Alda says. "There's a conclave meeting of wilderkind elders, at Echomount. I'm going to bring him there, lend him my voice, and let him plead his case." \u000a\u000a[[...|case]]
 p620
 sg23
 Vwhat now
@@ -2069,7 +2069,7 @@ Tiddler
 p633
 (dp634
 g21
-VYou turn to Curot. "How exactly are you going to persuade them? After all..."\u000a\u000a[["...people are frightened, because of the drought."|frightened]]\u000a\u000a[["...they're right to be angry that you're stealing the rains."|angry]]
+VYou turn to Orcut. "How exactly are you going to persuade them? After all..."\u000a\u000a[["...people are frightened, because of the drought."|frightened]]\u000a\u000a[["...they're right to be angry that you're stealing the rains."|angry]]
 p635
 sg23
 Vcase
@@ -2219,7 +2219,7 @@ Tiddler
 p678
 (dp679
 g21
-V"The drought isn't our fault!" Curot protests. "We've always called the rains to the city. If we do it more now, it's because the drought affects us as well What would you have us do?"
+V"The drought isn't our fault!" Orcut protests. "We've always called the rains to the city. If we do it more now, it's because the drought affects us as well What would you have us do?"
 p680
 sg23
 Vfault
@@ -2269,7 +2269,7 @@ Tiddler
 p693
 (dp694
 g21
-V"It wasn't an accusation, Curot," Unalda says, sternly. "It's a fact - people here are scared, and fear makes people do awful things. \u000a\u000a"If you're going to make peace, your first concern can't be proving that you're side is right. \u000a\u000a[[...|apology]]
+V"It wasn't an accusation, Orcut," Alda says, sternly. "It's a fact - people here are scared, and fear makes people do awful things. \u000a\u000a"If you're going to make peace, your first concern can't be proving that you're side is right. \u000a\u000a[[...|apology]]
 p695
 sg23
 Vfrightened2
@@ -2319,7 +2319,7 @@ Tiddler
 p708
 (dp709
 g21
-V"You'll face worse than that at the conclave," Unalda says calmly. "You won't make peace answering anger with anger, Curot." \u000a\u000a[[...|apology]]
+V"You'll face worse than that at the conclave," Alda says calmly. "You won't make peace answering anger with anger, Orcut." \u000a\u000a[[...|apology]]
 p710
 sg23
 Vangry2
@@ -2369,7 +2369,7 @@ Tiddler
 p723
 (dp724
 g21
-V"...you're right. I'm sorry." Curot looks at you. "Please excuse me." \u000a\u000aUnalda nods approvingly. She turns to study you, examining you closely in the dim light cast by Curot's bell. \u000a\u000a[[...|come]]
+V"...you're right. I'm sorry." Orcut looks at you. "Please excuse me." \u000a\u000aAlda nods approvingly. She turns to study you, examining you closely in the dim light cast by Orcut's bell. \u000a\u000a[[...|come]]
 p725
 sg23
 Vapology
@@ -2469,7 +2469,7 @@ Tiddler
 p753
 (dp754
 g21
-V"I know you have work to do here. So do I. But it could all be for nothing if there's war in the city. Traveling won't be safe anymore, especially for a Wilderkind and a Caroler traveling together. I'm not as young as I used to be, and Curot's a good Ringer, but he's no warrior. \u000a\u000a[["Of course, Unalda."|journey]]\u000a\u000a[["My fields will suffer..."|work to do]]\u000a\u000a[["I'm not sure I want peace..."|mission doubts]]
+V"I know you have work to do here. So do I. But it could all be for nothing if there's war in the city. Traveling won't be safe anymore, especially for a Wilderkind and a Caroler traveling together. I'm not as young as I used to be, and Orcut's a good Ringer, but he's no warrior. \u000a\u000a[["Of course, Alda."|journey]]\u000a\u000a[["My fields will suffer..."|work to do]]\u000a\u000a[["I'm not sure I want peace..."|mission doubts]]
 p755
 sg23
 Vwhy me
@@ -2508,7 +2508,7 @@ tp764
 Rp765
 sbsa(dp766
 g14
-I01
+I00
 sg15
 (lp767
 F1292.0
@@ -2519,7 +2519,7 @@ Tiddler
 p768
 (dp769
 g21
-V"Excellent." You're surprised at how profoundly //relieved// Unalda looks. She's always seemed invincible to you: aged but vital, weathered but never broken by the years. \u000a\u000aIf even she can't undertake this by herself, things must be bad indeed.
+V"Excellent." You're surprised at how profoundly //relieved// Alda looks. She's always seemed invincible to you: aged but vital, weathered but never broken by the years. \u000a\u000aIf even she can't undertake this by herself, things must be bad indeed.
 p770
 sg23
 Vjourney
@@ -2569,7 +2569,7 @@ Tiddler
 p783
 (dp784
 g21
-V"I'm not sure I want peace..." you say, looking sidelong at Curot. "Not if it means that nothing changes, that the Carolers call the rains away while the lakes dry up and our crops die." \u000a\u000aUnalda nods. "I understand. And I can promise you, that's not the kind of peace we're fighting for. Right, Curot?"\u000a\u000a[[...|doubts 2]]
+V"I'm not sure I want peace..." you say, looking sidelong at Orcut. "Not if it means that nothing changes, that the Carolers call the rains away while the lakes dry up and our crops die." \u000a\u000aAlda nods. "I understand. And I can promise you, that's not the kind of peace we're fighting for. Right, Orcut?"\u000a\u000a[[...|doubts 2]]
 p785
 sg23
 Vmission doubts
@@ -2619,7 +2619,7 @@ Tiddler
 p798
 (dp799
 g21
-V"My fields will suffer..." you say to her doubtfully. "It's been a hard season as it is, Unalda. To be away for so long..." \u000a\u000a"I know," she says. "But think how much more your fields will suffer if they're burned by Carolers, or if they're seized by a Wilderkind warlord to feed his army - and don't think their aren't plenty of would-be warlords just waiting for the excuse."\u000a\u000a[[...|persuaded]]
+V"My fields will suffer..." you say to her doubtfully. "It's been a hard season as it is, Alda. To be away for so long..." \u000a\u000a"I know," she says. "But think how much more your fields will suffer if they're burned by Carolers, or if they're seized by a Wilderkind warlord to feed his army - and don't think their aren't plenty of would-be warlords just waiting for the excuse."\u000a\u000a[[...|persuaded]]
 p800
 sg23
 Vwork to do
@@ -2719,7 +2719,7 @@ Tiddler
 p828
 (dp829
 g21
-VCurot frowns, not pleased by this turn of conversation - but he nods. "On my mother's behalf, I'm authorized to discuss changes in how we call the rains," Curot says. "Personally, I don't believe the drought has anything to do with our rain calling. But as a show of good faith, we're willing to discuss it." \u000a\u000a[[...|doubts 3]]
+VOrcut frowns, not pleased by this turn of conversation - but he nods. "On my mother's behalf, I'm authorized to discuss changes in how we call the rains," Orcut says. "Personally, I don't believe the drought has anything to do with our rain calling. But as a show of good faith, we're willing to discuss it." \u000a\u000a[[...|doubts 3]]
 p830
 sg23
 Vdoubts 2
@@ -2769,7 +2769,7 @@ Tiddler
 p843
 (dp844
 g21
-V"I understand your doubts," Unalda says. "But don't you think there's at least a chance this could make things better - without the need for war?" \u000a\u000a[[...|persuaded]]
+V"I understand your doubts," Alda says. "But don't you think there's at least a chance this could make things better - without the need for war?" \u000a\u000a[[...|persuaded]]
 p845
 sg23
 Vdoubts 3
