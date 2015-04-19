@@ -23,9 +23,14 @@ var images = [];
 var doneImages = 0;
 var requiredImages = 0;
 
-var contextPlayer = document.getElementById("gameCanvas").getContext("2d");
+var contextPlayer = document.getElementById("playerCanvas").getContext("2d");
 var contextBackground = document.getElementById("backgroundCanvas").getContext("2d");
 
+var keys = [];
+
+$(document).keydown(function(e){
+	console.log("keydown");
+});
 
 function init(){
 	loop();
