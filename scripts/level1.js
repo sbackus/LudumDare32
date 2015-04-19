@@ -174,8 +174,8 @@ function Bolas(x,y,direction){
 	// this.image = image;
 	this.x =  x;
 	this.y =  y;
-	this.width =  6;
-	this.height =  6;
+	this.width = 6;
+	this.height = 6;
 	this.size = 3;
 	this.speed = 6;
 	this.rotation = 2;
@@ -254,6 +254,7 @@ function update(){
 	carolers.forEach(function(caroler){
 		if(collision(caroler.bolas,player)){
 			if (player.shield.on){
+				caroler.bolas.rotation = caroler.bolas.rotation * -1
 				caroler.bolas.direction = caroler.bolas.direction * -1
 			} else{
 				player.health--;
