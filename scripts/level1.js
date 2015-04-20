@@ -298,7 +298,9 @@ function update(){
 				caroler.bolas.direction = caroler.bolas.direction * -1
 				caroler.bolas.reversed = true;
 			} else{
-				player.health--;
+				if (!caroler.bolas.reversed){
+					player.health--;
+				}
 				
 			}
 		}
