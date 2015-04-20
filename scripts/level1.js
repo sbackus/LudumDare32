@@ -26,6 +26,15 @@ var requiredImages = 0;
 var contextPlayer = document.getElementById("playerCanvas").getContext("2d");
 var contextBackground = document.getElementById("backgroundCanvas").getContext("2d");
 
+//Sounds
+var hit = new Howl({urls: ['././Audio/Hit.wav'], volume: 0.3 });  //plays when you are struck with a bola
+var chimes = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/131979__juskiddink__chimes.wav'], loop: true, volume: 0.5 }); //looping background music
+var bounce = new Howl({urls: ['././Audio/Bounce.wav']}); //plays when you redirect a bola
+var strike = new Howl({urls: ['././Audio/Strike.wav']}); //plays when a redirected bola hits an enemy
+var sadBell = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/59535__juskiddink__bell2.wav']}); //plays on game over
+var lowNote = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/122680__juskiddink__gong-2.wav']}); //plays on game over
+var song = new Howl({urls: ['././Audio/11078__maerkunst__female-voice/176118__maerkunst__short-song-1.mp3'], volume: 0 }).play(); //plays while shields are up via fadeIn/Out functions
+
 var keys = [];
 
 var player = null;
@@ -55,12 +64,11 @@ var wilderkin = [];
 var game_over = false;
 
 function init(){
-	//Howler Test
-	var chimes = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/131979__juskiddink__chimes.wav']}).play();
-	
+	chimes.play();
 	player = new Player();
 	loop();
 	// DON'T PUT ANYTHING AFTER THE GAME LOOP STARTS!
+	//alert("Post Loop"); //if uncommented this line will fire once at game load
 }
 
 function update(){
@@ -86,15 +94,18 @@ function update(){
 		if(collision(caroler,caroler.bolas) && caroler.bolas.reversed){
 			caroler.destroyed = true;
 			caroler.bolas.y = height + 100;
+			strike.play();
 		}
 		if(collision(caroler.bolas,player)){
 			if (player.shield.on){
 				caroler.bolas.rotation = caroler.bolas.rotation * -1
 				caroler.bolas.direction = caroler.bolas.direction * -1
 				caroler.bolas.reversed = true;
+				bounce.play();
 			} else{
 				if (!caroler.bolas.reversed){
 					player.health--;
+					hit.play();
 				}
 				
 			}
@@ -123,9 +134,10 @@ function loop(){
 		contextBackground.font = "bold 50px monaco";
 		contextBackground.fillStyle = "white";
 		contextBackground.fillText("Game Over",(width/2)-165,(height/2)-80);
-		console.log("this happens once");
-		return;
-		console.log("this never happens");
+		chimes.stop().fadeOut( 0, 2000 );
+		sadBell.play().fadeOut( 0, 3000 );
+		lowNote.play().fadeOut( 0, 5000 );
+		return 0;
 	}
 }
 
