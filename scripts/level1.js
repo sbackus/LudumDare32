@@ -181,10 +181,11 @@ function Caroler(image,x,y) {
 	this.update = function(){
 		if (this.destroyed){
 			this.destroyed_count++;
+		}else{
+			this.bolas.update();
+			this.y += this.speed;
+			this.drawn = false;
 		}
-		this.bolas.update();
-		this.y += this.speed;
-		this.drawn = false;
 	};
 };
 
@@ -258,7 +259,7 @@ function init(){
 function update(){
 	player.update();
 	// console.log(carolers.length)
-	if (Math.random()<=0.003 ){
+	if (Math.random()<=0.009 && carolers.length < 3 ){
 		carolers = carolers.concat(new Caroler(images[0], Math.random()*width, -10));
 	}
 
@@ -278,7 +279,7 @@ function update(){
 	carolers.forEach(function(caroler){
 		if(collision(caroler,caroler.bolas) && caroler.bolas.reversed){
 			caroler.destroyed = true;
-			
+			caroler.bolas.y = height + 100;
 		}
 		if(collision(caroler.bolas,player)){
 			if (player.shield.on){
