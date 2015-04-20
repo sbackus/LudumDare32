@@ -5,7 +5,7 @@ VC:\u005cUsers\u005cDave\u005cDocuments\u005cGitHub\u005cLudumDare32\u005cstoryd
 p2
 sS'saveDestination'
 p3
-VC:\u005cUsers\u005cDave\u005cDocuments\u005cGitHub\u005cLudumDare32\u005cstorydraft.tws
+S'E:\\Git\\LudumDare\\LudumDare32\\storydraft.tws'
 p4
 sS'metadata'
 p5
@@ -576,12 +576,12 @@ sg25
 g26
 ((I2015
 I4
-I18
-I22
-I57
-I53
-I5
-I108
+I19
+I19
+I35
+I2
+I6
+I109
 I1
 tp186
 (dp187
@@ -589,7 +589,9 @@ tp188
 Rp189
 sg31
 (lp190
-sg33
+Vcity
+p191
+asg33
 g26
 ((I2015
 I4
@@ -600,28 +602,28 @@ I38
 I5
 I108
 I1
-tp191
-(dp192
-tp193
-Rp194
-sbsa(dp195
+tp192
+(dp193
+tp194
+Rp195
+sbsa(dp196
 g14
 I00
 sg15
-(lp196
+(lp197
 F724.0
 aF313.0
 asg17
 (itiddlywiki
 Tiddler
-p197
-(dp198
+p198
+(dp199
 g21
 V"<<print $sendoff>>"\u000a\u000a"//Thank you//", Alda says. She puts a hand on your shoulder and looks you straight in the face. "If I had any other choice, I wouldn't drag you into this," she says. \u000a\u000a"But this is bigger than either of us."\u000a\u000a[[...|fight1]] \u000a\u000a
-p199
+p200
 sg23
 Vthank you
-p200
+p201
 sg25
 g26
 ((I2015
@@ -633,12 +635,12 @@ I55
 I5
 I108
 I1
-tp201
-(dp202
-tp203
-Rp204
+tp202
+(dp203
+tp204
+Rp205
 sg31
-(lp205
+(lp206
 sg33
 g26
 ((I2015
@@ -650,28 +652,28 @@ I12
 I5
 I108
 I1
-tp206
-(dp207
-tp208
-Rp209
-sbsa(dp210
+tp207
+(dp208
+tp209
+Rp210
+sbsa(dp211
 g14
 I00
 sg15
-(lp211
+(lp212
 F873.0
 aF312.0
 asg17
 (itiddlywiki
 Tiddler
-p212
-(dp213
+p213
+(dp214
 g21
 V"I can't hold off so many," you say. "They have bells, I assume they know how to use them..." \u000a\u000a"You must try," she says, desperation in her voice. "You know I wouldn't ask you for this if it wasn't of the highest importance. \u000a\u000a"You're one of the best Singers I've ever seen," Alda insists. "You can do this." \u000a\u000a[["You're right. Go."|thank you][$sendoff = "You're right. Go."]]\u000a\u000a[["I'll... I'll do my best."|thank you][$sendoff = "I'll... I'll do my best."]]\u000a\u000a[["You owe me for this."|thank you][$sendoff = "You owe me for this."]]
-p214
+p215
 sg23
 Vdoubt
-p215
+p216
 sg25
 g26
 ((I2015
@@ -683,12 +685,12 @@ I20
 I5
 I108
 I1
-tp216
-(dp217
-tp218
-Rp219
+tp217
+(dp218
+tp219
+Rp220
 sg31
-(lp220
+(lp221
 sg33
 g26
 ((I2015
@@ -700,46 +702,53 @@ I12
 I5
 I108
 I1
-tp221
-(dp222
-tp223
-Rp224
-sbsa(dp225
+tp222
+(dp223
+tp224
+Rp225
+sbsa(dp226
 g14
 I00
 sg15
-(lp226
-F1146.0
-aF163.0
+(lp227
+F1166.0
+aF158.0
 asg17
 (itiddlywiki
 Tiddler
-p227
-(dp228
+p228
+(dp229
 g21
+<<<<<<< HEAD
 V"I need more than that, Alda," you insist. "You're asking me to risk my life for a stranger..." \u000a\u000a"War is coming," she says. "Orit and I are trying to stop it. Please - I'll explain everything later, but for now that has to be enough." \u000a\u000a[["Of course. Go - I'll stop them."|thank you][$sendoff = "Of course. Go - I'll stop them."]]\u000a\u000a[["I'll hold you to that. Go."|thank you][$sendoff = "I'll hold you to that. Go."]]\u000a\u000a[["This better be worth it."|thank you][$sendoff = "This better be worth it."]]
 p229
+=======
+V"I need more than that, Alda," you insist. "You're asking me to risk my life for a stranger..." \u000a\u000a"War is coming," she says. "Orcut and I are trying to stop it. Please - I'll explain everything later, but for now that has to be enough." \u000a\u000a[["Of course. Go - I'll stop them."|thank you][$sendoff = "Of course. Go - I'll stop them."]]\u000a\u000a[["I'll hold you to that. Go."|thank you][$sendoff = "I'll hold you to that. Go."]]\u000a\u000a[["This better be worth it."|thank you][$sendoff = "This better be worth it."]]
+p230
+>>>>>>> origin/master
 sg23
 Vdemand explanation
-p230
+p231
 sg25
 g26
 ((I2015
 I4
-I18
-I22
-I8
-I33
-I5
-I108
+I19
+I19
+I17
+I21
+I6
+I109
 I1
-tp231
-(dp232
-tp233
-Rp234
+tp232
+(dp233
+tp234
+Rp235
 sg31
-(lp235
-sg33
+(lp236
+Vwilderkind
+p237
+asg33
 g26
 ((I2015
 I4
@@ -750,28 +759,28 @@ I12
 I5
 I108
 I1
-tp236
-(dp237
 tp238
-Rp239
-sbsa(dp240
+(dp239
+tp240
+Rp241
+sbsa(dp242
 g14
 I00
 sg15
-(lp241
+(lp243
 F574.0
 aF315.0
 asg17
 (itiddlywiki
 Tiddler
-p242
-(dp243
+p244
+(dp245
 g21
 V<<set $fight to 1>><<display Start>>
-p244
+p246
 sg23
 Vfight1
-p245
+p247
 sg25
 g26
 ((I2015
@@ -783,12 +792,12 @@ I36
 I5
 I108
 I1
-tp246
-(dp247
 tp248
-Rp249
+(dp249
+tp250
+Rp251
 sg31
-(lp250
+(lp252
 sg33
 g26
 ((I2015
@@ -800,28 +809,28 @@ I22
 I5
 I108
 I1
-tp251
-(dp252
 tp253
-Rp254
-sbsa(dp255
+(dp254
+tp255
+Rp256
+sbsa(dp257
 g14
 I00
 sg15
-(lp256
+(lp258
 I730
 aI14
 asg17
 (itiddlywiki
 Tiddler
-p257
-(dp258
+p259
+(dp260
 g21
 VYou don't know if it's true or not, but a lot of people more desperate than you have become convinced. There's talk of making the Carolers stop. There's even talk of war... \u000a\u000a[[...and you pray it doesn't become more than talk.|hereandnow]]\u000a\u000a[[...and Carillon City deserves no better, if they're really causing the drought.|hereandnow]]
-p259
+p261
 sg23
 Vwhispers
-p260
+p262
 sg25
 g26
 ((I2015
@@ -833,12 +842,12 @@ I19
 I5
 I108
 I1
-tp261
-(dp262
 tp263
-Rp264
+(dp264
+tp265
+Rp266
 sg31
-(lp265
+(lp267
 sg33
 g26
 ((I2015
@@ -850,28 +859,28 @@ I5
 I5
 I108
 I1
-tp266
-(dp267
 tp268
-Rp269
-sbsa(dp270
+(dp269
+tp270
+Rp271
+sbsa(dp272
 g14
 I00
 sg15
-(lp271
+(lp273
 F424.0
 aF161.0
 asg17
 (itiddlywiki
 Tiddler
-p272
-(dp273
+p274
+(dp275
 g21
 VThe figures cresting the rise, and now running down it after Alda and the Caroler, are dressed likewise, except they also wear white gloves - the pure white stands out at a distance - and carry bells, which chime as they run. \u000a\u000a[[...|help]]
-p274
+p276
 sg23
 Vthe others
-p275
+p277
 sg25
 g26
 ((I2015
@@ -883,12 +892,12 @@ I2
 I5
 I108
 I1
-tp276
-(dp277
 tp278
-Rp279
+(dp279
+tp280
+Rp281
 sg31
-(lp280
+(lp282
 sg33
 g26
 ((I2015
@@ -900,47 +909,55 @@ I57
 I5
 I108
 I1
-tp281
-(dp282
 tp283
-Rp284
-sbsa(dp285
+(dp284
+tp285
+Rp286
+sbsa(dp287
 g14
 I00
 sg15
+<<<<<<< HEAD
 (lp286
 F10.0
 aF433.0
+=======
+(lp288
+I10
+aI433
+>>>>>>> origin/master
 asg17
 (itiddlywiki
 Tiddler
-p287
-(dp288
-g21
-V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	font-size: 12pt;\u000a	\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	font-size\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}\u000a\u000a#sidebar { display: none; }\u000a  \u000a#passages { margin-left: 0;\u000a			border-left: 0px; padding-left: 0;  \u000a}
 p289
+(dp290
+g21
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	font-size: 12pt;\u000a	background-image: url("Art/Futurama_portraits/futurama_bg3.png"); \u000a	background-repeat: no-repeat;\u000a    background-position: 30px 20px; \u000a}\u000a\u000a\u000a.passage{\u000a\u000a}\u000a\u000a.passage a {\u000a	/* This affects passage links */\u000a	color:#3C6954\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}\u000a\u000a#passages {\u000a	max-width: 800px;\u000a	border-left: 0px; \u000a	padding-left: 0;\u000a	position: absolute;\u000a	top: 50px;\u000a	left: 10px;\u000a}\u000a#sidebar { \u000a	position: absolute;\u000a	top: 50px;\u000a	left: 50px;\u000a	content:url("Art/Futurama_portraits/Leela_oval3.png");\u000a	border: 0;\u000a	\u000a}\u000a  
+p291
 sg23
-VUntitled Stylesheet 1
-p290
+VWilderkind Style
+p292
 sg25
 g26
 ((I2015
 I4
-I18
-I22
-I38
-I33
-I5
-I108
+I19
+I19
+I34
+I29
+I6
+I109
 I1
-tp291
-(dp292
 tp293
-Rp294
+(dp294
+tp295
+Rp296
 sg31
-(lp295
+(lp297
 Vstylesheet
-p296
+p298
+aVwilderkind
+p299
 asg33
 g26
 ((I2015
@@ -952,28 +969,28 @@ I51
 I5
 I108
 I1
-tp297
-(dp298
-tp299
-Rp300
-sbsa(dp301
+tp300
+(dp301
+tp302
+Rp303
+sbsa(dp304
 g14
 I00
 sg15
-(lp302
+(lp305
 I1015
 aI14
 asg17
 (itiddlywiki
 Tiddler
-p303
-(dp304
+p306
+(dp307
 g21
 VBoth approaches are a lot of work. You'd probably need help from Alda, your neighbor on the other side of the oasis. You look up at the rise that separates your property, and are surprised to see two figures cresting it, coming toward you.\u000a\u000a[[...|loudbells]]
-p305
+p308
 sg23
 VAlda
-p306
+p309
 sg25
 g26
 ((I2015
@@ -985,12 +1002,12 @@ I44
 I5
 I108
 I1
-tp307
-(dp308
-tp309
-Rp310
+tp310
+(dp311
+tp312
+Rp313
 sg31
-(lp311
+(lp314
 sg33
 g26
 ((I2015
@@ -1002,28 +1019,28 @@ I25
 I5
 I108
 I1
-tp312
-(dp313
-tp314
-Rp315
-sbsa(dp316
+tp315
+(dp316
+tp317
+Rp318
+sbsa(dp319
 g14
 I00
 sg15
-(lp317
+(lp320
 I719
 aI157
 asg17
 (itiddlywiki
 Tiddler
-p318
-(dp319
+p321
+(dp322
 g21
 V"Here?! Why?" You have your opinions about the City, but you've never lifted a finger against them. And there can't be anything here that they want; you're just poor homesteaders. \u000a\u000a"Retribution," the Caroler says, breathing hard. \u000a\u000a[[...|wtf2]]
-p320
+p323
 sg23
 Vwtf
-p321
+p324
 sg25
 g26
 ((I2015
@@ -1035,12 +1052,12 @@ I58
 I5
 I108
 I1
-tp322
-(dp323
-tp324
-Rp325
+tp325
+(dp326
+tp327
+Rp328
 sg31
-(lp326
+(lp329
 sg33
 g26
 ((I2015
@@ -1052,28 +1069,28 @@ I0
 I5
 I108
 I1
-tp327
-(dp328
-tp329
-Rp330
-sbsa(dp331
+tp330
+(dp331
+tp332
+Rp333
+sbsa(dp334
 g14
 I00
 sg15
-(lp332
+(lp335
 I861
 aI164
 asg17
 (itiddlywiki
 Tiddler
-p333
-(dp334
+p336
+(dp337
 g21
 VYou gape at him "//Retribution//? For what? We haven't done anything to them!" \u000a\u000a"Other Wilderkind have," the Caroler says. "There have been raids..."\u000a\u000a[[...|hold them]]
-p335
+p338
 sg23
 Vwtf2
-p336
+p339
 sg25
 g26
 ((I2015
@@ -1085,12 +1102,12 @@ I41
 I5
 I108
 I1
-tp337
-(dp338
-tp339
-Rp340
+tp340
+(dp341
+tp342
+Rp343
 sg31
-(lp341
+(lp344
 sg33
 g26
 ((I2015
@@ -1102,28 +1119,28 @@ I35
 I5
 I108
 I1
-tp342
-(dp343
-tp344
-Rp345
-sbsa(dp346
+tp345
+(dp346
+tp347
+Rp348
+sbsa(dp349
 g14
 I00
 sg15
-(lp347
+(lp350
 I425
 aI462
 asg17
 (itiddlywiki
 Tiddler
-p348
-(dp349
+p351
+(dp352
 g21
 VYou fall back, throwing shields up against the flying projectiles that the Carolers call up with the ceaseless chimes of their bells. Before long, you reach the caves that stretch back into the mountains. The Carolers follow you in, but not far; after a few turnings, they think better of it and fall back. \u000a\u000a[[...|call]]
-p350
+p353
 sg23
 Vcaves
-p351
+p354
 sg25
 g26
 ((I2015
@@ -1135,12 +1152,12 @@ I19
 I6
 I109
 I1
-tp352
-(dp353
-tp354
-Rp355
+tp355
+(dp356
+tp357
+Rp358
 sg31
-(lp356
+(lp359
 sg33
 g26
 ((I2015
@@ -1152,28 +1169,28 @@ I3
 I6
 I109
 I1
-tp357
-(dp358
-tp359
-Rp360
-sbsa(dp361
+tp360
+(dp361
+tp362
+Rp363
+sbsa(dp364
 g14
 I00
 sg15
-(lp362
+(lp365
 F574.0
 aF461.0
 asg17
 (itiddlywiki
 Tiddler
-p363
-(dp364
+p366
+(dp367
 g21
 VSound carries in the caves.\u000a\u000aYou hear them shouting to each other; you hear the order to withdraw, and their tramping back to the cave entrance. And then, when it's quiet, it's not long before you hear a high, gentle ring, very different from the insistent clanging of the raiders' bells. \u000a\u000a[[...|direction]]
-p365
+p368
 sg23
 Vcall
-p366
+p369
 sg25
 g26
 ((I2015
@@ -1185,12 +1202,12 @@ I48
 I6
 I109
 I1
-tp367
-(dp368
-tp369
-Rp370
+tp370
+(dp371
+tp372
+Rp373
 sg31
-(lp371
+(lp374
 sg33
 g26
 ((I2015
@@ -1202,28 +1219,33 @@ I32
 I6
 I109
 I1
-tp372
-(dp373
-tp374
-Rp375
-sbsa(dp376
+tp375
+(dp376
+tp377
+Rp378
+sbsa(dp379
 g14
 I00
 sg15
-(lp377
+(lp380
 I722
 aI460
 asg17
 (itiddlywiki
 Tiddler
-p378
-(dp379
+p381
+(dp382
 g21
+<<<<<<< HEAD
 VDespite the echoes and the darkness you find you know exactly where the sound is coming from. \u000a\u000aFollowing the sound leads, in a few minutes, to Alda and Orit, crouched in a narrow side passage. They are illuminated by a soft glow from a chime that Orit holds in his hands. \u000a\u000a[[...|cavern convo]]
 p380
+=======
+VDespite the echoes and the darkness you find you know exactly where the sound is coming from. \u000a\u000aFollowing the sound leads, in a few minutes, to Alda and Orcut, crouched in a narrow side passage. They are illuminated by a soft glow from a chime that Orcut holds in his hands. \u000a\u000a[[...|cavern convo]]
+p383
+>>>>>>> origin/master
 sg23
 Vdirection
-p381
+p384
 sg25
 g26
 ((I2015
@@ -1235,12 +1257,12 @@ I57
 I6
 I109
 I1
-tp382
-(dp383
-tp384
-Rp385
+tp385
+(dp386
+tp387
+Rp388
 sg31
-(lp386
+(lp389
 sg33
 g26
 ((I2015
@@ -1252,28 +1274,33 @@ I31
 I6
 I109
 I1
-tp387
-(dp388
-tp389
-Rp390
-sbsa(dp391
+tp390
+(dp391
+tp392
+Rp393
+sbsa(dp394
 g14
 I00
 sg15
-(lp392
+(lp395
 F865.0
 aF459.0
 asg17
 (itiddlywiki
 Tiddler
-p393
-(dp394
+p396
+(dp397
 g21
+<<<<<<< HEAD
 V"Well done, Orit," Alda says. "I told you they wouldn't capture her."\u000a\u000a"Yes," Orit says. "You are clearly a talented Singer," he says politely - but he watches you with suspicion.\u000a\u000a[[...|ringer]]
 p395
+=======
+V"Well done, Orcut," Alda says. "I told you they wouldn't capture her."\u000a\u000a"Yes," Orcut says. "You are clearly a talented Singer," he says politely - but he watches you with suspicion.\u000a\u000a[[...|ringer]]
+p398
+>>>>>>> origin/master
 sg23
 Vcavern convo
-p396
+p399
 sg25
 g26
 ((I2015
@@ -1285,12 +1312,12 @@ I24
 I6
 I109
 I1
-tp397
-(dp398
-tp399
-Rp400
+tp400
+(dp401
+tp402
+Rp403
 sg31
-(lp401
+(lp404
 sg33
 g26
 ((I2015
@@ -1302,28 +1329,28 @@ I57
 I6
 I109
 I1
-tp402
-(dp403
-tp404
-Rp405
-sbsa(dp406
+tp405
+(dp406
+tp407
+Rp408
+sbsa(dp409
 g14
 I00
 sg15
-(lp407
+(lp410
 F1008.0
 aF457.0
 asg17
 (itiddlywiki
 Tiddler
-p408
-(dp409
+p411
+(dp412
 g21
 VYou gesture at the chime in his hands. "And you're a good Ringer." You didn't just follow the sound to them; the echoing of the taverns should have made that impossible. He showed you the way.\u000a\u000a[[...|light source]]
-p410
+p413
 sg23
 Vringer
-p411
+p414
 sg25
 g26
 ((I2015
@@ -1335,12 +1362,12 @@ I49
 I6
 I109
 I1
-tp412
-(dp413
-tp414
-Rp415
+tp415
+(dp416
+tp417
+Rp418
 sg31
-(lp416
+(lp419
 sg33
 g26
 ((I2015
@@ -1352,28 +1379,28 @@ I36
 I6
 I109
 I1
-tp417
-(dp418
-tp419
-Rp420
-sbsa(dp421
+tp420
+(dp421
+tp422
+Rp423
+sbsa(dp424
 g14
 I00
 sg15
-(lp422
+(lp425
 F1146.0
 aF456.0
 asg17
 (itiddlywiki
 Tiddler
-p423
-(dp424
+p426
+(dp427
 g21
 V"Thank you." \u000a\u000aHe strikes the chime again, with a small wooden rod he holds in his other hands, and the glow, which was starting to fade with the sound, comes back. \u000a\u000a[[...|questions]]
-p425
+p428
 sg23
 Vlight source
-p426
+p429
 sg25
 g26
 ((I2015
@@ -1385,12 +1412,12 @@ I47
 I6
 I109
 I1
-tp427
-(dp428
-tp429
-Rp430
+tp430
+(dp431
+tp432
+Rp433
 sg31
-(lp431
+(lp434
 sg33
 g26
 ((I2015
@@ -1402,28 +1429,28 @@ I54
 I6
 I109
 I1
-tp432
-(dp433
-tp434
-Rp435
-sbsa(dp436
+tp435
+(dp436
+tp437
+Rp438
+sbsa(dp439
 g14
 I00
 sg15
-(lp437
+(lp440
 F426.0
 aF594.0
 asg17
 (itiddlywiki
 Tiddler
-p438
-(dp439
+p441
+(dp442
 g21
 V"Alda, what's going on?" you ask, turning back to her. "Where did those Carolers come from? Why are you //meeting// with a Caroler?" \u000a\u000a[[[...|answers]]
-p440
+p443
 sg23
 Vquestions
-p441
+p444
 sg25
 g26
 ((I2015
@@ -1435,12 +1462,12 @@ I22
 I6
 I109
 I1
-tp442
-(dp443
-tp444
-Rp445
+tp445
+(dp446
+tp447
+Rp448
 sg31
-(lp446
+(lp449
 sg33
 g26
 ((I2015
@@ -1452,28 +1479,33 @@ I50
 I6
 I109
 I1
-tp447
-(dp448
-tp449
-Rp450
-sbsa(dp451
+tp450
+(dp451
+tp452
+Rp453
+sbsa(dp454
 g14
 I00
 sg15
-(lp452
+(lp455
 F570.0
 aF598.0
 asg17
 (itiddlywiki
 Tiddler
-p453
-(dp454
+p456
+(dp457
 g21
+<<<<<<< HEAD
 V"Orit's mother is an old friend." She smiles. "A //very// old friend. I wasn't always an ornery old farm woman, you know." \u000a\u000aIndeed, she looks years younger in the dim light, with her eyes focused not on anything here in the cavern, but something years ago and miles away. \u000a\u000a[[...|Orit came]]
 p455
+=======
+V"Orcut's mother is an old friend." She smiles. "A //very// old friend. I wasn't always an ornery old farm woman, you know." \u000a\u000aIndeed, she looks years younger in the dim light, with her eyes focused not on anything here in the cavern, but something years ago and miles away. \u000a\u000a[[...|Orcut came]]
+p458
+>>>>>>> origin/master
 sg23
 Vanswers
-p456
+p459
 sg25
 g26
 ((I2015
@@ -1485,12 +1517,12 @@ I39
 I6
 I109
 I1
-tp457
-(dp458
-tp459
-Rp460
+tp460
+(dp461
+tp462
+Rp463
 sg31
-(lp461
+(lp464
 sg33
 g26
 ((I2015
@@ -1502,28 +1534,36 @@ I25
 I6
 I109
 I1
-tp462
-(dp463
-tp464
-Rp465
-sbsa(dp466
+tp465
+(dp466
+tp467
+Rp468
+sbsa(dp469
 g14
 I00
 sg15
-(lp467
+(lp470
 F719.0
 aF599.0
 asg17
 (itiddlywiki
 Tiddler
-p468
-(dp469
+p471
+(dp472
 g21
+<<<<<<< HEAD
 V"You mean she doesn't know about...?" Orit is so surprised that he lets the light of the chime go out for a moment, and fumbles in the dark the strike it again and bring back the light.\u000a\u000a[[...|not my place]]
 p470
 sg23
 VOrit came
 p471
+=======
+V"You mean she doesn't know about...?" Orcut is so surprised that he lets the light of the chime go out for a moment, and fumbles in the dark the strike it again and bring back the light.\u000a\u000a[[...|not my place]]
+p473
+sg23
+VOrcut came
+p474
+>>>>>>> origin/master
 sg25
 g26
 ((I2015
@@ -1535,12 +1575,12 @@ I9
 I6
 I109
 I1
-tp472
-(dp473
-tp474
-Rp475
+tp475
+(dp476
+tp477
+Rp478
 sg31
-(lp476
+(lp479
 sg33
 g26
 ((I2015
@@ -1552,28 +1592,33 @@ I42
 I6
 I109
 I1
-tp477
-(dp478
-tp479
-Rp480
-sbsa(dp481
+tp480
+(dp481
+tp482
+Rp483
+sbsa(dp484
 g14
 I00
 sg15
-(lp482
+(lp485
 F864.0
 aF602.0
 asg17
 (itiddlywiki
 Tiddler
-p483
-(dp484
+p486
+(dp487
 g21
+<<<<<<< HEAD
 V"Know about what?" you ask, looking back and forth between them.\u000a\u000aOrit looks to Alda. "It's not my place to say," he says.\u000a\u000a[[...|no secret]]
 p485
+=======
+V"Know about what?" you ask, looking back and forth between them.\u000a\u000aOrcut looks to Alda. "It's not my place to say," he says.\u000a\u000a[[...|no secret]]
+p488
+>>>>>>> origin/master
 sg23
 Vnot my place
-p486
+p489
 sg25
 g26
 ((I2015
@@ -1585,12 +1630,12 @@ I20
 I6
 I109
 I1
-tp487
-(dp488
-tp489
-Rp490
+tp490
+(dp491
+tp492
+Rp493
 sg31
-(lp491
+(lp494
 sg33
 g26
 ((I2015
@@ -1602,28 +1647,28 @@ I12
 I6
 I109
 I1
-tp492
-(dp493
-tp494
-Rp495
-sbsa(dp496
+tp495
+(dp496
+tp497
+Rp498
+sbsa(dp499
 g14
 I00
 sg15
-(lp497
+(lp500
 F1007.0
 aF605.0
 asg17
 (itiddlywiki
 Tiddler
-p498
-(dp499
+p501
+(dp502
 g21
 V"It's not a secret," Alda says, shrugging. "It's just not something I talk about much." She turns to you. "I'm from Carillon City, originally. I used to be involved in the city government." \u000a\u000a[[...|involved]]
-p500
+p503
 sg23
 Vno secret
-p501
+p504
 sg25
 g26
 ((I2015
@@ -1635,12 +1680,12 @@ I24
 I6
 I109
 I1
-tp502
-(dp503
-tp504
-Rp505
+tp505
+(dp506
+tp507
+Rp508
 sg31
-(lp506
+(lp509
 sg33
 g26
 ((I2015
@@ -1652,28 +1697,33 @@ I22
 I6
 I109
 I1
-tp507
-(dp508
-tp509
-Rp510
-sbsa(dp511
+tp510
+(dp511
+tp512
+Rp513
+sbsa(dp514
 g14
 I00
 sg15
-(lp512
+(lp515
 F1148.0
 aF601.0
 asg17
 (itiddlywiki
 Tiddler
-p513
-(dp514
+p516
+(dp517
 g21
+<<<<<<< HEAD
 V"'Involved?' You were one of the great masters!" Orit says. "She practically ran the city!"\u000a\u000a"That is a gross exaggeration," she says. "But, he's right. I had some power." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["Why is Orit here now?"|why Orit]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]
 p515
+=======
+V"'Involved?' You were one of the great masters!" Orcut says. "She practically ran the city!"\u000a\u000a"That is a gross exaggeration," she says. "But, he's right. I had some power." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["Why is Orcut here now?"|why Orcut]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]
+p518
+>>>>>>> origin/master
 sg23
 Vinvolved
-p516
+p519
 sg25
 g26
 ((I2015
@@ -1685,12 +1735,12 @@ I52
 I6
 I109
 I1
-tp517
-(dp518
-tp519
-Rp520
+tp520
+(dp521
+tp522
+Rp523
 sg31
-(lp521
+(lp524
 sg33
 g26
 ((I2015
@@ -1702,28 +1752,36 @@ I27
 I6
 I109
 I1
-tp522
-(dp523
-tp524
-Rp525
-sbsa(dp526
+tp525
+(dp526
+tp527
+Rp528
+sbsa(dp529
 g14
 I00
 sg15
-(lp527
+(lp530
 F1288.0
 aF600.0
 asg17
 (itiddlywiki
 Tiddler
-p528
-(dp529
+p531
+(dp532
 g21
+<<<<<<< HEAD
 V"What is Orit doing here now?" you ask her. \u000a\u000a"There was an attack," he answers for himself. "A band of wilderkind attacked a bell choir calling the rains to the city. A lot of people were angry - very angry." \u000a\u000a[[...|mother]]
 p530
 sg23
 Vwhy Orit
 p531
+=======
+V"What is Orcut doing here now?" you ask her. \u000a\u000a"There was an attack," he answers for himself. "A band of wilderkind attacked a bell choir calling the rains to the city. A lot of people were angry - very angry." \u000a\u000a[[...|mother]]
+p533
+sg23
+Vwhy Orcut
+p534
+>>>>>>> origin/master
 sg25
 g26
 ((I2015
@@ -1735,12 +1793,12 @@ I40
 I6
 I109
 I1
-tp532
-(dp533
-tp534
-Rp535
+tp535
+(dp536
+tp537
+Rp538
 sg31
-(lp536
+(lp539
 sg33
 g26
 ((I2015
@@ -1752,28 +1810,33 @@ I47
 I6
 I109
 I1
-tp537
-(dp538
-tp539
-Rp540
-sbsa(dp541
+tp540
+(dp541
+tp542
+Rp543
+sbsa(dp544
 g14
 I00
 sg15
-(lp542
+(lp545
 F1291.0
 aF750.0
 asg17
 (itiddlywiki
 Tiddler
-p543
-(dp544
+p546
+(dp547
 g21
+<<<<<<< HEAD
 V"Why did those raiders come here?" you ask.\u000a\u000aAlda looks at Orit. "Actually, that's a good question. Why on earth did they come here, of all places?" \u000a\u000a[[...|idiots]]
 p545
+=======
+V"Why did those raiders come here?" you ask.\u000a\u000aAlda looks at Orcut. "Actually, that's a good question. Why on earth did they come here, of all places?" \u000a\u000a[[...|idiots]]
+p548
+>>>>>>> origin/master
 sg23
 Vwhy raiders
-p546
+p549
 sg25
 g26
 ((I2015
@@ -1785,12 +1848,12 @@ I9
 I6
 I109
 I1
-tp547
-(dp548
-tp549
-Rp550
+tp550
+(dp551
+tp552
+Rp553
 sg31
-(lp551
+(lp554
 sg33
 g26
 ((I2015
@@ -1802,28 +1865,28 @@ I47
 I6
 I109
 I1
-tp552
-(dp553
-tp554
-Rp555
-sbsa(dp556
+tp555
+(dp556
+tp557
+Rp558
+sbsa(dp559
 g14
 I00
 sg15
-(lp557
+(lp560
 F1148.0
 aF744.0
 asg17
 (itiddlywiki
 Tiddler
-p558
-(dp559
+p561
+(dp562
 g21
 V"Why did you leave?" you ask Alda. "Why walk away from something like that?"\u000a\u000aShe shrugs. "The truth is, I was always someone who liked the quiet. I used to envy the people out here, alone on their homesteads, without bells always ringing in their ears." \u000a\u000a[[...|myself]]
-p560
+p563
 sg23
 Vwhy leave
-p561
+p564
 sg25
 g26
 ((I2015
@@ -1835,12 +1898,12 @@ I13
 I6
 I109
 I1
-tp562
-(dp563
-tp564
-Rp565
+tp565
+(dp566
+tp567
+Rp568
 sg31
-(lp566
+(lp569
 sg33
 g26
 ((I2015
@@ -1852,28 +1915,33 @@ I47
 I6
 I109
 I1
-tp567
-(dp568
-tp569
-Rp570
-sbsa(dp571
+tp570
+(dp571
+tp572
+Rp573
+sbsa(dp574
 g14
 I00
 sg15
-(lp572
+(lp575
 F1152.0
 aF882.0
 asg17
 (itiddlywiki
 Tiddler
-p573
-(dp574
+p576
+(dp577
 g21
+<<<<<<< HEAD
 V"And being a leader means living for others before yourself. I did that for a long time. I decided it was time to do something for myself." \u000a\u000a[["Why is Orit here now?"|why Orit]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]
 p575
+=======
+V"And being a leader means living for others before yourself. I did that for a long time. I decided it was time to do something for myself." \u000a\u000a[["Why is Orcut here now?"|why Orcut]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]
+p578
+>>>>>>> origin/master
 sg23
 Vmyself
-p576
+p579
 sg25
 g26
 ((I2015
@@ -1885,12 +1953,12 @@ I51
 I6
 I109
 I1
-tp577
-(dp578
-tp579
-Rp580
+tp580
+(dp581
+tp582
+Rp583
 sg31
-(lp581
+(lp584
 sg33
 g26
 ((I2015
@@ -1902,28 +1970,33 @@ I16
 I6
 I109
 I1
-tp582
-(dp583
-tp584
-Rp585
-sbsa(dp586
+tp585
+(dp586
+tp587
+Rp588
+sbsa(dp589
 g14
 I00
 sg15
-(lp587
+(lp590
 F1427.0
 aF598.0
 asg17
 (itiddlywiki
 Tiddler
-p588
-(dp589
+p591
+(dp592
 g21
+<<<<<<< HEAD
 V"Orit's mother is one of the masters now," she continues. "And because she's not stupid, she wants to stop the violence now - before it goes any further. She sent Orit to find me, to see if I had any ideas to help. As it happens, I do." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]
 p590
+=======
+V"Orcut's mother is one of the masters now," she continues. "And because she's not stupid, she wants to stop the violence now - before it goes any further. She sent Orcut to find me, to see if I had any ideas to help. As it happens, I do." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]
+p593
+>>>>>>> origin/master
 sg23
 Vmother
-p591
+p594
 sg25
 g26
 ((I2015
@@ -1935,12 +2008,12 @@ I6
 I6
 I109
 I1
-tp592
-(dp593
-tp594
-Rp595
+tp595
+(dp596
+tp597
+Rp598
 sg31
-(lp596
+(lp599
 sg33
 g26
 ((I2015
@@ -1952,28 +2025,33 @@ I43
 I6
 I109
 I1
-tp597
-(dp598
-tp599
-Rp600
-sbsa(dp601
+tp600
+(dp601
+tp602
+Rp603
+sbsa(dp604
 g14
 I00
 sg15
-(lp602
+(lp605
 I1427
 aI748
 asg17
 (itiddlywiki
 Tiddler
-p603
-(dp604
+p606
+(dp607
 g21
+<<<<<<< HEAD
 VOrit scowls. "Because they're idiots," he said. "All Wilderkind are the same to them. They assume you're all in league, and they took it upon themselves to exact revenge for the attack on our choir." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["Why is Orit here now?"|why Orit]]\u000a\u000a[["What now?"|what now]]
 p605
+=======
+VOrcut scowls. "Because they're idiots," he said. "All Wilderkind are the same to them. They assume you're all in league, and they took it upon themselves to exact revenge for the attack on our choir." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["Why is Orcut here now?"|why Orcut]]\u000a\u000a[["What now?"|what now]]
+p608
+>>>>>>> origin/master
 sg23
 Vidiots
-p606
+p609
 sg25
 g26
 ((I2015
@@ -1985,12 +2063,12 @@ I24
 I6
 I109
 I1
-tp607
-(dp608
-tp609
-Rp610
+tp610
+(dp611
+tp612
+Rp613
 sg31
-(lp611
+(lp614
 sg33
 g26
 ((I2015
@@ -2002,28 +2080,33 @@ I28
 I6
 I109
 I1
-tp612
-(dp613
-tp614
-Rp615
-sbsa(dp616
+tp615
+(dp616
+tp617
+Rp618
+sbsa(dp619
 g14
 I00
 sg15
-(lp617
+(lp620
 F1297.0
 aF1089.0
 asg17
 (itiddlywiki
 Tiddler
-p618
-(dp619
+p621
+(dp622
 g21
+<<<<<<< HEAD
 V"What now?" you ask the both of them. \u000a\u000a"Orit came here to make peace," Alda says. "There's a conclave meeting of wilderkind elders, at Echomount. I'm going to bring him there, lend him my voice, and let him plead his case." \u000a\u000a[[...|case]]
 p620
+=======
+V"What now?" you ask the both of them. \u000a\u000a"Orcut came here to make peace," Alda says. "There's a conclave meeting of wilderkind elders, at Echomount. I'm going to bring him there, lend him my voice, and let him plead his case." \u000a\u000a[[...|case]]
+p623
+>>>>>>> origin/master
 sg23
 Vwhat now
-p621
+p624
 sg25
 g26
 ((I2015
@@ -2035,12 +2118,12 @@ I46
 I6
 I109
 I1
-tp622
-(dp623
-tp624
-Rp625
+tp625
+(dp626
+tp627
+Rp628
 sg31
-(lp626
+(lp629
 sg33
 g26
 ((I2015
@@ -2052,28 +2135,33 @@ I55
 I6
 I109
 I1
-tp627
-(dp628
-tp629
-Rp630
-sbsa(dp631
+tp630
+(dp631
+tp632
+Rp633
+sbsa(dp634
 g14
 I00
 sg15
-(lp632
+(lp635
 F1294.0
 aF1233.0
 asg17
 (itiddlywiki
 Tiddler
-p633
-(dp634
+p636
+(dp637
 g21
+<<<<<<< HEAD
 VYou turn to Orit. "How exactly are you going to persuade them? After all..."\u000a\u000a[["...people are frightened, because of the drought."|frightened]]\u000a\u000a[["...they're right to be angry that you're stealing the rains."|angry]]
 p635
+=======
+VYou turn to Orcut. "How exactly are you going to persuade them? After all..."\u000a\u000a[["...people are frightened, because of the drought."|frightened]]\u000a\u000a[["...they're right to be angry that you're stealing the rains."|angry]]
+p638
+>>>>>>> origin/master
 sg23
 Vcase
-p636
+p639
 sg25
 g26
 ((I2015
@@ -2085,12 +2173,12 @@ I10
 I6
 I109
 I1
-tp637
-(dp638
-tp639
-Rp640
+tp640
+(dp641
+tp642
+Rp643
 sg31
-(lp641
+(lp644
 sg33
 g26
 ((I2015
@@ -2102,28 +2190,28 @@ I49
 I6
 I109
 I1
-tp642
-(dp643
-tp644
-Rp645
-sbsa(dp646
+tp645
+(dp646
+tp647
+Rp648
+sbsa(dp649
 g14
 I00
 sg15
-(lp647
+(lp650
 F1368.0
 aF1376.0
 asg17
 (itiddlywiki
 Tiddler
-p648
-(dp649
+p651
+(dp652
 g21
 V"...they're right to be angry that you're stealing the rains."\u000a\u000a<<display fault>>\u000a\u000a[[...|angry2]]
-p650
+p653
 sg23
 Vangry
-p651
+p654
 sg25
 g26
 ((I2015
@@ -2135,12 +2223,12 @@ I1
 I6
 I109
 I1
-tp652
-(dp653
-tp654
-Rp655
+tp655
+(dp656
+tp657
+Rp658
 sg31
-(lp656
+(lp659
 sg33
 g26
 ((I2015
@@ -2152,28 +2240,28 @@ I12
 I6
 I109
 I1
-tp657
-(dp658
-tp659
-Rp660
-sbsa(dp661
+tp660
+(dp661
+tp662
+Rp663
+sbsa(dp664
 g14
 I00
 sg15
-(lp662
+(lp665
 F1224.0
 aF1377.0
 asg17
 (itiddlywiki
 Tiddler
-p663
-(dp664
+p666
+(dp667
 g21
 V"...people are frightened, because of the drought," you finish. \u000a\u000a<<display fault>>\u000a\u000a[[...|frightened2]]
-p665
+p668
 sg23
 Vfrightened
-p666
+p669
 sg25
 g26
 ((I2015
@@ -2185,12 +2273,12 @@ I40
 I6
 I109
 I1
-tp667
-(dp668
-tp669
-Rp670
+tp670
+(dp671
+tp672
+Rp673
 sg31
-(lp671
+(lp674
 sg33
 g26
 ((I2015
@@ -2202,28 +2290,33 @@ I12
 I6
 I109
 I1
-tp672
-(dp673
-tp674
-Rp675
-sbsa(dp676
+tp675
+(dp676
+tp677
+Rp678
+sbsa(dp679
 g14
 I00
 sg15
-(lp677
+(lp680
 I1291
 aI1536
 asg17
 (itiddlywiki
 Tiddler
-p678
-(dp679
+p681
+(dp682
 g21
+<<<<<<< HEAD
 V"The drought isn't our fault!" Orit protests. "We've always called the rains to the city. If we do it more now, it's because the drought affects us as well What would you have us do?"
 p680
+=======
+V"The drought isn't our fault!" Orcut protests. "We've always called the rains to the city. If we do it more now, it's because the drought affects us as well What would you have us do?"
+p683
+>>>>>>> origin/master
 sg23
 Vfault
-p681
+p684
 sg25
 g26
 ((I2015
@@ -2235,12 +2328,12 @@ I50
 I6
 I109
 I1
-tp682
-(dp683
-tp684
-Rp685
+tp685
+(dp686
+tp687
+Rp688
 sg31
-(lp686
+(lp689
 sg33
 g26
 ((I2015
@@ -2252,28 +2345,33 @@ I30
 I6
 I109
 I1
-tp687
-(dp688
-tp689
-Rp690
-sbsa(dp691
+tp690
+(dp691
+tp692
+Rp693
+sbsa(dp694
 g14
 I00
 sg15
-(lp692
+(lp695
 F1163.0
 aF1519.0
 asg17
 (itiddlywiki
 Tiddler
-p693
-(dp694
+p696
+(dp697
 g21
+<<<<<<< HEAD
 V"It wasn't an accusation, Orit," Alda says, sternly. "It's a fact - people here are scared, and fear makes people do awful things. \u000a\u000a"If you're going to make peace, your first concern can't be proving that you're side is right. \u000a\u000a[[...|apology]]
 p695
+=======
+V"It wasn't an accusation, Orcut," Alda says, sternly. "It's a fact - people here are scared, and fear makes people do awful things. \u000a\u000a"If you're going to make peace, your first concern can't be proving that you're side is right. \u000a\u000a[[...|apology]]
+p698
+>>>>>>> origin/master
 sg23
 Vfrightened2
-p696
+p699
 sg25
 g26
 ((I2015
@@ -2285,12 +2383,12 @@ I5
 I6
 I109
 I1
-tp697
-(dp698
-tp699
-Rp700
+tp700
+(dp701
+tp702
+Rp703
 sg31
-(lp701
+(lp704
 sg33
 g26
 ((I2015
@@ -2302,28 +2400,33 @@ I43
 I6
 I109
 I1
-tp702
-(dp703
-tp704
-Rp705
-sbsa(dp706
+tp705
+(dp706
+tp707
+Rp708
+sbsa(dp709
 g14
 I00
 sg15
-(lp707
+(lp710
 F1419.0
 aF1513.0
 asg17
 (itiddlywiki
 Tiddler
-p708
-(dp709
+p711
+(dp712
 g21
+<<<<<<< HEAD
 V"You'll face worse than that at the conclave," Alda says calmly. "You won't make peace answering anger with anger, Orit." \u000a\u000a[[...|apology]]
 p710
+=======
+V"You'll face worse than that at the conclave," Alda says calmly. "You won't make peace answering anger with anger, Orcut." \u000a\u000a[[...|apology]]
+p713
+>>>>>>> origin/master
 sg23
 Vangry2
-p711
+p714
 sg25
 g26
 ((I2015
@@ -2335,12 +2438,12 @@ I21
 I6
 I109
 I1
-tp712
-(dp713
-tp714
-Rp715
+tp715
+(dp716
+tp717
+Rp718
 sg31
-(lp716
+(lp719
 sg33
 g26
 ((I2015
@@ -2352,28 +2455,33 @@ I4
 I6
 I109
 I1
-tp717
-(dp718
-tp719
-Rp720
-sbsa(dp721
+tp720
+(dp721
+tp722
+Rp723
+sbsa(dp724
 g14
 I00
 sg15
-(lp722
+(lp725
 F1295.0
 aF1695.0
 asg17
 (itiddlywiki
 Tiddler
-p723
-(dp724
+p726
+(dp727
 g21
+<<<<<<< HEAD
 V"...you're right. I'm sorry." Orit looks at you. "Please excuse me." \u000a\u000aAlda nods approvingly. She turns to study you, examining you closely in the dim light cast by Orit's bell. \u000a\u000a[[...|come]]
 p725
+=======
+V"...you're right. I'm sorry." Orcut looks at you. "Please excuse me." \u000a\u000aAlda nods approvingly. She turns to study you, examining you closely in the dim light cast by Orcut's bell. \u000a\u000a[[...|come]]
+p728
+>>>>>>> origin/master
 sg23
 Vapology
-p726
+p729
 sg25
 g26
 ((I2015
@@ -2385,12 +2493,12 @@ I50
 I6
 I109
 I1
-tp727
-(dp728
-tp729
-Rp730
+tp730
+(dp731
+tp732
+Rp733
 sg31
-(lp731
+(lp734
 sg33
 g26
 ((I2015
@@ -2402,28 +2510,28 @@ I37
 I6
 I109
 I1
-tp732
-(dp733
-tp734
-Rp735
-sbsa(dp736
+tp735
+(dp736
+tp737
+Rp738
+sbsa(dp739
 g14
 I00
 sg15
-(lp737
+(lp740
 F1294.0
 aF1832.0
 asg17
 (itiddlywiki
 Tiddler
-p738
-(dp739
+p741
+(dp742
 g21
 V"Come with us," she says after a long moment. \u000a\u000aYour eyes widen in surprise. "Me? Why?"\u000a\u000a[[...|why me]]
-p740
+p743
 sg23
 Vcome
-p741
+p744
 sg25
 g26
 ((I2015
@@ -2435,12 +2543,12 @@ I8
 I6
 I109
 I1
-tp742
-(dp743
-tp744
-Rp745
+tp745
+(dp746
+tp747
+Rp748
 sg31
-(lp746
+(lp749
 sg33
 g26
 ((I2015
@@ -2452,28 +2560,33 @@ I53
 I6
 I109
 I1
-tp747
-(dp748
-tp749
-Rp750
-sbsa(dp751
+tp750
+(dp751
+tp752
+Rp753
+sbsa(dp754
 g14
 I00
 sg15
-(lp752
+(lp755
 F1297.0
 aF1970.0
 asg17
 (itiddlywiki
 Tiddler
-p753
-(dp754
+p756
+(dp757
 g21
+<<<<<<< HEAD
 V"I know you have work to do here. So do I. But it could all be for nothing if there's war in the city. Traveling won't be safe anymore, especially for a Wilderkind and a Caroler traveling together. I'm not as young as I used to be, and Orit's a good Ringer, but he's no warrior. \u000a\u000a[["Of course, Alda."|journey]]\u000a\u000a[["My fields will suffer..."|work to do]]\u000a\u000a[["I'm not sure I want peace..."|mission doubts]]
 p755
+=======
+V"I know you have work to do here. So do I. But it could all be for nothing if there's war in the city. Traveling won't be safe anymore, especially for a Wilderkind and a Caroler traveling together. I'm not as young as I used to be, and Orcut's a good Ringer, but he's no warrior. \u000a\u000a[["Of course, Alda."|journey]]\u000a\u000a[["My fields will suffer..."|work to do]]\u000a\u000a[["I'm not sure I want peace..."|mission doubts]]
+p758
+>>>>>>> origin/master
 sg23
 Vwhy me
-p756
+p759
 sg25
 g26
 ((I2015
@@ -2485,12 +2598,12 @@ I21
 I6
 I109
 I1
-tp757
-(dp758
-tp759
-Rp760
+tp760
+(dp761
+tp762
+Rp763
 sg31
-(lp761
+(lp764
 sg33
 g26
 ((I2015
@@ -2502,28 +2615,28 @@ I11
 I6
 I109
 I1
-tp762
-(dp763
-tp764
-Rp765
-sbsa(dp766
+tp765
+(dp766
+tp767
+Rp768
+sbsa(dp769
 g14
 I00
 sg15
-(lp767
+(lp770
 F1292.0
 aF2434.0
 asg17
 (itiddlywiki
 Tiddler
-p768
-(dp769
+p771
+(dp772
 g21
 V"Excellent." You're surprised at how profoundly //relieved// Alda looks. She's always seemed invincible to you: aged but vital, weathered but never broken by the years. \u000a\u000aIf even she can't undertake this by herself, things must be bad indeed.\u000a\u000a[[...|near echomount]]
-p770
+p773
 sg23
 Vjourney
-p771
+p774
 sg25
 g26
 ((I2015
@@ -2535,12 +2648,12 @@ I59
 I6
 I109
 I1
-tp772
-(dp773
-tp774
-Rp775
+tp775
+(dp776
+tp777
+Rp778
 sg31
-(lp776
+(lp779
 sg33
 g26
 ((I2015
@@ -2552,28 +2665,33 @@ I23
 I6
 I109
 I1
-tp777
-(dp778
-tp779
-Rp780
-sbsa(dp781
+tp780
+(dp781
+tp782
+Rp783
+sbsa(dp784
 g14
 I00
 sg15
-(lp782
+(lp785
 F1458.0
 aF2111.0
 asg17
 (itiddlywiki
 Tiddler
-p783
-(dp784
+p786
+(dp787
 g21
+<<<<<<< HEAD
 V"I'm not sure I want peace..." you say, looking sidelong at Orit. "Not if it means that nothing changes, that the Carolers call the rains away while the lakes dry up and our crops die." \u000a\u000aAlda nods. "I understand. And I can promise you, that's not the kind of peace we're fighting for. Right, Orit?"\u000a\u000a[[...|doubts 2]]
 p785
+=======
+V"I'm not sure I want peace..." you say, looking sidelong at Orcut. "Not if it means that nothing changes, that the Carolers call the rains away while the lakes dry up and our crops die." \u000a\u000aAlda nods. "I understand. And I can promise you, that's not the kind of peace we're fighting for. Right, Orcut?"\u000a\u000a[[...|doubts 2]]
+p788
+>>>>>>> origin/master
 sg23
 Vmission doubts
-p786
+p789
 sg25
 g26
 ((I2015
@@ -2585,12 +2703,12 @@ I13
 I6
 I109
 I1
-tp787
-(dp788
-tp789
-Rp790
+tp790
+(dp791
+tp792
+Rp793
 sg31
-(lp791
+(lp794
 sg33
 g26
 ((I2015
@@ -2602,28 +2720,28 @@ I23
 I6
 I109
 I1
-tp792
-(dp793
-tp794
-Rp795
-sbsa(dp796
+tp795
+(dp796
+tp797
+Rp798
+sbsa(dp799
 g14
 I00
 sg15
-(lp797
+(lp800
 F1159.0
 aF2107.0
 asg17
 (itiddlywiki
 Tiddler
-p798
-(dp799
+p801
+(dp802
 g21
 V"My fields will suffer..." you say to her doubtfully. "It's been a hard season as it is, Alda. To be away for so long..." \u000a\u000a"I know," she says. "But think how much more your fields will suffer if they're burned by Carolers, or if they're seized by a Wilderkind warlord to feed his army - and don't think their aren't plenty of would-be warlords just waiting for the excuse."\u000a\u000a[[...|persuaded]]
-p800
+p803
 sg23
 Vwork to do
-p801
+p804
 sg25
 g26
 ((I2015
@@ -2635,12 +2753,12 @@ I39
 I6
 I109
 I1
-tp802
-(dp803
-tp804
-Rp805
+tp805
+(dp806
+tp807
+Rp808
 sg31
-(lp806
+(lp809
 sg33
 g26
 ((I2015
@@ -2652,28 +2770,28 @@ I23
 I6
 I109
 I1
-tp807
-(dp808
-tp809
-Rp810
-sbsa(dp811
+tp810
+(dp811
+tp812
+Rp813
+sbsa(dp814
 g14
 I00
 sg15
-(lp812
+(lp815
 I1162
 aI2257
 asg17
 (itiddlywiki
 Tiddler
-p813
-(dp814
+p816
+(dp817
 g21
 VYou nod reluctantly. "Alright. I'll come. The sooner this is resolved, the sooner everything will go back to normal." \u000a\u000a[[...|journey]]
-p815
+p818
 sg23
 Vpersuaded
-p816
+p819
 sg25
 g26
 ((I2015
@@ -2685,12 +2803,12 @@ I17
 I6
 I109
 I1
-tp817
-(dp818
-tp819
-Rp820
+tp820
+(dp821
+tp822
+Rp823
 sg31
-(lp821
+(lp824
 sg33
 g26
 ((I2015
@@ -2702,28 +2820,33 @@ I17
 I6
 I109
 I1
-tp822
-(dp823
-tp824
-Rp825
-sbsa(dp826
+tp825
+(dp826
+tp827
+Rp828
+sbsa(dp829
 g14
 I00
 sg15
-(lp827
+(lp830
 F1455.0
 aF2248.0
 asg17
 (itiddlywiki
 Tiddler
-p828
-(dp829
+p831
+(dp832
 g21
+<<<<<<< HEAD
 VOrit frowns, not pleased by this turn of conversation - but he nods. "On my mother's behalf, I'm authorized to discuss changes in how we call the rains," Orit says. "Personally, I don't believe the drought has anything to do with our rain calling. But as a show of good faith, we're willing to discuss it." \u000a\u000a[[...|doubts 3]]
 p830
+=======
+VOrcut frowns, not pleased by this turn of conversation - but he nods. "On my mother's behalf, I'm authorized to discuss changes in how we call the rains," Orcut says. "Personally, I don't believe the drought has anything to do with our rain calling. But as a show of good faith, we're willing to discuss it." \u000a\u000a[[...|doubts 3]]
+p833
+>>>>>>> origin/master
 sg23
 Vdoubts 2
-p831
+p834
 sg25
 g26
 ((I2015
@@ -2735,12 +2858,12 @@ I1
 I6
 I109
 I1
-tp832
-(dp833
-tp834
-Rp835
+tp835
+(dp836
+tp837
+Rp838
 sg31
-(lp836
+(lp839
 sg33
 g26
 ((I2015
@@ -2752,28 +2875,28 @@ I16
 I6
 I109
 I1
-tp837
-(dp838
-tp839
-Rp840
-sbsa(dp841
+tp840
+(dp841
+tp842
+Rp843
+sbsa(dp844
 g14
 I00
 sg15
-(lp842
+(lp845
 I1451
 aI2388
 asg17
 (itiddlywiki
 Tiddler
-p843
-(dp844
+p846
+(dp847
 g21
 V"I understand your doubts," Alda says. "But don't you think there's at least a chance this could make things better - without the need for war?" \u000a\u000a[[...|persuaded]]
-p845
+p848
 sg23
 Vdoubts 3
-p846
+p849
 sg25
 g26
 ((I2015
@@ -2785,12 +2908,12 @@ I2
 I6
 I109
 I1
-tp847
-(dp848
-tp849
-Rp850
+tp850
+(dp851
+tp852
+Rp853
 sg31
-(lp851
+(lp854
 sg33
 g26
 ((I2015
@@ -2802,28 +2925,28 @@ I19
 I6
 I109
 I1
-tp852
-(dp853
-tp854
-Rp855
-sbsa(dp856
+tp855
+(dp856
+tp857
+Rp858
+sbsa(dp859
 g14
 I00
 sg15
-(lp857
+(lp860
 F557.0
 aF2605.0
 asg17
 (itiddlywiki
 Tiddler
-p858
-(dp859
+p861
+(dp862
 g21
 VIt takes more than a day of hard hiking to reach Echomount; it's close to dusk the next day as you draw close to the deep crater where the elders of the Wilderkind meet. You can see the flicker of campfires; the conclave is already gathered. \u000a\u000aThe elders are no doubt eager to sort out the trouble of the drought and the conflict with Carillon. Hopefully, you're in time to have a voice at the table. \u000a\u000a[[...|halt]]
-p860
+p863
 sg23
 Vnear echomount
-p861
+p864
 sg25
 g26
 ((I2015
@@ -2835,12 +2958,12 @@ I16
 I6
 I109
 I1
-tp862
-(dp863
-tp864
-Rp865
+tp865
+(dp866
+tp867
+Rp868
 sg31
-(lp866
+(lp869
 sg33
 g26
 ((I2015
@@ -2852,28 +2975,28 @@ I2
 I6
 I109
 I1
-tp867
-(dp868
-tp869
-Rp870
-sbsa(dp871
+tp870
+(dp871
+tp872
+Rp873
+sbsa(dp874
 g14
 I00
 sg15
-(lp872
+(lp875
 F695.0
 aF2601.0
 asg17
 (itiddlywiki
 Tiddler
-p873
-(dp874
+p876
+(dp877
 g21
 V"Stop right there." \u000a\u000aOh, of course. Nothing's ever easy, is it? \u000a\u000a[[...|guards]]
-p875
+p878
 sg23
 Vhalt
-p876
+p879
 sg25
 g26
 ((I2015
@@ -2885,12 +3008,12 @@ I59
 I6
 I109
 I1
-tp877
-(dp878
-tp879
-Rp880
+tp880
+(dp881
+tp882
+Rp883
 sg31
-(lp881
+(lp884
 sg33
 g26
 ((I2015
@@ -2902,28 +3025,28 @@ I19
 I6
 I109
 I1
-tp882
-(dp883
-tp884
-Rp885
-sbsa(dp886
+tp885
+(dp886
+tp887
+Rp888
+sbsa(dp889
 g14
 I00
 sg15
-(lp887
+(lp890
 F829.0
 aF2601.0
 asg17
 (itiddlywiki
 Tiddler
-p888
-(dp889
+p891
+(dp892
 g21
 VA man steps out from behind a boulder up ahead. "You're approaching a conclave of the Wilderkind," he says. "Turn back." \u000a\u000a"I'm Alda, from out east," Alda calls back. "I will address the conclave." \u000a\u000a[[...|who else]]
-p890
+p893
 sg23
 Vguards
-p891
+p894
 sg25
 g26
 ((I2015
@@ -2935,12 +3058,12 @@ I43
 I6
 I109
 I1
-tp892
-(dp893
-tp894
-Rp895
+tp895
+(dp896
+tp897
+Rp898
 sg31
-(lp896
+(lp899
 sg33
 g26
 ((I2015
@@ -2952,28 +3075,33 @@ I2
 I6
 I109
 I1
-tp897
-(dp898
-tp899
-Rp900
-sbsa(dp901
+tp900
+(dp901
+tp902
+Rp903
+sbsa(dp904
 g14
 I00
 sg15
-(lp902
+(lp905
 I966
 aI2600
 asg17
 (itiddlywiki
 Tiddler
-p903
-(dp904
+p906
+(dp907
 g21
+<<<<<<< HEAD
 V"Alda. I may have heard the name. Who's that with you?" \u000a\u000a"My neighbor Jes," she says, gesturing to you. There's a barely perceptible pause; this is the tricky bit. "Orit from Carillon City. He has a message from a master there." \u000a\u000a[[...|whistle]]
 p905
+=======
+V"Alda. I may have heard the name. Who's that with you?" \u000a\u000a"My neighbor Jes," she says, gesturing to you. There's a barely perceptible pause; this is the tricky bit. "Orcut from Carillon City. He has a message from a master there." \u000a\u000a[[...|whistle]]
+p908
+>>>>>>> origin/master
 sg23
 Vwho else
-p906
+p909
 sg25
 g26
 ((I2015
@@ -2985,12 +3113,12 @@ I1
 I6
 I109
 I1
-tp907
-(dp908
-tp909
-Rp910
+tp910
+(dp911
+tp912
+Rp913
 sg31
-(lp911
+(lp914
 sg33
 g26
 ((I2015
@@ -3002,28 +3130,28 @@ I9
 I6
 I109
 I1
-tp912
-(dp913
-tp914
-Rp915
-sbsa(dp916
+tp915
+(dp916
+tp917
+Rp918
+sbsa(dp919
 g14
 I00
 sg15
-(lp917
+(lp920
 I1103
 aI2601
 asg17
 (itiddlywiki
 Tiddler
-p918
-(dp919
+p921
+(dp922
 g21
 VYou can't see the man's face in the gathering twilight. He's quiet for a long moment, and then gives a long, piercing whistle.\u000a\u000aYou become aware of motion all around you. More sentries stepping out from cover. You're surrounded. \u000a\u000a[[...|outrage]]
-p920
+p923
 sg23
 Vwhistle
-p921
+p924
 sg25
 g26
 ((I2015
@@ -3035,12 +3163,12 @@ I35
 I6
 I109
 I1
-tp922
-(dp923
-tp924
-Rp925
+tp925
+(dp926
+tp927
+Rp928
 sg31
-(lp926
+(lp929
 sg33
 g26
 ((I2015
@@ -3052,28 +3180,33 @@ I17
 I6
 I109
 I1
-tp927
-(dp928
-tp929
-Rp930
-sbsa(dp931
+tp930
+(dp931
+tp932
+Rp933
+sbsa(dp934
 g14
 I00
 sg15
-(lp932
+(lp935
 I1237
 aI2601
 asg17
 (itiddlywiki
 Tiddler
-p933
-(dp934
+p936
+(dp937
 g21
+<<<<<<< HEAD
 VAlda crosses her arms. "I have a right to speak at the conclave, young man," she says. "I can't imagine the elders would look to kindly on your turning Wilderkind away." \u000a\u000a"And I don't think they'd look kindly on you bringing a caroler to Echomount," he shoots back. "You know, a force of them raided my settlement a few days back? Do you have any idea what those barbarians are doing to our people? What they did to my family?" \u000a\u000a[[...|Orit]]
 p935
+=======
+VAlda crosses her arms. "I have a right to speak at the conclave, young man," she says. "I can't imagine the elders would look to kindly on your turning Wilderkind away." \u000a\u000a"And I don't think they'd look kindly on you bringing a caroler to Echomount," he shoots back. "You know, a force of them raided my settlement a few days back? Do you have any idea what those barbarians are doing to our people? What they did to my family?" \u000a\u000a[[...|orcut]]
+p938
+>>>>>>> origin/master
 sg23
 Voutrage
-p936
+p939
 sg25
 g26
 ((I2015
@@ -3085,12 +3218,12 @@ I2
 I6
 I109
 I1
-tp937
-(dp938
-tp939
-Rp940
+tp940
+(dp941
+tp942
+Rp943
 sg31
-(lp941
+(lp944
 sg33
 g26
 ((I2015
@@ -3102,28 +3235,36 @@ I13
 I6
 I109
 I1
-tp942
-(dp943
-tp944
-Rp945
-sbsa(dp946
+tp945
+(dp946
+tp947
+Rp948
+sbsa(dp949
 g14
 I00
 sg15
-(lp947
+(lp950
 F1375.0
 aF2600.0
 asg17
 (itiddlywiki
 Tiddler
-p948
-(dp949
+p951
+(dp952
 g21
+<<<<<<< HEAD
 V"I don't know," Orit says, "but I can imagine. And I'm sorry. I'm hear to make sure the same thing doesn't happen to anyone else." \u000a\u000a"You mean you're here to save your people from our revenge," the man growls. "Well, I won't allow it." \u000a\u000a[["Don't do this, brother!"|attacked][$saying = "Don't do this, brother"]]\u000a\u000a[["Calm down - we'll go."|attacked][$saying = "Calm down - we'll go"]]\u000a\u000a[["Yeah? What are you going to do about it?"|attacked][$saying = "Yeah? What are you going to do about it?"]]
 p950
 sg23
 VOrit
 p951
+=======
+V"I don't know," Orcut says, "but I can imagine. And I'm sorry. I'm hear to make sure the same thing doesn't happen to anyone else." \u000a\u000a"You mean you're here to save your people from our revenge," the man growls. "Well, I won't allow it." \u000a\u000a[["Don't do this, brother!"|attacked][$saying = "Don't do this, brother"]]\u000a\u000a[["Calm down - we'll go."|attacked][$saying = "Calm down - we'll go"]]\u000a\u000a[["Yeah? What are you going to do about it?"|attacked][$saying = "Yeah? What are you going to do about it?"]]
+p953
+sg23
+Vorcut
+p954
+>>>>>>> origin/master
 sg25
 g26
 ((I2015
@@ -3135,12 +3276,12 @@ I46
 I6
 I109
 I1
-tp952
-(dp953
-tp954
-Rp955
+tp955
+(dp956
+tp957
+Rp958
 sg31
-(lp956
+(lp959
 sg33
 g26
 ((I2015
@@ -3152,28 +3293,28 @@ I6
 I6
 I109
 I1
-tp957
-(dp958
-tp959
-Rp960
-sbsa(dp961
+tp960
+(dp961
+tp962
+Rp963
+sbsa(dp964
 g14
 I00
 sg15
-(lp962
+(lp965
 I1513
 aI2599
 asg17
 (itiddlywiki
 Tiddler
-p963
-(dp964
+p966
+(dp967
 g21
 V"<<print $saying>>" you call. But they ignore you. You hear the sound of singing all around you, the crackle of magic, the displaced air from shields being conjured out of song.\u000a\u000aSuddenly their leader shoots forward, a shield crackling to life around him; he means to ram you all with it, toss you aside. You bring up your own shield just in time; the two barriers crackle as they meet, and then collapse, knocking you and your attacker back. \u000a\u000a[[...|attacked2]]
-p965
+p968
 sg23
 Vattacked
-p966
+p969
 sg25
 g26
 ((I2015
@@ -3185,12 +3326,12 @@ I55
 I6
 I109
 I1
-tp967
-(dp968
-tp969
-Rp970
+tp970
+(dp971
+tp972
+Rp973
 sg31
-(lp971
+(lp974
 sg33
 g26
 ((I2015
@@ -3202,28 +3343,28 @@ I5
 I6
 I109
 I1
-tp972
-(dp973
-tp974
-Rp975
-sbsa(dp976
+tp975
+(dp976
+tp977
+Rp978
+sbsa(dp979
 g14
 I00
 sg15
-(lp977
+(lp980
 I551
 aI2750
 asg17
 (itiddlywiki
 Tiddler
-p978
-(dp979
+p981
+(dp982
 g21
 VBut another sentry is already rushing in. You don't think you can get your shield up again in time...\u000a\u000aBut suddenly there's a loud, clear sound - the sound of a bell - and he veers off course. He veers over toward Alda, stumbling, out of control; the sidesteps and he runs straight into another senty's shield. \u000a\u000aAnd Alda is holding a silver hand-bell produced from a pouch on her belt. \u000a\u000a[[...|bell]]
-p980
+p983
 sg23
 Vattacked2
-p981
+p984
 sg25
 g26
 ((I2015
@@ -3235,12 +3376,12 @@ I54
 I6
 I109
 I1
-tp982
-(dp983
-tp984
-Rp985
+tp985
+(dp986
+tp987
+Rp988
 sg31
-(lp986
+(lp989
 sg33
 g26
 ((I2015
@@ -3252,28 +3393,33 @@ I39
 I6
 I109
 I1
-tp987
-(dp988
-tp989
-Rp990
-sbsa(dp991
+tp990
+(dp991
+tp992
+Rp993
+sbsa(dp994
 g14
 I00
 sg15
-(lp992
+(lp995
 I691
 aI2751
 asg17
 (itiddlywiki
 Tiddler
-p993
-(dp994
+p996
+(dp997
 g21
+<<<<<<< HEAD
 V"She's a Ringer!" cries one of the sentries. "Careful!" \u000a\u000aAlda steps back over to you and Orit. "I have to get to the conclave," she says. "They'll put a stop to this foolishness."\u000a\u000a"We'll never make it," Orit says, shaking his head. "It's too far. I can't... I won't be able to run that far."\u000a\u000a[[...|defend]]
 p995
+=======
+V"She's a Ringer!" cries one of the sentries. "Careful!" \u000a\u000aAlda steps back over to you and Orcut. "I have to get to the conclave," she says. "They'll put a stop to this foolishness."\u000a\u000a"We'll never make it," Orcut says, shaking his head. "It's too far. I can't... I won't be able to run that far."\u000a\u000a[[...|defend]]
+p998
+>>>>>>> origin/master
 sg23
 Vbell
-p996
+p999
 sg25
 g26
 ((I2015
@@ -3285,12 +3431,12 @@ I0
 I6
 I109
 I1
-tp997
-(dp998
-tp999
-Rp1000
+tp1000
+(dp1001
+tp1002
+Rp1003
 sg31
-(lp1001
+(lp1004
 sg33
 g26
 ((I2015
@@ -3302,28 +3448,33 @@ I35
 I6
 I109
 I1
-tp1002
-(dp1003
-tp1004
-Rp1005
-sbsa(dp1006
+tp1005
+(dp1006
+tp1007
+Rp1008
+sbsa(dp1009
 g14
 I00
 sg15
-(lp1007
+(lp1010
 F833.0
 aF2749.0
 asg17
 (itiddlywiki
 Tiddler
-p1008
-(dp1009
+p1011
+(dp1012
 g21
+<<<<<<< HEAD
 V"You don't have to. I'll run to the conclave; Jes, you stay here and keep them off Orit." \u000a\u000aYou frown. "That'll never work, Alda..."\u000a\u000a[["...they'll catch you."|catch alda]]\u000a\u000a[["...I can't keep them at bay with just my shields."|shield v shield]]
 p1010
+=======
+V"You don't have to. I'll run to the conclave; Jes, you stay here and keep them off Orcut." \u000a\u000aYou frown. "That'll never work, Alda..."\u000a\u000a[["...they'll catch you."|catch alda]]\u000a\u000a[["...I can't keep them at bay with just my shields."|shield v shield]]
+p1013
+>>>>>>> origin/master
 sg23
 Vdefend
-p1011
+p1014
 sg25
 g26
 ((I2015
@@ -3335,12 +3486,12 @@ I17
 I6
 I109
 I1
-tp1012
-(dp1013
-tp1014
-Rp1015
+tp1015
+(dp1016
+tp1017
+Rp1018
 sg31
-(lp1016
+(lp1019
 sg33
 g26
 ((I2015
@@ -3352,28 +3503,28 @@ I36
 I6
 I109
 I1
-tp1017
-(dp1018
-tp1019
-Rp1020
-sbsa(dp1021
+tp1020
+(dp1021
+tp1022
+Rp1023
+sbsa(dp1024
 g14
 I00
 sg15
-(lp1022
+(lp1025
 F974.0
 aF2748.0
 asg17
 (itiddlywiki
 Tiddler
-p1023
-(dp1024
+p1026
+(dp1027
 g21
 V"...I can't keep them at bay with just my shields," you finish.\u000a\u000a"No need," she says. "Here. Use this." \u000a\u000aShe hands you the bell.\u000a\u000a[[...|wtf a bell]]
-p1025
+p1028
 sg23
 Vshield v shield
-p1026
+p1029
 sg25
 g26
 ((I2015
@@ -3385,12 +3536,12 @@ I39
 I6
 I109
 I1
-tp1027
-(dp1028
-tp1029
-Rp1030
+tp1030
+(dp1031
+tp1032
+Rp1033
 sg31
-(lp1031
+(lp1034
 sg33
 g26
 ((I2015
@@ -3402,28 +3553,28 @@ I21
 I6
 I109
 I1
-tp1032
-(dp1033
-tp1034
-Rp1035
-sbsa(dp1036
+tp1035
+(dp1036
+tp1037
+Rp1038
+sbsa(dp1039
 g14
 I00
 sg15
-(lp1037
+(lp1040
 F972.0
 aF2882.0
 asg17
 (itiddlywiki
 Tiddler
-p1038
-(dp1039
+p1041
+(dp1042
 g21
 V"...they'll catch you," you finish.\u000a\u000a"No they won't," she says. "If they try, you'll pull them back." \u000a\u000aShe hands you the bell. "Use this." \u000a\u000a[[...|wtf a bell]]
-p1040
+p1043
 sg23
 Vcatch alda
-p1041
+p1044
 sg25
 g26
 ((I2015
@@ -3435,12 +3586,12 @@ I16
 I6
 I109
 I1
-tp1042
-(dp1043
-tp1044
-Rp1045
+tp1045
+(dp1046
+tp1047
+Rp1048
 sg31
-(lp1046
+(lp1049
 sg33
 g26
 ((I2015
@@ -3452,28 +3603,33 @@ I21
 I6
 I109
 I1
-tp1047
-(dp1048
-tp1049
-Rp1050
-sbsa(dp1051
+tp1050
+(dp1051
+tp1052
+Rp1053
+sbsa(dp1054
 g14
 I00
 sg15
-(lp1052
+(lp1055
 F1121.0
 aF2748.0
 asg17
 (itiddlywiki
 Tiddler
-p1053
-(dp1054
+p1056
+(dp1057
 g21
+<<<<<<< HEAD
 VYou look down at the simple silver bell as though it's a snake. "I can't... I'm not a... "I don't know how to..."\u000a\u000a"You must," she says, laying a hand on your should. "And you can." \u000a\u000a"Him!" You gesture at Orit. "He can do it!" \u000a\u000a[[...|how do I]]
 p1055
+=======
+VYou look down at the simple silver bell as though it's a snake. "I can't... I'm not a... "I don't know how to..."\u000a\u000a"You must," she says, laying a hand on your should. "And you can." \u000a\u000a"Him!" You gesture at Orcut. "He can do it!" \u000a\u000a[[...|how do I]]
+p1058
+>>>>>>> origin/master
 sg23
 Vwtf a bell
-p1056
+p1059
 sg25
 g26
 ((I2015
@@ -3485,12 +3641,12 @@ I59
 I6
 I109
 I1
-tp1057
-(dp1058
-tp1059
-Rp1060
+tp1060
+(dp1061
+tp1062
+Rp1063
 sg31
-(lp1061
+(lp1064
 sg33
 g26
 ((I2015
@@ -3502,28 +3658,28 @@ I26
 I6
 I109
 I1
-tp1062
-(dp1063
-tp1064
-Rp1065
-sbsa(dp1066
+tp1065
+(dp1066
+tp1067
+Rp1068
+sbsa(dp1069
 g14
 I00
 sg15
-(lp1067
+(lp1070
 F1257.0
 aF2745.0
 asg17
 (itiddlywiki
 Tiddler
-p1068
-(dp1069
+p1071
+(dp1072
 g21
 VShe shakes her head. "Jes, using a bell in a fight is more like using your voice in a fight than like using a bell out of a fight. Take it from someone who's lived in the City and in the Wilderlands. You're the one who has to do this."\u000a\u000a"But how do I use it?" you insist.\u000a\u000a[[...|good luck]]
-p1070
+p1073
 sg23
 Vhow do I
-p1071
+p1074
 sg25
 g26
 ((I2015
@@ -3535,12 +3691,12 @@ I19
 I6
 I109
 I1
-tp1072
-(dp1073
-tp1074
-Rp1075
+tp1075
+(dp1076
+tp1077
+Rp1078
 sg31
-(lp1076
+(lp1079
 sg33
 g26
 ((I2015
@@ -3552,28 +3708,28 @@ I1
 I6
 I109
 I1
-tp1077
-(dp1078
-tp1079
-Rp1080
-sbsa(dp1081
+tp1080
+(dp1081
+tp1082
+Rp1083
+sbsa(dp1084
 g14
 I00
 sg15
-(lp1082
+(lp1085
 I1400
 aI2745
 asg17
 (itiddlywiki
 Tiddler
-p1083
-(dp1084
+p1086
+(dp1087
 g21
 V"This bell is shaped for calling - for summoning things to yourself. It will do the work for you. It's Just like singing: focus on what you want, ring the bell with decision, and it will happen." \u000a\u000a"Now, good luck - and wish me the same." And she's off, running with surprising speed for her age. One of the sentries rushes after her; you bite your lip and follow her advice: you picture the sentry veering off toward you, you hold the image in your mind, and you ring the bell...\u000a\u000a[[...|you did it]]
-p1085
+p1088
 sg23
 Vgood luck
-p1086
+p1089
 sg25
 g26
 ((I2015
@@ -3585,12 +3741,12 @@ I13
 I6
 I109
 I1
-tp1087
-(dp1088
-tp1089
-Rp1090
+tp1090
+(dp1091
+tp1092
+Rp1093
 sg31
-(lp1091
+(lp1094
 sg33
 g26
 ((I2015
@@ -3602,28 +3758,33 @@ I5
 I6
 I109
 I1
-tp1092
-(dp1093
-tp1094
-Rp1095
-sbsa(dp1096
+tp1095
+(dp1096
+tp1097
+Rp1098
+sbsa(dp1099
 g14
 I00
 sg15
-(lp1097
+(lp1100
 I1536
 aI2744
 asg17
 (itiddlywiki
 Tiddler
-p1098
-(dp1099
+p1101
+(dp1102
 g21
+<<<<<<< HEAD
 VThe sentry stumbles and ends up running in a wide orbit around you, cursing.\u000a\u000a"You did it," Orit says, eyes wide. "She's right. Bell and voice, together... the implications..."\u000a\u000aYou don't have time to think about them. The sentries are closing in. "Stay behind me," you tell him. \u000a\u000a[[...|action2]]
 p1100
+=======
+VThe sentry stumbles and ends up running in a wide orbit around you, cursing.\u000a\u000a"You did it," Orcut says, eyes wide. "She's right. Bell and voice, together... the implications..."\u000a\u000aYou don't have time to think about them. The sentries are closing in. "Stay behind me," you tell him. \u000a\u000a[[...|action2]]
+p1103
+>>>>>>> origin/master
 sg23
 Vyou did it
-p1101
+p1104
 sg25
 g26
 ((I2015
@@ -3635,12 +3796,12 @@ I24
 I6
 I109
 I1
-tp1102
-(dp1103
-tp1104
-Rp1105
+tp1105
+(dp1106
+tp1107
+Rp1108
 sg31
-(lp1106
+(lp1109
 sg33
 g26
 ((I2015
@@ -3652,28 +3813,28 @@ I36
 I6
 I109
 I1
-tp1107
-(dp1108
-tp1109
-Rp1110
-sbsa(dp1111
+tp1110
+(dp1111
+tp1112
+Rp1113
+sbsa(dp1114
 g14
 I00
 sg15
-(lp1112
+(lp1115
 F1334.0
 aF2946.0
 asg17
 (itiddlywiki
 Tiddler
-p1113
-(dp1114
+p1116
+(dp1117
 g21
 V<<set $fight to 2>><<display Start>>
-p1115
+p1118
 sg23
 Vaction2
-p1116
+p1119
 sg25
 g26
 ((I2015
@@ -3685,12 +3846,12 @@ I53
 I6
 I109
 I1
-tp1117
-(dp1118
-tp1119
-Rp1120
+tp1120
+(dp1121
+tp1122
+Rp1123
 sg31
-(lp1121
+(lp1124
 sg33
 g26
 ((I2015
@@ -3702,6 +3863,7 @@ I58
 I6
 I109
 I1
+<<<<<<< HEAD
 tp1122
 (dp1123
 tp1124
@@ -3774,11 +3936,36 @@ p1145
 sg23
 Vsentry apology
 p1146
+=======
+tp1125
+(dp1126
+tp1127
+Rp1128
+sbsa(dp1129
+g14
+I01
+sg15
+(lp1130
+I140
+aI429
+asg17
+(itiddlywiki
+Tiddler
+p1131
+(dp1132
+g21
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	font-size: 12pt;\u000a	background-image: url("Art/Futurama_portraits/futurama_bg4.png"); \u000a	background-repeat: no-repeat;\u000a    background-position: 30px 20px; \u000a}\u000a\u000a\u000a.passage{\u000a\u000a}\u000a\u000a.passage a {\u000a	/* This affects passage links */\u000a	color:#18ACB5\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}\u000a\u000a#passages {\u000a	max-width: 800px;\u000a	border-left: 0px; \u000a	padding-left: 0;\u000a	position: absolute;\u000a	top: 50px;\u000a	left: 10px;\u000a}\u000a#sidebar { \u000a	position: absolute;\u000a	top: 50px;\u000a	left: 50px;\u000a	content:url("Art/Futurama_portraits/Leela_oval3.png");\u000a	border: 0;\u000a	\u000a}\u000a  
+p1133
+sg23
+VCity Style
+p1134
+>>>>>>> origin/master
 sg25
 g26
 ((I2015
 I4
 I19
+<<<<<<< HEAD
 I17
 I34
 I44
@@ -3942,10 +4129,30 @@ Rp1195
 sg31
 (lp1196
 sg33
+=======
+I19
+I34
+I43
+I6
+I109
+I1
+tp1135
+(dp1136
+tp1137
+Rp1138
+sg31
+(lp1139
+Vstylesheet
+p1140
+aVcity
+p1141
+asg33
+>>>>>>> origin/master
 g26
 ((I2015
 I4
 I19
+<<<<<<< HEAD
 I17
 I42
 I18
@@ -4084,6 +4291,20 @@ I3
 I55
 I6
 I109
+=======
+I19
+I32
+I3
+I6
+I109
+I1
+tp1142
+(dp1143
+tp1144
+Rp1145
+sbsasS'scale'
+p1146
+>>>>>>> origin/master
 I1
 tp1237
 (dp1238
@@ -4868,6 +5089,10 @@ sbsasS'scale'
 p1475
 F0.6000000000000001
 sS'snapping'
+<<<<<<< HEAD
 p1476
+=======
+p1147
+>>>>>>> origin/master
 I00
 ss.
