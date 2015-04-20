@@ -1,0 +1,6 @@
+Blue, primary - 1b418f
+Blue, dark - 15326e
+Blue, bright - 275bc5
+Gold, primary - b888015
+Gold, bright - cfa629
+White/grey (accent) - dedede
