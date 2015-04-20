@@ -1,0 +1,1 @@
+var lowNote2 = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/122680__juskiddink__gong-2.wav'], volume: 0.2}).play().fadeOut( 0, 3000);
