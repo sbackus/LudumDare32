@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V<<if $my_var is 0>>This is the real start of the game.\u000a\u000a[[flip]]\u000a\u000a\u000a<canvas id="playerCanvas" width="500px" height="400px" style=" position: absolute; left: 5px; top: 0px; z-index: 2;"> </canvas>\u000a\u000a<canvas id="backgroundCanvas" width="500px" height="400px" style=" position: absolute; left: 5px; top: 0px; z-index: 1; background-color: blue; " > </canvas>\u000a\u000a<<loadJS scripts/level1.js>>\u000a<<loadJS scripts/howler.min.js>>\u000a\u000a<<else>>\u000a\u000a\u000a\u000a<<endif>>
+V<<if $my_var is 0>>This is the real start of the game.\u000a\u000a[[flip]]\u000a\u000a\u000a<canvas id="playerCanvas" width="500px" height="400px" style=" position: absolute; left: 5px; top: 0px; z-index: 2;"> </canvas>\u000a\u000a<canvas id="backgroundCanvas" width="500px" height="400px" style=" position: absolute; left: 5px; top: 0px; z-index: 1; background-color: blue; " > </canvas>\u000a\u000a<canvas id="projectileCanvas" width="500px" height="400px" style=" position: absolute; left: 5px; top: 0px; z-index: 1;" > </canvas>\u000a\u000a\u000a<<loadJS scripts/wilderkind.js>>\u000a<<loadJS scripts/image_loader.js>>\u000a<<loadJS scripts/shield.js>>\u000a<<loadJS scripts/bolas.js>>\u000a<<loadJS scripts/utilities.js>>\u000a<<loadJS scripts/player.js>>\u000a<<loadJS scripts/caroler.js>>\u000a<<loadJS scripts/level1.js>>\u000a<<loadJS scripts/howler.min.js>>\u000a\u000a\u000a\u000a<<else>>\u000a\u000a\u000a\u000a<<endif>>
 p22
 sS'title'
 p23
@@ -50,12 +50,12 @@ struct_time
 p26
 ((I2015
 I4
-I19
-I21
-I23
+I20
+I10
 I42
-I6
-I109
+I11
+I0
+I110
 I1
 tp27
 (dp28
