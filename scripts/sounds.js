@@ -10,3 +10,4 @@ var lowNote = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/1226
 var song = new Howl({urls: ['././Audio/11078__maerkunst__female-voice/176118__maerkunst__short-song-1_edit.wav'], volume: 0 }).play(); //plays while shields are up via fadeIn/Out functions
 var lowNote2 = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/122680__juskiddink__gong-2.wav'], loop: true, volume: 0.2}); //looping background
 var bellCall = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/122650__juskiddink__singing-bowl_edit.wav'], volume: 0.1 }); //plays on mouse click
+var bellFail = new Howl({urls: ['././Audio/252264__reitanna__thump.wav'], volume: 0.8 }); //plays on mouse click when bell can not yet be used
