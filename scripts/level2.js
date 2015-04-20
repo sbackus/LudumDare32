@@ -41,9 +41,11 @@ var contextBackground = document.getElementById("backgroundCanvas").getContext("
       canvas.addEventListener('click', function(evt) {
         var mousePos = getMousePos(canvas, evt);
         var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
-		bells = bells.concat(new Bell(mousePos.x, mousePos.y));
-
-        console.log(message);
+		if(bells.length<1){
+			bells = bells.concat(new Bell(mousePos.x, mousePos.y));
+		}
+		
+		bellCall.play();
       }, false);
 
 var keys = [];
@@ -79,8 +81,6 @@ function init(){
 	chimes.play();
 	lowNote2.play();
 	
-	// wilderkin = wilderkin.concat(new Wilderkind(images[1], width/2, height/2));
-
 	player = new Player();
 	loop();
 	// DON'T PUT ANYTHING AFTER THE GAME LOOP STARTS! IT WON'T RUN!
@@ -88,13 +88,24 @@ function init(){
 
 function update(){
 	player.update();
-	// console.log(wilderkin.length)
 	if (Math.random()<=0.009){
 		wilderkin = wilderkin.concat(new Wilderkind(images[1], Math.random()*width, randomChoice([-10,height])));
 	}
 
 	bells.forEach(function(bell){
 		bell.update()
+	});
+
+	bells.forEach(function(bell){
+		wilderkin.forEach(function(wilderkind) {
+			if(collision(bell,wilderkind)){
+				if(!wilderkind.pulled){
+					wilderkind.bounce_speed = -2;
+					wilderkind.pulled = true;
+					wilderkind.bell = bell;
+				}
+			}
+		});
 	});
 
 	wilderkin.forEach(function(wilderkind) {

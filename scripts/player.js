@@ -33,10 +33,10 @@ function Player() {
 		}
 	};
 	this.update = function(){
-		if(keys[key.up]) {this.y-=this.speed; this.drawn = false;}
-		if(keys[key.down]) {this.y+=this.speed; this.drawn = false;}
-		if(keys[key.left]) {this.x-=this.speed; this.drawn = false;}
-		if(keys[key.right]) {this.x+=this.speed; this.drawn = false;}
+		if(keys[key.up]||keys[key.w]) {this.y-=this.speed; this.drawn = false;}
+		if(keys[key.down]||keys[key.s]) {this.y+=this.speed; this.drawn = false;}
+		if(keys[key.left]||keys[key.a]) {this.x-=this.speed; this.drawn = false;}
+		if(keys[key.right]||keys[key.d]) {this.x+=this.speed; this.drawn = false;}
 		this.shield.update();
 		if(this.shield.switched) {this.drawn = false;}
 		if(this.x < 0) this.x = 0;
