@@ -102,7 +102,7 @@ function Player() {
 	this.width = this.shielded_image.width;
 	this.height =  this.shielded_image.width;
 	this.drawn = false;
-	this.speed = 7;
+	this.speed = 6;
 	this.shield = new Shield();
 	this.health=20;
 	this.draw =  function(){
@@ -154,7 +154,7 @@ function Caroler(image,x,y) {
 	this.height =  this.image.height;
 	this.drawn = false;
 	this.speed = 0.25;
-	this.bolas = new Bolas(this.x,this.y+15,290)
+	this.bolas = new Bolas(this.x,this.y+15)
 	this.destroyed = false;
 	this.destroyed_count = 0;
 	this.draw =  function(){
@@ -189,7 +189,11 @@ function Caroler(image,x,y) {
 	};
 };
 
-function Bolas(x,y,direction){
+function randomChoice(arr) {
+    return arr[Math.floor(arr.length * Math.random())];
+}
+
+function Bolas(x,y){
 	// this.image = image;
 	this.x =  x;
 	this.y =  y;
@@ -197,8 +201,12 @@ function Bolas(x,y,direction){
 	this.height = 6;
 	this.size = 3;
 	this.speed = 6;
-	this.rotation = 4;
-	this.direction = direction;
+	this.rotation = randomChoice([4,-4,5,-5]);
+	if (this.rotation<0){
+		this.direction = 90;
+	} else {
+		this.direction = 270;
+	}
 	this.reversed = false;
 	this.draw = function(){
 			contextBackground.clearRect(this.x-this.width,this.y-this.height,this.width*2,this.height*2);
