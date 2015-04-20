@@ -23,7 +23,7 @@ p11
 (dp13
 S'selected'
 p14
-I00
+I01
 sS'pos'
 p15
 (lp16
@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V<<if $started neq 1>><<set $started to 1>>You're in the west field, ankle-deep in the muck of an irrigation ditch, frowning. You walk a little ways, eyes down on your squelching boots, frowning all the time. There's not enough water. \u000a\u000a[[...|low water]]\u000a<<else if $fight is 1>>Magic happens here.\u000a\u000a[[...|caves]]\u000a<<else>>Magic happens here a second time.\u000a\u000a[[...|elders]]\u000a<<endif>>
+VYou're in the west field, ankle-deep in the muck of an irrigation ditch, frowning. You walk a little ways, eyes down on your squelching boots, frowning all the time. There's not enough water. \u000a\u000a[[...|low water]]\u000a
 p22
 sS'title'
 p23
@@ -51,9 +51,9 @@ p26
 ((I2015
 I4
 I20
-I9
-I51
-I28
+I13
+I13
+I17
 I0
 I110
 I1
@@ -767,7 +767,7 @@ Tiddler
 p242
 (dp243
 g21
-V<<set $fight to 1>><<display Start>>
+VMagic happens here.\u000a\u000a[[...|caves]]
 p244
 sg23
 Vfight1
@@ -776,12 +776,12 @@ sg25
 g26
 ((I2015
 I4
-I18
-I22
+I20
+I13
 I12
-I36
-I5
-I108
+I59
+I0
+I110
 I1
 tp246
 (dp247
@@ -3617,7 +3617,7 @@ Tiddler
 p1097
 (dp1098
 g21
-V<<set $fight to 2>><<display Start>>
+VMagic happens here a second time. \u000a\u000a[[...|elders]]
 p1099
 sg23
 Vaction2
@@ -3626,12 +3626,12 @@ sg25
 g26
 ((I2015
 I4
-I19
-I15
-I58
-I53
-I6
-I109
+I20
+I13
+I12
+I28
+I0
+I110
 I1
 tp1101
 (dp1102
@@ -4706,7 +4706,7 @@ tp1423
 Rp1424
 sbsa(dp1425
 g14
-I01
+I00
 sg15
 (lp1426
 F21.666666666666664
@@ -4760,7 +4760,7 @@ tp1440
 Rp1441
 sbsa(dp1442
 g14
-I01
+I00
 sg15
 (lp1443
 F16.666666666666664
@@ -5067,27 +5067,27 @@ g14
 I00
 sg15
 (lp1535
-F421.6666666666668
-aF311.6666666666665
+F1335.3333333333321
+aF3513.3333333333326
 asg17
 (itiddlywiki
 Tiddler
 p1536
 (dp1537
 g21
-V<<set $started to 1>>\u000a\u000a[[...|fight1]]
+V<<display check with orit>> assures you that he agrees. "I didn't realize how much we were changing the landscape," he admits. "Not until I saw your and Alda's fields. After seeing what you make due with, the way we treat our own lands seems lavish. Of course, we have a great many people to feed - more than live in any one place in the Wilderlands.\u000a\u000a<<display both ways>>
 p1538
 sg23
-VUntitled Passage 1
+Vpeeved
 p1539
 sg25
 g26
 ((I2015
 I4
 I20
-I9
-I50
-I57
+I10
+I54
+I54
 I0
 I110
 I1
@@ -5102,9 +5102,9 @@ g26
 ((I2015
 I4
 I20
-I9
-I50
-I18
+I10
+I44
+I2
 I0
 I110
 I1
@@ -5117,18 +5117,18 @@ g14
 I00
 sg15
 (lp1550
-F1335.3333333333321
-aF3513.3333333333326
+F1337.0000000000002
+aF3765.0000000000005
 asg17
 (itiddlywiki
 Tiddler
 p1551
 (dp1552
 g21
-V<<display check with orit>> assures you that he agrees. "I didn't realize how much we were changing the landscape," he admits. "Not until I saw your and Alda's fields. After seeing what you make due with, the way we treat our own lands seems lavish. Of course, we have a great many people to feed - more than live in any one place in the Wilderlands.\u000a\u000a<<display both ways>>
+V<<display check with orit>> tells you he's been thinking the same thing. "I didn't realize how different the Wilderlands are from the area around Carillon City. We've all heard how much drier it is, but I don't think we realized just how much. Maybe part of the solution is that we can call rains for you? Or even teach you to do it yourselves.\u000a\u000a<<display both ways>>
 p1553
 sg23
-Vpeeved
+Vexcited
 p1554
 sg25
 g26
@@ -5137,7 +5137,7 @@ I4
 I20
 I10
 I54
-I54
+I16
 I0
 I110
 I1
@@ -5167,18 +5167,18 @@ g14
 I00
 sg15
 (lp1565
-F1337.0000000000002
-aF3765.0000000000005
+F1474.9999999999986
+aF3513.3333333333317
 asg17
 (itiddlywiki
 Tiddler
 p1566
 (dp1567
 g21
-V<<display check with orit>> tells you he's been thinking the same thing. "I didn't realize how different the Wilderlands are from the area around Carillon City. We've all heard how much drier it is, but I don't think we realized just how much. Maybe part of the solution is that we can call rains for you? Or even teach you to do it yourselves.\u000a\u000a<<display both ways>>
+VYou talk to Orit about it. He hears you out and then
 p1568
 sg23
-Vexcited
+Vcheck with orit
 p1569
 sg25
 g26
@@ -5186,8 +5186,8 @@ g26
 I4
 I20
 I10
-I54
-I16
+I44
+I50
 I0
 I110
 I1
@@ -5204,7 +5204,7 @@ I4
 I20
 I10
 I44
-I2
+I14
 I0
 I110
 I1
@@ -5217,18 +5217,18 @@ g14
 I00
 sg15
 (lp1580
-F1474.9999999999986
-aF3513.3333333333317
+F1476.6666666666663
+aF3764.999999999999
 asg17
 (itiddlywiki
 Tiddler
 p1581
 (dp1582
 g21
-VYou talk to Orit about it. He hears you out and then
+V"But to be honest, I think you have things to teach us as well. I suspect our farmers would give up on fields as dry as yours and Alda's. Maybe we don't need as much water as we're using..." \u000a\u000a[[...|the city]]
 p1583
 sg23
-Vcheck with orit
+Vboth ways
 p1584
 sg25
 g26
@@ -5236,8 +5236,8 @@ g26
 I4
 I20
 I10
-I44
-I50
+I57
+I59
 I0
 I110
 I1
@@ -5253,8 +5253,8 @@ g26
 I4
 I20
 I10
-I44
-I14
+I54
+I0
 I0
 I110
 I1
@@ -5267,27 +5267,27 @@ g14
 I00
 sg15
 (lp1595
-F1476.6666666666663
-aF3764.999999999999
+F1625.3333333333335
+aF3761.6666666666674
 asg17
 (itiddlywiki
 Tiddler
 p1596
 (dp1597
 g21
-V"But to be honest, I think you have things to teach us as well. I suspect our farmers would give up on fields as dry as yours and Alda's. Maybe we don't need as much water as we're using..." \u000a\u000a[[...|the city]]
+VAnd in another day you're in the city itself. \u000a\u000aIt's a strange place. Buildings tower above you like high cliffs, there are people //everywhere// - and of course there are the bells. Merchants ringing bells to attract attention as they hawk their wares, bells affixed outside homes for visitors to signal those inside. Bells literally ring every hour from tall spires, to mark the progress of the day. \u000a\u000aOf course, song is as much a part of life in the Wilderlands. But only in the context of the family, the home. Alda's probably heard you singing, from time to time at your homestead; you're damned sure nobody else has. This is a very different way of living.\u000a\u000a[[You find it charming.|charming]]\u000a\u000a[[You find it obnoxious.|obnoxious]]
 p1598
 sg23
-Vboth ways
+Vthe city
 p1599
 sg25
 g26
 ((I2015
 I4
 I20
-I10
-I57
-I59
+I11
+I5
+I18
 I0
 I110
 I1
@@ -5303,8 +5303,8 @@ g26
 I4
 I20
 I10
-I54
-I0
+I58
+I2
 I0
 I110
 I1
@@ -5317,18 +5317,18 @@ g14
 I00
 sg15
 (lp1610
-F1625.3333333333335
-aF3761.6666666666674
+F1762.0
+aF3759.9999999999995
 asg17
 (itiddlywiki
 Tiddler
 p1611
 (dp1612
 g21
-VAnd in another day you're in the city itself. \u000a\u000aIt's a strange place. Buildings tower above you like high cliffs, there are people //everywhere// - and of course there are the bells. Merchants ringing bells to attract attention as they hawk their wares, bells affixed outside homes for visitors to signal those inside. Bells literally ring every hour from tall spires, to mark the progress of the day. \u000a\u000aOf course, song is as much a part of life in the Wilderlands. But only in the context of the family, the home. Alda's probably heard you singing, from time to time at your homestead; you're damned sure nobody else has. This is a very different way of living.\u000a\u000a[[You find it charming.|charming]]\u000a\u000a[[You find it obnoxious.|obnoxious]]
+VThe crowds and the incessant noise and the damn constant ringing is maddening. You put on a brave face during the negotiations and think of the day you'll be able to go home. \u000a\u000a<<display one day>>
 p1613
 sg23
-Vthe city
+Vobnoxious
 p1614
 sg25
 g26
@@ -5336,8 +5336,8 @@ g26
 I4
 I20
 I11
-I5
-I18
+I19
+I50
 I0
 I110
 I1
@@ -5352,9 +5352,9 @@ g26
 ((I2015
 I4
 I20
-I10
-I58
-I2
+I11
+I5
+I24
 I0
 I110
 I1
@@ -5368,17 +5368,17 @@ I00
 sg15
 (lp1625
 F1762.0
-aF3759.9999999999995
+aF3896.6666666666656
 asg17
 (itiddlywiki
 Tiddler
 p1626
 (dp1627
 g21
-VThe crowds and the incessant noise and the damn constant ringing is maddening. You put on a brave face during the negotiations and think of the day you'll be able to go home. \u000a\u000a<<display one day>>
+VThe crowds and tapestry of sound all around are exciting, invigorating! You wander the city, eager to see everything, hear everything. The time flies by as you wander the city, while the masters and the elders meet to talk through details. \u000a\u000a<<display one day>>
 p1628
 sg23
-Vobnoxious
+Vcharming
 p1629
 sg25
 g26
@@ -5387,7 +5387,7 @@ I4
 I20
 I11
 I19
-I50
+I57
 I0
 I110
 I1
@@ -5417,18 +5417,18 @@ g14
 I00
 sg15
 (lp1640
-F1762.0
-aF3896.6666666666656
+F1895.3333333333337
+aF3761.666666666665
 asg17
 (itiddlywiki
 Tiddler
 p1641
 (dp1642
 g21
-VThe crowds and tapestry of sound all around are exciting, invigorating! You wander the city, eager to see everything, hear everything. The time flies by as you wander the city, while the masters and the elders meet to talk through details. \u000a\u000a<<display one day>>
+VOne day, you stand on the city's ramparts with Orit. The two of you have both been only peripherally involved with the negotiations themselves, present occasionally but mostly left on your own. He's been showing you some of his favorite sites; today, that means the view of the mountains from atop the wall.\u000a\u000a[[...|warriors]]
 p1643
 sg23
-Vcharming
+Vone day
 p1644
 sg25
 g26
@@ -5436,8 +5436,8 @@ g26
 I4
 I20
 I11
-I19
-I57
+I23
+I58
 I0
 I110
 I1
@@ -5453,8 +5453,8 @@ g26
 I4
 I20
 I11
-I5
-I24
+I18
+I46
 I0
 I110
 I1
@@ -5467,18 +5467,18 @@ g14
 I00
 sg15
 (lp1655
-F1895.3333333333337
-aF3761.666666666665
+F263.66666666666663
+aF4218.33333333333
 asg17
 (itiddlywiki
 Tiddler
 p1656
 (dp1657
 g21
-VOne day, you stand on the city's ramparts with Orit. The two of you have both been only peripherally involved with the negotiations themselves, present occasionally but mostly left on your own. He's been showing you some of his favorite sites; today, that means the view of the mountains from atop the wall.\u000a\u000a[[...|warriors]]
+VYou admire the distant view for some time, and then look at the environs surrounding the city. The rich green fields are exotic enough, for you. \u000a\u000aYou frown down at the buzz of activity all around the walls. You see lots heavy armor - real armor, not the ornate metal plates and scales that are inexplicably popular in the city's fashion. "There are a great many warriors," you remark to Orit. \u000a\u000aYou can't help but feel uncomfortable when some of the City's soldiers were hunting you down just days ago. \u000a\u000a[[...|busywork]]
 p1658
 sg23
-Vone day
+Vwarriors
 p1659
 sg25
 g26
@@ -5486,8 +5486,8 @@ g26
 I4
 I20
 I11
-I23
-I58
+I30
+I16
 I0
 I110
 I1
@@ -5503,8 +5503,8 @@ g26
 I4
 I20
 I11
-I18
-I46
+I24
+I1
 I0
 I110
 I1
@@ -5517,18 +5517,18 @@ g14
 I00
 sg15
 (lp1670
-F263.66666666666663
-aF4218.33333333333
+F418.6666666666665
+aF4215.000000000001
 asg17
 (itiddlywiki
 Tiddler
 p1671
 (dp1672
 g21
-VYou admire the distant view for some time, and then look at the environs surrounding the city. The rich green fields are exotic enough, for you. \u000a\u000aYou frown down at the buzz of activity all around the walls. You see lots heavy armor - real armor, not the ornate metal plates and scales that are inexplicably popular in the city's fashion. "There are a great many warriors," you remark to Orit. \u000a\u000aYou can't help but feel uncomfortable when some of the City's soldiers were hunting you down just days ago. \u000a\u000a[[...|busywork]]
+VOrit sighs. "Yes. I was asking my mother about it. They're providing busywork for them. Some of the warriors went off on raids without permission from the masters; they have orders not to now, but... well, my mother thought it was busy to keep them busy. So we've stepped up patrols, and we're doing a survery of the city's defenses. \u000a\u000a"I see." It's a sensible plan. But looking down on all those soldiers - and knowing that some of them wish they were out in the Wilderlands burning homesteads - still makes you uncomfortable. "I don't like thinking the peace is so fragile," you tell him.\u000a\u000a[[...|orit either]]
 p1673
 sg23
-Vwarriors
+Vbusywork
 p1674
 sg25
 g26
@@ -5536,8 +5536,8 @@ g26
 I4
 I20
 I11
-I30
-I16
+I41
+I39
 I0
 I110
 I1
@@ -5553,8 +5553,8 @@ g26
 I4
 I20
 I11
-I24
-I1
+I30
+I18
 I0
 I110
 I1
@@ -5567,27 +5567,27 @@ g14
 I00
 sg15
 (lp1685
-F418.6666666666665
-aF4215.000000000001
+F575.3333333333338
+aF4216.666666666663
 asg17
 (itiddlywiki
 Tiddler
 p1686
 (dp1687
 g21
-VOrit sighs. "Yes. I was asking my mother about it. They're providing busywork for them. Some of the warriors went off on raids without permission from the masters; they have orders not to now, but... well, my mother thought it was busy to keep them busy. So we've stepped up patrols, and we're doing a survery of the city's defenses. \u000a\u000a"I see." It's a sensible plan. But looking down on all those soldiers - and knowing that some of them wish they were out in the Wilderlands burning homesteads - still makes you uncomfortable. "I don't like thinking the peace is so fragile," you tell him.\u000a\u000a[[...|orit either]]
+V"Me neither," he says. "It's like the sentries around the Echomount - so many people on both sides want peace. But it's easier to break something than to make it. If the sentries had killed me, or the raiders had killed you, things would be different now. The masters have put a stop to the raids now, but any more fighting and we could lose all of the progress we've made."\u000a\u000a[[...|next morning]]
 p1688
 sg23
-Vbusywork
+Vorit either
 p1689
 sg25
 g26
 ((I2015
 I4
 I20
-I11
-I41
-I39
+I12
+I18
+I43
 I0
 I110
 I1
@@ -5603,8 +5603,8 @@ g26
 I4
 I20
 I11
-I30
-I18
+I41
+I42
 I0
 I110
 I1
@@ -5617,27 +5617,27 @@ g14
 I00
 sg15
 (lp1700
-F575.3333333333338
-aF4216.666666666663
+F716.9999999999998
+aF4215.0
 asg17
 (itiddlywiki
 Tiddler
 p1701
 (dp1702
 g21
-V"Me neither," he says. "It's like the sentries around the Echomount - so many people on both sides want peace. But it's easier to break something than to make it. If the sentries had killed me, or the raiders had killed you, things would be different now. The masters have put a stop to the raids now, but any more fighting and we could lose all of the progress we've made. 
+VThe next morning, the larger delegation of elders arrives. You, Orit and Alda meet them to conduct them to where the negotiations are taking place.\u000a\u000aThe negotiations are going well. You haven't heard all the details, but it's hoped that the newly arrived elders will simply have to ratify the agreement that Ker and the others have worked out.\u000a\u000aThat's when the bells start to sound.\u000a\u000a[[...|all the bells]]
 p1703
 sg23
-Vorit either
+Vnext morning
 p1704
 sg25
 g26
 ((I2015
 I4
 I20
-I11
-I44
-I28
+I12
+I22
+I10
 I0
 I110
 I1
@@ -5652,9 +5652,9 @@ g26
 ((I2015
 I4
 I20
-I11
+I12
+I19
 I41
-I42
 I0
 I110
 I1
@@ -5662,10 +5662,760 @@ tp1710
 (dp1711
 tp1712
 Rp1713
+sbsa(dp1714
+g14
+I00
+sg15
+(lp1715
+F861.9999999999998
+aF4221.666666666667
+asg17
+(itiddlywiki
+Tiddler
+p1716
+(dp1717
+g21
+V//All// the bells. \u000a\u000aSuddenly every bell in every spire is ringing, and you hear voices and handbells striking up on every street corner. The delegates are startled; some actually cover their ears. Alda grits her teeth, but it's Orit who looks the most shocked. His eyes go wide, his skin turns ashen.\u000a\u000a"That's the alarm," he says. "The city's under attack!" \u000a\u000aThe two of you raise to a nearby staircase leading up to the rampart; Alda rushes after you. \u000a\u000a[[...|two armies]]
+p1718
+sg23
+Vall the bells
+p1719
+sg25
+g26
+((I2015
+I4
+I20
+I12
+I24
+I52
+I0
+I110
+I1
+tp1720
+(dp1721
+tp1722
+Rp1723
+sg31
+(lp1724
+sg33
+g26
+((I2015
+I4
+I20
+I12
+I22
+I13
+I0
+I110
+I1
+tp1725
+(dp1726
+tp1727
+Rp1728
+sbsa(dp1729
+g14
+I00
+sg15
+(lp1730
+F998.6666666666666
+aF4219.9999999999945
+asg17
+(itiddlywiki
+Tiddler
+p1731
+(dp1732
+g21
+VThe blue-clad, heavily armored warriors of the City are rushing to and fro before the city like swarming bees. Rapidly approaching the city is a force, smaller but numerous enough, of men and women in green and purple.\u000a\u000a"Who would do this?" you ask. "The elders were all at Echomount, they know peace is coming..."\u000a\u000a[[...|who knows]]
+p1733
+sg23
+Vtwo armies
+p1734
+sg25
+g26
+((I2015
+I4
+I20
+I12
+I30
+I13
+I0
+I110
+I1
+tp1735
+(dp1736
+tp1737
+Rp1738
+sg31
+(lp1739
+sg33
+g26
+((I2015
+I4
+I20
+I12
+I24
+I54
+I0
+I110
+I1
+tp1740
+(dp1741
+tp1742
+Rp1743
+sbsa(dp1744
+g14
+I00
+sg15
+(lp1745
+F1140.333333333333
+aF4216.666666666666
+asg17
+(itiddlywiki
+Tiddler
+p1746
+(dp1747
+g21
+V"Who knows?" Alda asks, pursing her lips. "Getting all the Wilderkind to agree of something is always hard. Maybe they're from settlements that didn't send an elder to the conclave, or maybe they didn't hear back from their elders in time. Or maybe they just don't want peace.\u000a\u000aShe looks to Orit. "We need to get the elders to the negotiations, and then we need to get everyone - elders //and// masters - back here to break this up." \u000a\u000a[[...|bloodshed]]
+p1748
+sg23
+Vwho knows
+p1749
+sg25
+g26
+((I2015
+I4
+I20
+I12
+I32
+I42
+I0
+I110
+I1
+tp1750
+(dp1751
+tp1752
+Rp1753
+sg31
+(lp1754
+sg33
+g26
+((I2015
+I4
+I20
+I12
+I30
+I16
+I0
+I110
+I1
+tp1755
+(dp1756
+tp1757
+Rp1758
+sbsa(dp1759
+g14
+I00
+sg15
+(lp1760
+F1283.666666666668
+aF4214.999999999999
+asg17
+(itiddlywiki
+Tiddler
+p1761
+(dp1762
+g21
+V"But this is more than a raid," Orit says, pointing out at the two armies, which are rapidly coming together. "This is the beginnings of a battle. There will be losses, on both sides. So much bloodshed..."\u000a\u000aHe shakes his head. "No matter what the elders and masters say, I'm not sure we can avert a war. The warriors on both side have forced the issue." \u000a\u000aHis voice cracks; he looks heartbroken. "We were so close..." \u000a\u000a[[...|not over yet]]
+p1763
+sg23
+Vbloodshed
+p1764
+sg25
+g26
+((I2015
+I4
+I20
+I12
+I35
+I50
+I0
+I110
+I1
+tp1765
+(dp1766
+tp1767
+Rp1768
+sg31
+(lp1769
+sg33
+g26
+((I2015
+I4
+I20
+I12
+I32
+I44
+I0
+I110
+I1
+tp1770
+(dp1771
+tp1772
+Rp1773
+sbsa(dp1774
+g14
+I00
+sg15
+(lp1775
+F1428.666666666667
+aF4216.666666666664
+asg17
+(itiddlywiki
+Tiddler
+p1776
+(dp1777
+g21
+V"...no," Alda says. "No, it's not over yet."\u000a\u000aShe turns to you. "Jes. We'll get the elders and the masters here as soon as we can. In the meantime..." \u000a\u000a"...what?" you say. "Just... get between them? Two armies? How can I...?"\u000a\u000a"I don't know," she admits. "I'm sorry, I don't. But I do know that everything we've worked for is gone if those two armies meet. I don't know. You've got the powers of both sides, the power to shield and the power to call - voice //and// bell. Just... don't let those two armies meet. And I promise we'll bring help as soon as we can."\u000a\u000a[[...|deep breath jes]]
+p1778
+sg23
+Vnot over yet
+p1779
+sg25
+g26
+((I2015
+I4
+I20
+I12
+I39
+I57
+I0
+I110
+I1
+tp1780
+(dp1781
+tp1782
+Rp1783
+sg31
+(lp1784
+sg33
+g26
+((I2015
+I4
+I20
+I12
+I35
+I53
+I0
+I110
+I1
+tp1785
+(dp1786
+tp1787
+Rp1788
+sbsa(dp1789
+g14
+I00
+sg15
+(lp1790
+F1563.666666666667
+aF4216.666666666668
+asg17
+(itiddlywiki
+Tiddler
+p1791
+(dp1792
+g21
+VYou look back and forth between them. Orit, whose hope has blossomed over the last few days, his eyes wide and desperate. Alda, who believed in peace from the start, who's hiked for days on her old legs to make it happen. You can't let what they've tried to accomplish end here. \u000a\u000aBoth for them and for yourself. \u000a\u000a[[Because if war breaks out now, there will be no going back to your quiet little homestead.|ok]]\u000a\u000a[[Because you believe too. You believe the City and the Wilderlands can work together.|ok]]
+p1793
+sg23
+Vdeep breath jes
+p1794
+sg25
+g26
+((I2015
+I4
+I20
+I12
+I43
+I36
+I0
+I110
+I1
+tp1795
+(dp1796
+tp1797
+Rp1798
+sg31
+(lp1799
+sg33
+g26
+((I2015
+I4
+I20
+I12
+I40
+I0
+I0
+I110
+I1
+tp1800
+(dp1801
+tp1802
+Rp1803
+sbsa(dp1804
+g14
+I00
+sg15
+(lp1805
+F1718.6666666666654
+aF4218.333333333331
+asg17
+(itiddlywiki
+Tiddler
+p1806
+(dp1807
+g21
+V"Ok," you say. "Ok, I'll do what I can." \u000a\u000aYou look out over the two armies. The Carolers have stopped advancing; they're organizing themselves into ranks. You see bells flashing in the sun. The Wilderkind, in contrast, are fanning out, getting space with which to maneuver and charge, readying shields to rush into the center of the Carolers' formations. "Just... hurry," you say. \u000a\u000a[[...|fly]]
+p1808
+sg23
+Vok
+p1809
+sg25
+g26
+((I2015
+I4
+I20
+I12
+I47
+I6
+I0
+I110
+I1
+tp1810
+(dp1811
+tp1812
+Rp1813
+sg31
+(lp1814
+sg33
+g26
+((I2015
+I4
+I20
+I12
+I43
+I39
+I0
+I110
+I1
+tp1815
+(dp1816
+tp1817
+Rp1818
+sbsa(dp1819
+g14
+I00
+sg15
+(lp1820
+F1855.3333333333321
+aF4218.33333333333
+asg17
+(itiddlywiki
+Tiddler
+p1821
+(dp1822
+g21
+VYou don't have any more time to wait. Already the Carolers are holding their bells poised, ready to call up projectiles to fling at the Wilderkind, who aren't slowing their charge.\u000a\u000a"Wish me luck!" you call - and leap off the rampart. \u000a\u000a[[...|leap]]
+p1823
+sg23
+Vfly
+p1824
+sg25
+g26
+((I2015
+I4
+I20
+I12
+I49
+I4
+I0
+I110
+I1
+tp1825
+(dp1826
+tp1827
+Rp1828
+sg31
+(lp1829
+sg33
+g26
+((I2015
+I4
+I20
+I12
+I47
+I8
+I0
+I110
+I1
+tp1830
+(dp1831
+tp1832
+Rp1833
+sbsa(dp1834
+g14
+I00
+sg15
+(lp1835
+F260.3333333333334
+aF4381.666666666666
+asg17
+(itiddlywiki
+Tiddler
+p1836
+(dp1837
+g21
+VYou sing a shield around yourself, and it cushions your impact with the ground. You run forward, sprinting for all your worth. You rush through the ranks of the Caroler warriors, raising cries as you go, but moving too quickly for them to react until you're already past. \u000a\u000aA shielded Wilderkind is about the barrel into the first rank; you see hurled projectiles impacting off his shields. You leap past the first Caroler warriors just in time, and throw up a shield of your own, cancelling his. \u000a\u000aBoth of you fall; you're surprised, but not as much as you could be, to see the leader of the sentries at Echomount. \u000a\u000a[[...|bad wilderkind]]
+p1838
+sg23
+Vleap
+p1839
+sg25
+g26
+((I2015
+I4
+I20
+I12
+I54
+I57
+I0
+I110
+I1
+tp1840
+(dp1841
+tp1842
+Rp1843
+sg31
+(lp1844
+sg33
+g26
+((I2015
+I4
+I20
+I12
+I49
+I8
+I0
+I110
+I1
+tp1845
+(dp1846
+tp1847
+Rp1848
+sbsa(dp1849
+g14
+I00
+sg15
+(lp1850
+F408.33333333333326
+aF4383.3333333333285
+asg17
+(itiddlywiki
+Tiddler
+p1851
+(dp1852
+g21
+V"You!" he cries.\u000a\u000a"Please, everyone!" you cry out. "Don't do this! The elders and the masters are in the city negotiating peace! There's no need to fight!"\u000a\u000a"No peace with the people who burned my family's crops!" the sentry leader cries. "No peace with the people who steal the rains!" \u000a\u000a[[...|bad carolers]]
+p1853
+sg23
+Vbad wilderkind
+p1854
+sg25
+g26
+((I2015
+I4
+I20
+I12
+I55
+I5
+I0
+I110
+I1
+tp1855
+(dp1856
+tp1857
+Rp1858
+sg31
+(lp1859
+sg33
+g26
+((I2015
+I4
+I20
+I12
+I52
+I43
+I0
+I110
+I1
+tp1860
+(dp1861
+tp1862
+Rp1863
+sbsa(dp1864
+g14
+I00
+sg15
+(lp1865
+F547.0000000000005
+aF4384.999999999998
+asg17
+(itiddlywiki
+Tiddler
+p1866
+(dp1867
+g21
+V"No peace with the criminals who attacked our bell choir!" cries out one of the Caroler soldiers behind you. "No peace with the people who would have the city wither without the rains!"\u000a\u000a"Please," you say...\u000a\u000a[["If you take revenge now, more people are going to get hurt!"|no revenge]]\u000a\u000a[["There's a better way! We can help each other!"|better way]]
+p1868
+sg23
+Vbad carolers
+p1869
+sg25
+g26
+((I2015
+I4
+I20
+I12
+I57
+I45
+I0
+I110
+I1
+tp1870
+(dp1871
+tp1872
+Rp1873
+sg31
+(lp1874
+sg33
+g26
+((I2015
+I4
+I20
+I12
+I54
+I46
+I0
+I110
+I1
+tp1875
+(dp1876
+tp1877
+Rp1878
+sbsa(dp1879
+g14
+I00
+sg15
+(lp1880
+F687.0000000000003
+aF4385.0
+asg17
+(itiddlywiki
+Tiddler
+p1881
+(dp1882
+g21
+V"If you take revenge now, more people are going to get hurt!" <<display no use>>
+p1883
+sg23
+Vno revenge
+p1884
+sg25
+g26
+((I2015
+I4
+I20
+I13
+I10
+I7
+I0
+I110
+I1
+tp1885
+(dp1886
+tp1887
+Rp1888
+sg31
+(lp1889
+sg33
+g26
+((I2015
+I4
+I20
+I12
+I57
+I48
+I0
+I110
+I1
+tp1890
+(dp1891
+tp1892
+Rp1893
+sbsa(dp1894
+g14
+I00
+sg15
+(lp1895
+F691.9999999999993
+aF4528.333333333334
+asg17
+(itiddlywiki
+Tiddler
+p1896
+(dp1897
+g21
+V"There's a better way! We can help each other!" <<display no use>>
+p1898
+sg23
+Vbetter way
+p1899
+sg25
+g26
+((I2015
+I4
+I20
+I13
+I10
+I15
+I0
+I110
+I1
+tp1900
+(dp1901
+tp1902
+Rp1903
+sg31
+(lp1904
+sg33
+g26
+((I2015
+I4
+I20
+I12
+I57
+I48
+I0
+I110
+I1
+tp1905
+(dp1906
+tp1907
+Rp1908
+sbsa(dp1909
+g14
+I00
+sg15
+(lp1910
+F835.0000000000002
+aF4389.999999999998
+asg17
+(itiddlywiki
+Tiddler
+p1911
+(dp1912
+g21
+VYou see people on both sides hesitate, exchanging glances with their neighbors or looking thoughtfully over at their opponents.\u000a\u000aBut then one of the Carolers rings their bell and a stone whips into the air; it zips around and flies toward a Wilderkind. You leap in front of it with your shield and reflect it - but you've lost the moment. \u000a\u000aNo sign of the elders and the masters. You need to buy more time, hold off the bloodshed as long as you possibly can...\u000a\u000a[[...|action3]]
+p1913
+sg23
+Vno use
+p1914
+sg25
+g26
+((I2015
+I4
+I20
+I13
+I10
+I26
+I0
+I110
+I1
+tp1915
+(dp1916
+tp1917
+Rp1918
+sg31
+(lp1919
+sg33
+g26
+((I2015
+I4
+I20
+I13
+I6
+I35
+I0
+I110
+I1
+tp1920
+(dp1921
+tp1922
+Rp1923
+sbsa(dp1924
+g14
+I00
+sg15
+(lp1925
+F983.6666666666665
+aF4385.000000000003
+asg17
+(itiddlywiki
+Tiddler
+p1926
+(dp1927
+g21
+VMAGIC. HAPPENS. HERE!
+p1928
+sg23
+Vaction3
+p1929
+sg25
+g26
+((I2015
+I4
+I20
+I13
+I11
+I12
+I0
+I110
+I1
+tp1930
+(dp1931
+tp1932
+Rp1933
+sg31
+(lp1934
+sg33
+g26
+((I2015
+I4
+I20
+I13
+I10
+I30
+I0
+I110
+I1
+tp1935
+(dp1936
+tp1937
+Rp1938
 sbsasS'scale'
-p1714
+p1939
 F0.6000000000000001
 sS'snapping'
-p1715
+p1940
 I00
 ss.
