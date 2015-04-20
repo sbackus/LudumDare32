@@ -88,8 +88,7 @@ function init(){
 
 function update(){
 	player.update();
-	// console.log(wilderkin.length)
-	if (Math.random()<=0.009&& wilderkin.length<5){
+	if (Math.random()<=0.009){
 		wilderkin = wilderkin.concat(new Wilderkind(images[1], Math.random()*width, randomChoice([-10,height])));
 	}
 
@@ -104,7 +103,6 @@ function update(){
 					wilderkind.bounce_speed = -2;
 					wilderkind.pulled = true;
 					wilderkind.bell = bell;
-					// console.log("collision")
 				}
 			}
 		});

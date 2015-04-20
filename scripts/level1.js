@@ -65,7 +65,6 @@ function init(){
 
 function update(){
 	player.update();
-	// console.log(carolers.length)
 	if (Math.random()<=0.009 && carolers.length < 3 ){
 		carolers = carolers.concat(new Caroler(images[0], Math.random()*width, -10));
 	}

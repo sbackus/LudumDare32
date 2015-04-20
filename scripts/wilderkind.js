@@ -17,9 +17,7 @@ function Wilderkind(image,x,y) {
 		this.drawn = true;
 	};
 	this.update = function(){
-		console.log(this.destroyed)
 		if(!this.destroyed){
-			// this.destroyed = true;
 			if(!(this.bell == null) && this.bell.time>=this.bell.duration){
 				this.pulled = false;
 				this.bounce_speed = 0
