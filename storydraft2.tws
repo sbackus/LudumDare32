@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V<<set $bell to 0>>You're in the west field, ankle-deep in the muck of an irrigation ditch, frowning. You walk a little ways, eyes down on your squelching boots, frowning all the time. There's not enough water. \u000a\u000aYou step out of the ditch and look around. The field is filled with promising green shoots, but the soil is dry and sandy. Beyond the field, the waters of the small lake that drew you to plow the little patch of level ground in this valley are visibly low. \u000a\u000aYou look up at the sky. Dark clouds race overhead. They promise rain, but they won't rain on you and your fields. They are flying across the sky toward Carillon City. \u000a\u000a[[...|bells]]
+V<<set $bell to 0>>You're in the west field, ankle-deep in the muck of an irrigation ditch, frowning down at the mud squelching around your boots. There's not enough water. \u000a\u000aYou climb out of the ditch and look around, pursing your lips. The field is filled with promising green shoots, but the soil is dry and sandy. And beyond the field, the waters of the small lake that provide water for your small farm and your neighbor's are visibly low. \u000a\u000aYou look up at the sky. Dark clouds race overhead. They promise rain, but you know the rain won't fall here. The clouds will speed on to where the Ringers of Carillon City are calling them. \u000a\u000a[[...|bells]]
 p22
 sS'title'
 p23
@@ -51,9 +51,9 @@ p26
 ((I2015
 I4
 I20
-I16
-I46
-I2
+I17
+I34
+I27
 I0
 I110
 I1
@@ -169,7 +169,7 @@ Tiddler
 p63
 (dp64
 g21
-VSpeaking of which - a low peal of bells becomes audible. \u000a\u000aThe City is miles away, far longer than the sound would ordinary carry. But when they use the bells to call the rain, the sound carries in unexpected ways, reaching many miles distant. Carried by something stranger than the air, maybe. \u000a\u000aYou open your mouth and sing to your self, soft and wordless. The air shifts around you, and there's a faint glow as a shield materializes around you, blocking out the sound. \u000a\u000aYou smile; the Carolers with their bells aren't the only ones with magic. \u000a\u000a[[...|waters]]
+VSpeaking of which - a low peal of bells becomes audible. \u000a\u000aThe City is miles away, far longer than the sound would ordinary carry. But when they Ring their bells, instead of just ringing them, the sound moves in strange ways. \u000a\u000aYou open your mouth and sing to your self, soft and wordless. The air shifts around you, and there's a faint glow as a shield materializes around you, blocking out the sound. \u000a\u000aYou smile; the Carolers aren't the only ones with magic. \u000a\u000a[[...|waters]]
 p65
 sg23
 Vbells
@@ -179,9 +179,9 @@ g26
 ((I2015
 I4
 I20
-I15
-I1
-I58
+I17
+I36
+I42
 I0
 I110
 I1
@@ -221,7 +221,7 @@ Tiddler
 p79
 (dp80
 g21
-VAlthough they are more or less the only ones with water, in the middle of this drought. \u000a\u000aThey've always called the rains to water their crops, but as the land gets drier, as the wells dry up and the lakes and pools get lower, they do it more and more. \u000a\u000aOr maybe, like some say, the more they call the rains the drier the land gets.\u000a\u000aYou don't know if it's true or not, but a lot of people more desperate than you have become convinced. There's talk of making the Carolers stop. There's even talk of war... \u000a\u000a[[...and you pray it doesn't become more than talk.|hereandnow]]\u000a\u000a[[...and Carillon City deserves no better, if they're really causing the drought.|hereandnow][$bell = $bell + 1]]
+VAlthough they are more or less the only ones with water, in the middle of this drought. They've always called the rains to water their crops, but as the land gets drier, as the wells dry up and the lakes and pools get lower, they do it more and more. \u000a\u000aOr maybe, like some say, the more they call the rains the drier the land gets.\u000a\u000aYou don't know if it's true or not, but a lot of people more desperate than you have become convinced that Carillon's endless calling is the real cause of the drought. There's anger; there's even talk of war. \u000a\u000a[[...and you pray it doesn't become more than talk.|hereandnow]]\u000a\u000a[[...and Carillon City deserves no better, if they're really causing the drought.|hereandnow][$bell = $bell + 1]]
 p81
 sg23
 Vwaters
@@ -231,9 +231,9 @@ g26
 ((I2015
 I4
 I20
-I16
-I46
-I51
+I17
+I37
+I53
 I0
 I110
 I1
@@ -266,14 +266,14 @@ I00
 sg15
 (lp94
 F615.9999999999998
-aF17.33333333333334
+aF19.000000000000007
 asg17
 (itiddlywiki
 Tiddler
 p95
 (dp96
 g21
-VThe sound of bells comes back - louder, more insistent, even through your shield. You narrow your eyes; something's wrong, you've never heard them this loud before. \u000a\u000aYou look back up toward the two figures. They're not just coming toward you. They're running. And more figures are coming over the rise behind them. \u000a\u000aYou go to the edge of the field and watch them approach. One of them is Alda: she's an older woman, grey-haired and wrinkled but still healthy and strong, and she's running like a young woman now. With her is a young man that you don't know. He wears light clothes of silver and blue - Carillon clothes. \u000a\u000a[[...|the others]]
+VThe sound of bells comes back - louder, more insistent, even through your shield. You narrow your eyes; something's wrong, you've never heard them this loud before. \u000a\u000aYou look back up toward the two figures. They're not just coming toward you. They're running. And more figures are coming over the rise behind them. \u000a\u000a[[...|the two]]
 p97
 sg23
 Vloudbells
@@ -283,9 +283,9 @@ g26
 ((I2015
 I4
 I20
-I15
-I2
-I12
+I17
+I5
+I26
 I0
 I110
 I1
@@ -325,7 +325,7 @@ Tiddler
 p111
 (dp112
 g21
-VBut that's still far away, for now. For now you have a field, and a crop you're counting on, and too little water. You contemplate the ditch. Perhaps you could dig it deeper to draw more water out to your field? Or perhaps you should resort to getting water by the bucket field and watering the crops by hand?\u000a\u000aBoth approaches are a lot of work. You'd probably need help from Alda, your neighbor on the other side of the oasis. You look up at the rise that separates your property, and are surprised to see two figures cresting it, coming toward you.\u000a\u000a[[...|loudbells]]
+VBut that's still far away, for now. For now you have a field, and a crop you're counting on, and too little water. You contemplate the ditch. Perhaps you could dig it deeper to draw more water out to your field? Or perhaps you should resort to getting water by the bucket field and watering the crops by hand?\u000a\u000aBoth approaches are a lot of work. You'd probably need help from Alda, your one neighbor who lives on the other side of the lake. You look up at the rise that separates your property, and are surprised to see two figures cresting it, coming toward you.\u000a\u000a[[...|loudbells]]
 p113
 sg23
 Vhereandnow
@@ -335,9 +335,9 @@ g26
 ((I2015
 I4
 I20
-I15
-I2
-I8
+I17
+I38
+I42
 I0
 I110
 I1
@@ -481,7 +481,7 @@ Tiddler
 p159
 (dp160
 g21
-V"<<print $sendoff>>"\u000a\u000a"//Thank you//", Alda says. She puts a hand on your shoulder and looks you straight in the face. "If I had any other choice, I wouldn't drag you into this," she says. \u000a\u000a"But this is bigger than either of us."\u000a\u000a[[...|fight1]] \u000a\u000a
+V"<<print $sendoff>>"\u000a\u000a"//Thank you//", Alda says. She puts a hand on your shoulder and looks you straight in the face. "If I had any other choice, I wouldn't drag you into this," she says. \u000a\u000a"But this is bigger than either of us."\u000a\u000a[[...|fighting carolers]] \u000a\u000a
 p161
 sg23
 Vthank you
@@ -491,9 +491,9 @@ g26
 ((I2015
 I4
 I20
-I15
-I6
-I54
+I17
+I44
+I39
 I0
 I110
 I1
@@ -629,8 +629,8 @@ g14
 I00
 sg15
 (lp206
-F1083.9999999999998
-aF296.66666666666686
+F1040.666666666667
+aF316.66666666666697
 asg17
 (itiddlywiki
 Tiddler
@@ -689,7 +689,7 @@ Tiddler
 p223
 (dp224
 g21
-VThe figures cresting the rise, and now running down it after Alda and the Caroler, are dressed likewise, except they also wear white gloves - the pure white stands out at a distance - and carry bells, which chime as they run. \u000a\u000a"Alda," you cry out as they get closer. "What's going on?" \u000a\u000a[[...|help]]
+VThe figures cresting the rise, and now running down it after Alda and the Caroler, are also dressed in the blue and gold colors of Carillon, but they're wearing real armor, not light metal plates for fashion. Soldiers - and soldiers trained in the magic of Ringing. \u000a\u000a"Alda," you cry out as they get closer. "What's going on?" \u000a\u000a[[...|help]]
 p225
 sg23
 Vthe others
@@ -699,9 +699,9 @@ g26
 ((I2015
 I4
 I20
-I15
-I2
 I17
+I7
+I10
 I0
 I110
 I1
@@ -793,7 +793,7 @@ Tiddler
 p255
 (dp256
 g21
-VYou fall back, throwing shields up against the flying projectiles that the Carolers call up with the ceaseless chimes of their bells. Before long, you reach the caves that stretch back into the mountains. The Carolers follow you in, but not far; after a few turnings, they think better of it and fall back. \u000a\u000aSound carries in the caves. You hear them shouting to each other; you hear the order to withdraw, and their tramping back to the cave entrance. \u000a\u000a[[...|direction]]
+VA number of the raiders have fallen, stunned by their own hurled rocks bouncing back, but more are coming. You're not sure how much longer you can keep this up; you start falling back, toward the safety of the caves. \u000a\u000aThe Carolers follow you into the gaping mouth of the caverns that stretch back into the mountains, but not far; after a few turnings, they think better of it and fall back. \u000a\u000aSound carries in the caves. You hear them shouting to each other; you hear the order to withdraw, and heavy boots tramping back to the cave entrance. \u000a\u000a[[...|direction]]
 p257
 sg23
 Vcaves
@@ -803,9 +803,9 @@ g26
 ((I2015
 I4
 I20
-I15
-I13
-I12
+I17
+I46
+I51
 I0
 I110
 I1
@@ -897,7 +897,7 @@ Tiddler
 p287
 (dp288
 g21
-V"Well done, Orit," Alda says to him. "I told you they wouldn't capture her. Come, Jes - are you alright? They didn't hurt you, did they?"\u000a\u000a"I'm fine."\u000a\u000a"I told you," Alda repeats. She smiles. "Thank you so much, Jes. I'm so glad you're safe. Now, I owe you an explanation. First, let me introduce Orit."\u000a\u000a[[...|ringer]]
+V"A well done calling, Orit," Alda says to him. "I told you they wouldn't capture her. Come, Jes - are you alright? They didn't hurt you, did they?"\u000a\u000a"I'm fine."\u000a\u000a"I told you," Alda repeats to Orit. She smiles. "Thank you so much, Jes. I'm so glad you're safe. Now, I owe you an explanation. First, let me introduce Orit."\u000a\u000a[[...|ringer]]
 p289
 sg23
 Vcavern convo
@@ -907,9 +907,9 @@ g26
 ((I2015
 I4
 I20
-I15
-I18
-I16
+I17
+I47
+I57
 I0
 I110
 I1
@@ -949,7 +949,7 @@ Tiddler
 p303
 (dp304
 g21
-V"Thank you for your help," Orit says formally. "You are clearly a talented Singer," he says. He watches you with suspicion despite is politeness.\u000a\u000aYou gesture at the chime in his hands. "And you're a good Ringer." You didn't just follow the sound to them; the echoing of the caverns should have made that impossible. He showed you the way.\u000a\u000a"Thank you." He bows his head to accept the compliment. The light is dimming, and the chime again, with a small wooden rod he holds in his other hands, and the glow, which was starting to fade with the sound, comes back. \u000a\u000a[[...|questions]]\u000a
+V"Thank you for your help," Orit says formally. "You are clearly a talented Singer," he says. But despite his politeness, he watches you with suspicion.\u000a\u000aYou gesture at the chime in his hands. "And you're a good Ringer." You didn't just follow the sound to them; the echoing of the caverns should have made that impossible. He showed you the way.\u000a\u000a"Thank you." He bows his head to accept the compliment. The light is dimming, and he strikes the chime again, with a small wooden rod he holds in his other hand. The glow, which was starting to fade with the sound, comes back. \u000a\u000a[[...|questions]]\u000a
 p305
 sg23
 Vringer
@@ -959,9 +959,9 @@ g26
 ((I2015
 I4
 I20
+I17
+I49
 I15
-I20
-I8
 I0
 I110
 I1
@@ -1053,7 +1053,7 @@ Tiddler
 p335
 (dp336
 g21
-V"You mean she doesn't know about...?" \u000a\u000aOrit is so surprised that he drops the chime. It clatters on the cavern floor, and the light is gone in an instant as the bell is stilled. He fumbles in the dark for a moment before finding and striking the chime, bringing back the light.\u000a\u000a"Know about what?" you ask, looking back and forth between them.\u000a\u000aOrit looks to Alda. "It's not my place to say," he says.\u000a\u000a[[...|no secret]]
+V"You mean she doesn't know about...?" \u000a\u000aOrit is so surprised that he drops the chime. It clatters on the cavern floor, and the light is gone in an instant as the bell is stilled. He fumbles in the dark for a moment before restoring illumination by sounding the chime once again.\u000a\u000a"Know about what?" you ask, looking back and forth between them.\u000a\u000aOrit looks to Alda. "It's not my place to say," he says.\u000a\u000a[[...|no secret]]
 p337
 sg23
 VOrit came
@@ -1063,9 +1063,9 @@ g26
 ((I2015
 I4
 I20
-I15
-I22
-I48
+I17
+I50
+I14
 I0
 I110
 I1
@@ -1157,7 +1157,7 @@ Tiddler
 p367
 (dp368
 g21
-V"'Involved?' You were one of the great masters!" Orit says. He turns to you. "She practically ran the city! My mother still talks about her to this day. Anytime she has a problem with another master, it's 'Alda wouldn't stand for this, Orit, she would set them straight.'"\u000a\u000a"I mean, she has a problem with another master //practically all time time//."\u000a\u000a[[...|exaggeration]]
+V"'Involved?' You were one of the great masters!" Orit says. He turns to you. "She practically ran the city! \u000a\u000a"My mother still talks about her to this day. Anytime she has a problem with another master, it's 'Alda wouldn't stand for this, Orit, she would set them straight.'"\u000a\u000a[[...|exaggeration]]
 p369
 sg23
 Vinvolved
@@ -1167,9 +1167,9 @@ g26
 ((I2015
 I4
 I20
-I15
-I26
-I41
+I17
+I51
+I4
 I0
 I110
 I1
@@ -1209,7 +1209,7 @@ Tiddler
 p383
 (dp384
 g21
-V"What is Orit doing here now?" you ask her. \u000a\u000a"There was an attack," he answers for himself. "A band of wilderkind attacked a bell choir calling the rains to the city. A lot of people were angry - very angry.\u000a\u000a"My mother wants peace with Wilderkind. She wants to stop the violence before it goes any further. But she wasn't who to talk to among the Wilderkind. She thought Alda might have a better idea."\u000a\u000a[[...|I do]]
+V"What is Orit doing here now?" you ask her. \u000a\u000a"There was an attack," he answers for himself. "A band of Wilderkind attacked a bell choir calling the rains to the city. They..." He looks down. "They killed several Ringers. Apprentices, actually. Very young recruits. A lot of people were angry - very angry.\u000a\u000a[["I didn't know. I'm sorry."|apologize]]\u000a\u000a[["That has nothing to do with us."|deny]]
 p385
 sg23
 Vwhy Orit
@@ -1219,9 +1219,9 @@ g26
 ((I2015
 I4
 I20
-I15
-I33
-I28
+I17
+I54
+I39
 I0
 I110
 I1
@@ -1253,8 +1253,8 @@ g14
 I00
 sg15
 (lp398
-F1291.0
-aF750.0
+F1286.0000000000005
+aF741.6666666666665
 asg17
 (itiddlywiki
 Tiddler
@@ -1313,7 +1313,7 @@ Tiddler
 p415
 (dp416
 g21
-V"Why did you leave?" you ask Alda. "Why walk away from something like that?"\u000a\u000aShe shrugs. "The truth is, I was always someone who liked the quiet. I used to envy the people out here, alone on their homesteads, without bells always ringing in their ears. \u000a\u000a"And being a leader means living for others before yourself. I did that for a long time. I decided it was time to do something for myself." \u000a\u000a[["Why is Orit here now?"|why Orit]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]\u000a
+V"Why did you leave Carillon City, Alda?" you ask Alda. "Why walk away from something like that?"\u000a\u000aShe shrugs. "The truth is, I was always someone who liked the quiet. I used to envy the people out here, alone on their homesteads, without bells always ringing in their ears. \u000a\u000a"And being a leader means living for others before yourself. I did that for a long time. I decided it was time to do something for myself." \u000a\u000a[["Why is Orit here now?"|why Orit]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]\u000a
 p417
 sg23
 Vwhy leave
@@ -1323,9 +1323,9 @@ g26
 ((I2015
 I4
 I20
-I15
-I38
-I59
+I17
+I51
+I58
 I0
 I110
 I1
@@ -1365,7 +1365,7 @@ Tiddler
 p431
 (dp432
 g21
-V"I do, as it happens." She snorts. "It turns out Wilderkind donpolitics are a great deal like Carillon politics, just a little less polite and a lot less formal.\u000a\u000a[["Why did you leave Carillon City, Alda?"|why leave]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]\u000a
+V"I do, as it happens." She snorts. "It turns out Wilderkind politics are a great deal like Carillon politics, just a little less polite and a lot less formal.\u000a\u000a[["Why did you leave Carillon City, Alda?"|why leave]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]\u000a
 p433
 sg23
 VI do
@@ -1375,9 +1375,9 @@ g26
 ((I2015
 I4
 I20
-I15
-I38
-I14
+I18
+I2
+I7
 I0
 I110
 I1
@@ -1417,7 +1417,7 @@ Tiddler
 p447
 (dp448
 g21
-VOrit scowls. "Because they're idiots," he says.\u000a\u000a"It's the warriors, and a few of the masters who support them." He shakes his head. "They've been talking as though the Wilderkind already declared war. They don't understand - or maybe they do and they pretend not to - that you're not organized the way we are, that Wilderkind from one settlement might attack us and the others could have nothing to do with it. \u000a\u000a"I'd think they would have stopped when they saw you," you suggest. "Those clothes practically scream Carillon." \u000a\u000a"I would have thought that too," he scowling. "I intend to pursue the matter when I get home, believe me." \u000a\u000a[["Why did you leave Carillon City, Alda?"|why leave]]\u000a\u000a[["Why is Orit here now?"|why Orit]]\u000a\u000a[["What now?"|what now]]
+VOrit scowls. "Because they're idiots," he says.\u000a\u000a"It's the warriors, and a few of the masters who support them." He shakes his head. "They've been talking as though the Wilderkind already declared war. They don't understand - or maybe they do and they pretend not to - that you're not organized the way we are, that Wilderkind from one settlement might attack us and the others could have nothing to do with it. \u000a\u000a[[...|idiots 2]]
 p449
 sg23
 Vidiots
@@ -1427,9 +1427,9 @@ g26
 ((I2015
 I4
 I20
-I15
-I37
-I55
+I18
+I3
+I6
 I0
 I110
 I1
@@ -6654,10 +6654,322 @@ tp2056
 (dp2057
 tp2058
 Rp2059
+sbsa(dp2060
+g14
+I00
+sg15
+(lp2061
+F748.3333333333331
+aF163.33333333333334
+asg17
+(itiddlywiki
+Tiddler
+p2062
+(dp2063
+g21
+VYou go to the edge of the field and watch them approach. Alda is one: you can tell by the grey-hair, though she's running like a much younger woman.\u000a\u000aWith her is a young man that you don't know. He wears strange clothes, light garments with blue-painted metal adornments, plates and spikes and scales - a fashion so extravagant it could only come from Carillon.\u000a\u000a[[...|the others]]
+p2064
+sg23
+Vthe two
+p2065
+sg25
+g26
+((I2015
+I4
+I20
+I17
+I39
+I56
+I0
+I110
+I1
+tp2066
+(dp2067
+tp2068
+Rp2069
+sg31
+(lp2070
+Vjes
+p2071
+asg34
+g26
+((I2015
+I4
+I20
+I17
+I4
+I8
+I0
+I110
+I1
+tp2072
+(dp2073
+tp2074
+Rp2075
+sbsa(dp2076
+g14
+I00
+sg15
+(lp2077
+F1190.0000000000002
+aF311.6666666666666
+asg17
+(itiddlywiki
+Tiddler
+p2078
+(dp2079
+g21
+VYou're left alone with the Caroler soldiers approaching. Their bells are ringing; they're calling objects through the air, stones mostly, whipping them around at high speeds. You've heard of this; it's a variation of the same magic they use to call the rains.\u000a\u000aYou've never fought Carolers again. But you really doubt those rocks could pierce one of your shields...\u000a\u000a[[...|fight1]]
+p2080
+sg23
+Vfighting carolers
+p2081
+sg25
+g26
+((I2015
+I4
+I20
+I17
+I44
+I46
+I0
+I110
+I1
+tp2082
+(dp2083
+tp2084
+Rp2085
+sg31
+(lp2086
+Vjes
+p2087
+asg34
+g26
+((I2015
+I4
+I20
+I17
+I41
+I29
+I0
+I110
+I1
+tp2088
+(dp2089
+tp2090
+Rp2091
+sbsa(dp2092
+g14
+I00
+sg15
+(lp2093
+F1752.0000000000002
+aF383.33333333333337
+asg17
+(itiddlywiki
+Tiddler
+p2094
+(dp2095
+g21
+VHe takes a deep breath before continuing. \u000a\u000a"My mother wants peace with Wilderkind. She wants to stop the violence before it goes any further. But she wasn't who to talk to among the Wilderkind. She thought Alda might have a better idea."\u000a\u000a[[...|I do]]
+p2096
+sg23
+Vwhy 2
+p2097
+sg25
+g26
+((I2015
+I4
+I20
+I18
+I1
+I25
+I0
+I110
+I1
+tp2098
+(dp2099
+tp2100
+Rp2101
+sg31
+(lp2102
+Vorit
+p2103
+asg34
+g26
+((I2015
+I4
+I20
+I17
+I53
+I37
+I0
+I110
+I1
+tp2104
+(dp2105
+tp2106
+Rp2107
+sbsa(dp2108
+g14
+I00
+sg15
+(lp2109
+F1512.6666666666667
+aF290.0
+asg17
+(itiddlywiki
+Tiddler
+p2110
+(dp2111
+g21
+V"Maybe not," Alda says, "but it's still a terrible thing that happened to our neighbors - and something we could help stop happening again. Just because we're not to blame doesn't mean we're not responsible, Jes.\u000a\u000aShe turns back to Orit. "Go on," she says more gently.\u000a\u000a[[...|why 2]]
+p2112
+sg23
+Vdeny
+p2113
+sg25
+g26
+((I2015
+I4
+I20
+I18
+I0
+I45
+I0
+I110
+I1
+tp2114
+(dp2115
+tp2116
+Rp2117
+sg31
+(lp2118
+Valda
+p2119
+asg34
+g26
+((I2015
+I4
+I20
+I17
+I54
+I41
+I0
+I110
+I1
+tp2120
+(dp2121
+tp2122
+Rp2123
+sbsa(dp2124
+g14
+I00
+sg15
+(lp2125
+F1505.3333333333328
+aF456.66666666666663
+asg17
+(itiddlywiki
+Tiddler
+p2126
+(dp2127
+g21
+V"As I told you," Alda says gently to Orit, shaking her head. "If there Wilderkind five of us in a room there are five opinions. Most of the Wilderkind feel the same as Jes." \u000a\u000aHe nods. They're clearly continuing a conversation from earlier; you're not quite sure what it means. \u000a\u000a[[...|why 2]]
+p2128
+sg23
+Vapologize
+p2129
+sg25
+g26
+((I2015
+I4
+I20
+I18
+I0
+I56
+I0
+I110
+I1
+tp2130
+(dp2131
+tp2132
+Rp2133
+sg31
+(lp2134
+Valda
+p2135
+asg34
+g26
+((I2015
+I4
+I20
+I17
+I54
+I42
+I0
+I110
+I1
+tp2136
+(dp2137
+tp2138
+Rp2139
+sbsa(dp2140
+g14
+I01
+sg15
+(lp2141
+F1574.9999999999995
+aF746.6666666666666
+asg17
+(itiddlywiki
+Tiddler
+p2142
+(dp2143
+g21
+V"I'd think they would have stopped when they saw you," you suggest. "Those clothes practically scream Carillon." \u000a\u000a"I would have thought that too," he scowling. "I intend to pursue the matter when I get home, believe me." \u000a\u000a[["Why did you leave Carillon City, Alda?"|why leave]]\u000a\u000a[["Why is Orit here now?"|why Orit]]\u000a\u000a[["What now?"|what now]]
+p2144
+sg23
+Vidiots 2
+p2145
+sg25
+g26
+((I2015
+I4
+I20
+I18
+I3
+I18
+I0
+I110
+I1
+tp2146
+(dp2147
+tp2148
+Rp2149
+sg31
+(lp2150
+Vorit
+p2151
+asg34
+g26
+((I2015
+I4
+I20
+I18
+I2
+I36
+I0
+I110
+I1
+tp2152
+(dp2153
+tp2154
+Rp2155
 sbsasS'scale'
-p2060
+p2156
 F0.6000000000000001
 sS'snapping'
-p2061
+p2157
 I00
 ss.
