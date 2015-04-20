@@ -48,15 +48,6 @@ var keys = [];
 
 var player = null;
 
-//Sounds
-var hit = new Howl({urls: ['././Audio/Hit.wav'], volume: 0.3 });  //plays when you are struck with a bola
-var chimes = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/131979__juskiddink__chimes.wav'], loop: true, volume: 0.5 }); //looping background music
-var bounce = new Howl({urls: ['././Audio/Bounce.wav']}); //plays when you redirect a bola
-var strike = new Howl({urls: ['././Audio/Strike.wav']}); //plays when a redirected bola hits an enemy
-var sadBell = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/59535__juskiddink__bell2.wav']}); //plays on game over
-var lowNote = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/122680__juskiddink__gong-2.wav']}); //plays on game over
-var song = new Howl({urls: ['././Audio/11078__maerkunst__female-voice/176118__maerkunst__short-song-1.mp3'], volume: 0 }).play(); //plays while shields are up via fadeIn/Out functions
-
 var key = {
 	up: 38,
 	down: 40,
@@ -81,8 +72,9 @@ var wilderkin = [];
 var game_over = false;
 
 function init(){
-	//Howler Test
-	var chimes = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/131979__juskiddink__chimes.wav']}).play();
+	//backgound music go
+	chimes.play();
+	lowNote2.play();
 	
 	// wilderkin = wilderkin.concat(new Wilderkind(images[1], width/2, height/2));
 
@@ -104,8 +96,10 @@ function update(){
 	    	wilderkind.bounce_speed = 2.5;
 	    	if (!player.shield.on){
 	    		player.health -= 5;
+				hit.play();
 	    	}else{
 	    		player.shield.power = 0;
+				reflect.play();
 	    	}
 	    }
 	});
