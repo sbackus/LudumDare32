@@ -1,0 +1,18 @@
+Assets:
+
+largest dimension (Approx) 40 to 80 pixels 
+- Player Icon
+- Player Icon w/ Shield
+- Attacking City Folk
+- Attacking Wilderkind
+
+Largest dimension (Approx) 15 to 25 pixels
+- City folk projectile
+- City folk projectile converted
+
+(Approx) 60 pixels high (see also Art/greenBars.png)
+
+- Bell available
+- Bell recharging
+- Life bar Outline
+- Shield bar Outline
