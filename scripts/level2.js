@@ -42,8 +42,6 @@ var contextBackground = document.getElementById("backgroundCanvas").getContext("
         var mousePos = getMousePos(canvas, evt);
         var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
 		bells = bells.concat(new Bell(mousePos.x, mousePos.y));
-
-        console.log(message);
       }, false);
 
 var keys = [];
@@ -80,7 +78,6 @@ function init(){
 	lowNote2.play();
 	
 	// wilderkin = wilderkin.concat(new Wilderkind(images[1], width/2, height/2));
-
 	player = new Player();
 	loop();
 	// DON'T PUT ANYTHING AFTER THE GAME LOOP STARTS! IT WON'T RUN!
@@ -89,12 +86,25 @@ function init(){
 function update(){
 	player.update();
 	// console.log(wilderkin.length)
-	if (Math.random()<=0.009){
+	if (Math.random()<=0.009&& wilderkin.length<5){
 		wilderkin = wilderkin.concat(new Wilderkind(images[1], Math.random()*width, randomChoice([-10,height])));
 	}
 
 	bells.forEach(function(bell){
 		bell.update()
+	});
+
+	bells.forEach(function(bell){
+		wilderkin.forEach(function(wilderkind) {
+			if(collision(bell,wilderkind)){
+				if(!wilderkind.pulled){
+					wilderkind.bounce_speed = -2;
+					wilderkind.pulled = true;
+					wilderkind.bell = bell;
+					// console.log("collision")
+				}
+			}
+		});
 	});
 
 	wilderkin.forEach(function(wilderkind) {
