@@ -23,12 +23,39 @@ var images = [];
 var doneImages = 0;
 var requiredImages = 0;
 
+var mouse_x = 0;
+var mouse_y = 0;
+
 var contextPlayer = document.getElementById("playerCanvas").getContext("2d");
 var contextBackground = document.getElementById("backgroundCanvas").getContext("2d");
+
+      function getMousePos(canvas, evt) {
+        var rect = canvas.getBoundingClientRect();
+        return {
+          x: evt.clientX - rect.left,
+          y: evt.clientY - rect.top
+        };
+      }
+      var canvas = document.getElementById('playerCanvas');
+
+      canvas.addEventListener('click', function(evt) {
+        var mousePos = getMousePos(canvas, evt);
+        var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+        console.log(message);
+      }, false);
 
 var keys = [];
 
 var player = null;
+
+//Sounds
+var hit = new Howl({urls: ['././Audio/Hit.wav'], volume: 0.3 });  //plays when you are struck with a bola
+var chimes = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/131979__juskiddink__chimes.wav'], loop: true, volume: 0.5 }); //looping background music
+var bounce = new Howl({urls: ['././Audio/Bounce.wav']}); //plays when you redirect a bola
+var strike = new Howl({urls: ['././Audio/Strike.wav']}); //plays when a redirected bola hits an enemy
+var sadBell = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/59535__juskiddink__bell2.wav']}); //plays on game over
+var lowNote = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/122680__juskiddink__gong-2.wav']}); //plays on game over
+var song = new Howl({urls: ['././Audio/11078__maerkunst__female-voice/176118__maerkunst__short-song-1.mp3'], volume: 0 }).play(); //plays while shields are up via fadeIn/Out functions
 
 var key = {
 	up: 38,
@@ -68,11 +95,19 @@ function update(){
 	player.update();
 	// console.log(wilderkin.length)
 	if (Math.random()<=0.009){
-		wilderkin = wilderkin.concat(new Wilderkind(images[1], Math.random()*width, -10));
+		wilderkin = wilderkin.concat(new Wilderkind(images[1], Math.random()*width, randomChoice([-10,height])));
 	}
 
 	wilderkin.forEach(function(wilderkind) {
 	    wilderkind.update();
+	    if (collision(wilderkind,player)){
+	    	wilderkind.bounce_speed = 2.5;
+	    	if (!player.shield.on){
+	    		player.health -= 5;
+	    	}else{
+	    		player.shield.power = 0;
+	    	}
+	    }
 	});
 
 	//delete references to offscreen objects
