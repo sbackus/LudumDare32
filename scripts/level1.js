@@ -212,7 +212,11 @@ function Bolas(x,y){
 			contextBackground.clearRect(this.x-this.width,this.y-this.height,this.width*2,this.height*2);
 			contextBackground.beginPath();
 	    	contextBackground.arc(this.x, this.y, this.size, 0, 2 * Math.PI, false);
-	    	contextBackground.fillStyle = 'red';
+	    	if(this.reversed){
+	    		contextBackground.fillStyle = 'pink';
+	    	}else{
+	    		contextBackground.fillStyle = 'red';
+	    	}
 	    	contextBackground.fill();
 	};
 	this.update = function(){
@@ -279,7 +283,6 @@ function update(){
 		for (i = 0; i < list.length; ++i) {
 		    if (list[i].cleanup()) {
 		        list.splice(i--, 1);
-		        console.log("cleaning");
 		    }
 		};
 	});
