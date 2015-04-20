@@ -122,13 +122,7 @@ function loop(){
 		update();
 		render();
 	}else{
-		contextBackground.font = "bold 50px monaco";
-		contextBackground.fillStyle = "white";
-		contextBackground.fillText("Game Over",(width/2)-165,(height/2)-80);
-		chimes.stop().fadeOut( 0, 2000 );
-		lowNote2.stop().fadeOut( 0, 2000 );
-		sadBell.play().fadeOut( 0, 3000 );
-		lowNote.play().fadeOut( 0, 5000 );
+		show_game_over_screen();
 		return 0;
 	}
 }

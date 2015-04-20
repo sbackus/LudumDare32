@@ -181,20 +181,14 @@ function render(){
 }
 
 function loop(){
-	requestAnimFrame(function(){
-		loop();
-	});
 	if (!game_over){
+		requestAnimFrame(function(){
+			loop();
+		});
 		update();
 		render();
 	}else{
-		contextBackground.font = "bold 50px monaco";
-		contextBackground.fillStyle = "white";
-		contextBackground.fillText("Game Over",(width/2)-165,(height/2)-80);
-		contextBackground.fillText("Retry?",(width/2)-165,(height/2));
-		canvas.addEventListener('click', function(evt) {
-	        location.reload();
-		});
+		show_game_over_screen();
 	}
 }
 
