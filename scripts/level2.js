@@ -16,8 +16,8 @@ window.requestAnimFrame = (function(){
 			};
 })();
 
-var width = 1040;
-var height = 660;
+var width = 1020;
+var height = 515;
 
 var images = [];
 var doneImages = 0;
