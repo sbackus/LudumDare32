@@ -9,3 +9,4 @@ var sadBell = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/5953
 var lowNote = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/122680__juskiddink__gong-2.wav']}); //plays on game over
 var song = new Howl({urls: ['././Audio/11078__maerkunst__female-voice/176118__maerkunst__short-song-1_edit.wav'], volume: 0 }).play(); //plays while shields are up via fadeIn/Out functions
 var lowNote2 = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/122680__juskiddink__gong-2.wav'], loop: true, volume: 0.2}); //looping background
+var bellCall = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/122650__juskiddink__singing-bowl_edit.wav'], volume: 0.1 }); //plays on mouse click
