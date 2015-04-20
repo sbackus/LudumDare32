@@ -1,11 +1,14 @@
 
 function Bolas(x,y){
-	// this.image = image;
+	this.image = images[2];
+	this.imageAlt = images[3];
 	this.x =  x;
 	this.y =  y;
-	this.width = 6;
-	this.height = 6;
-	this.size = 3;
+	this.width =  this.image.width;
+	this.height =  this.image.height;
+	//this.width = 6;
+	//this.height = 6;
+	//this.size = 3;
 	this.speed = 6;
 	this.rotation = randomChoice([4,-4,5,-5]);
 	if (this.rotation<0){
@@ -14,16 +17,14 @@ function Bolas(x,y){
 		this.direction = 270;
 	}
 	this.reversed = false;
-	this.draw = function(){
-			contextBackground.clearRect(this.x-this.width,this.y-this.height,this.width*2,this.height*2);
-			contextBackground.beginPath();
-	    	contextBackground.arc(this.x, this.y, this.size, 0, 2 * Math.PI, false);
+	this.draw = function(){		
 	    	if(this.reversed){
-	    		contextBackground.fillStyle = 'pink';
+	    		contextBackground.clearRect(this.x,this.y,this.width,this.height);
+				contextBackground.drawImage(this.imageAlt,this.x,this.y);
 	    	}else{
-	    		contextBackground.fillStyle = 'red';
+	    		contextBackground.clearRect(this.x,this.y,this.width,this.height);
+				contextBackground.drawImage(this.image,this.x,this.y);
 	    	}
-	    	contextBackground.fill();
 	};
 	this.update = function(){
 		this.x += offset_x(this.direction,this.speed);
