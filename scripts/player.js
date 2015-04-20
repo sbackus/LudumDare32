@@ -1,8 +1,8 @@
 function Player() {
 	this.shielded_image = images[0];
 	this.unshieled_image = images[1];
-	this.x =  width/2;
-	this.y =  height/2;
+	this.x =  width/2 -10;
+	this.y =  height/2 -10;
 	this.width = this.shielded_image.width;
 	this.height =  this.shielded_image.width;
 	this.drawn = false;
