@@ -23,7 +23,7 @@ p11
 (dp13
 S'selected'
 p14
-I01
+I00
 sS'pos'
 p15
 (lp16
@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V<<if $started neq 1>><<set $started to 1>>You're in the west field, ankle-deep in the muck of an irrigation ditch, frowning. You walk a little ways, eyes down on your squelching boots, frowning all the time. There's not enough water. \u000a\u000a[[...|low water]]\u000a<<else if $fight is 1>>>>Magic happens here.\u000a\u000a[[...|caves]]\u000a<<else>>Magic happens here a second time.\u000a<<endif>>
+V<<if $started neq 1>><<set $started to 1>>You're in the west field, ankle-deep in the muck of an irrigation ditch, frowning. You walk a little ways, eyes down on your squelching boots, frowning all the time. There's not enough water. \u000a\u000a[[...|low water]]\u000a<<else if $fight is 1>>>>Magic happens here.\u000a\u000a[[...|caves]]\u000a<<else>>Magic happens here a second time.\u000a\u000a[[...|elders]]\u000a<<endif>>
 p22
 sS'title'
 p23
@@ -51,9 +51,9 @@ p26
 ((I2015
 I4
 I19
-I15
-I59
-I57
+I17
+I4
+I19
 I6
 I109
 I1
@@ -567,7 +567,7 @@ Tiddler
 p182
 (dp183
 g21
-V<<set $sendoff to "Nothing">>"There's no time to explain now," Alda says. "I need to keep Orcut away from them." She indicates the Caroler. "I'm sorry to ask, but please. You're a strong Singer; for the good of all the Wilderkind, hold them off until we get to the caves. Join us there when you can." \u000a\u000a[["I need more than that, Alda."|demand explanation]]\u000a\u000a[["I can't hold off so many."|doubt]]\u000a\u000a[["Go."|thank you][$sendoff to "Go."]]\u000a\u000a
+V<<set $sendoff to "Nothing">>"There's no time to explain now," Alda says. "I need to keep Orit away from them." She indicates the Caroler. "I'm sorry to ask, but please. You're a strong Singer; for the good of all the Wilderkind, hold them off until we get to the caves. Join us there when you can." \u000a\u000a[["I need more than that, Alda."|demand explanation]]\u000a\u000a[["I can't hold off so many."|doubt]]\u000a\u000a[["Go."|thank you][$sendoff to "Go."]]\u000a\u000a
 p184
 sg23
 Vhold them
@@ -717,7 +717,7 @@ Tiddler
 p227
 (dp228
 g21
-V"I need more than that, Alda," you insist. "You're asking me to risk my life for a stranger..." \u000a\u000a"War is coming," she says. "Orcut and I are trying to stop it. Please - I'll explain everything later, but for now that has to be enough." \u000a\u000a[["Of course. Go - I'll stop them."|thank you][$sendoff = "Of course. Go - I'll stop them."]]\u000a\u000a[["I'll hold you to that. Go."|thank you][$sendoff = "I'll hold you to that. Go."]]\u000a\u000a[["This better be worth it."|thank you][$sendoff = "This better be worth it."]]
+V"I need more than that, Alda," you insist. "You're asking me to risk my life for a stranger..." \u000a\u000a"War is coming," she says. "Orit and I are trying to stop it. Please - I'll explain everything later, but for now that has to be enough." \u000a\u000a[["Of course. Go - I'll stop them."|thank you][$sendoff = "Of course. Go - I'll stop them."]]\u000a\u000a[["I'll hold you to that. Go."|thank you][$sendoff = "I'll hold you to that. Go."]]\u000a\u000a[["This better be worth it."|thank you][$sendoff = "This better be worth it."]]
 p229
 sg23
 Vdemand explanation
@@ -909,8 +909,8 @@ g14
 I00
 sg15
 (lp286
-I10
-aI433
+F10.0
+aF433.0
 asg17
 (itiddlywiki
 Tiddler
@@ -1219,7 +1219,7 @@ Tiddler
 p378
 (dp379
 g21
-VDespite the echoes and the darkness you find you know exactly where the sound is coming from. \u000a\u000aFollowing the sound leads, in a few minutes, to Alda and Orcut, crouched in a narrow side passage. They are illuminated by a soft glow from a chime that Orcut holds in his hands. \u000a\u000a[[...|cavern convo]]
+VDespite the echoes and the darkness you find you know exactly where the sound is coming from. \u000a\u000aFollowing the sound leads, in a few minutes, to Alda and Orit, crouched in a narrow side passage. They are illuminated by a soft glow from a chime that Orit holds in his hands. \u000a\u000a[[...|cavern convo]]
 p380
 sg23
 Vdirection
@@ -1269,7 +1269,7 @@ Tiddler
 p393
 (dp394
 g21
-V"Well done, Orcut," Alda says. "I told you they wouldn't capture her."\u000a\u000a"Yes," Orcut says. "You are clearly a talented Singer," he says politely - but he watches you with suspicion.\u000a\u000a[[...|ringer]]
+V"Well done, Orit," Alda says. "I told you they wouldn't capture her."\u000a\u000a"Yes," Orit says. "You are clearly a talented Singer," he says politely - but he watches you with suspicion.\u000a\u000a[[...|ringer]]
 p395
 sg23
 Vcavern convo
@@ -1469,7 +1469,7 @@ Tiddler
 p453
 (dp454
 g21
-V"Orcut's mother is an old friend." She smiles. "A //very// old friend. I wasn't always an ornery old farm woman, you know." \u000a\u000aIndeed, she looks years younger in the dim light, with her eyes focused not on anything here in the cavern, but something years ago and miles away. \u000a\u000a[[...|Orcut came]]
+V"Orit's mother is an old friend." She smiles. "A //very// old friend. I wasn't always an ornery old farm woman, you know." \u000a\u000aIndeed, she looks years younger in the dim light, with her eyes focused not on anything here in the cavern, but something years ago and miles away. \u000a\u000a[[...|Orit came]]
 p455
 sg23
 Vanswers
@@ -1519,10 +1519,10 @@ Tiddler
 p468
 (dp469
 g21
-V"You mean she doesn't know about...?" Orcut is so surprised that he lets the light of the chime go out for a moment, and fumbles in the dark the strike it again and bring back the light.\u000a\u000a[[...|not my place]]
+V"You mean she doesn't know about...?" Orit is so surprised that he lets the light of the chime go out for a moment, and fumbles in the dark the strike it again and bring back the light.\u000a\u000a[[...|not my place]]
 p470
 sg23
-VOrcut came
+VOrit came
 p471
 sg25
 g26
@@ -1569,7 +1569,7 @@ Tiddler
 p483
 (dp484
 g21
-V"Know about what?" you ask, looking back and forth between them.\u000a\u000aOrcut looks to Alda. "It's not my place to say," he says.\u000a\u000a[[...|no secret]]
+V"Know about what?" you ask, looking back and forth between them.\u000a\u000aOrit looks to Alda. "It's not my place to say," he says.\u000a\u000a[[...|no secret]]
 p485
 sg23
 Vnot my place
@@ -1669,7 +1669,7 @@ Tiddler
 p513
 (dp514
 g21
-V"'Involved?' You were one of the great masters!" Orcut says. "She practically ran the city!"\u000a\u000a"That is a gross exaggeration," she says. "But, he's right. I had some power." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["Why is Orcut here now?"|why Orcut]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]
+V"'Involved?' You were one of the great masters!" Orit says. "She practically ran the city!"\u000a\u000a"That is a gross exaggeration," she says. "But, he's right. I had some power." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["Why is Orit here now?"|why Orit]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]
 p515
 sg23
 Vinvolved
@@ -1719,10 +1719,10 @@ Tiddler
 p528
 (dp529
 g21
-V"What is Orcut doing here now?" you ask her. \u000a\u000a"There was an attack," he answers for himself. "A band of wilderkind attacked a bell choir calling the rains to the city. A lot of people were angry - very angry." \u000a\u000a[[...|mother]]
+V"What is Orit doing here now?" you ask her. \u000a\u000a"There was an attack," he answers for himself. "A band of wilderkind attacked a bell choir calling the rains to the city. A lot of people were angry - very angry." \u000a\u000a[[...|mother]]
 p530
 sg23
-Vwhy Orcut
+Vwhy Orit
 p531
 sg25
 g26
@@ -1769,7 +1769,7 @@ Tiddler
 p543
 (dp544
 g21
-V"Why did those raiders come here?" you ask.\u000a\u000aAlda looks at Orcut. "Actually, that's a good question. Why on earth did they come here, of all places?" \u000a\u000a[[...|idiots]]
+V"Why did those raiders come here?" you ask.\u000a\u000aAlda looks at Orit. "Actually, that's a good question. Why on earth did they come here, of all places?" \u000a\u000a[[...|idiots]]
 p545
 sg23
 Vwhy raiders
@@ -1869,7 +1869,7 @@ Tiddler
 p573
 (dp574
 g21
-V"And being a leader means living for others before yourself. I did that for a long time. I decided it was time to do something for myself." \u000a\u000a[["Why is Orcut here now?"|why Orcut]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]
+V"And being a leader means living for others before yourself. I did that for a long time. I decided it was time to do something for myself." \u000a\u000a[["Why is Orit here now?"|why Orit]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]
 p575
 sg23
 Vmyself
@@ -1919,7 +1919,7 @@ Tiddler
 p588
 (dp589
 g21
-V"Orcut's mother is one of the masters now," she continues. "And because she's not stupid, she wants to stop the violence now - before it goes any further. She sent Orcut to find me, to see if I had any ideas to help. As it happens, I do." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]
+V"Orit's mother is one of the masters now," she continues. "And because she's not stupid, she wants to stop the violence now - before it goes any further. She sent Orit to find me, to see if I had any ideas to help. As it happens, I do." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["What were those raiders doing here?"|why raiders]]\u000a\u000a[["What now?"|what now]]
 p590
 sg23
 Vmother
@@ -1969,7 +1969,7 @@ Tiddler
 p603
 (dp604
 g21
-VOrcut scowls. "Because they're idiots," he said. "All Wilderkind are the same to them. They assume you're all in league, and they took it upon themselves to exact revenge for the attack on our choir." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["Why is Orcut here now?"|why Orcut]]\u000a\u000a[["What now?"|what now]]
+VOrit scowls. "Because they're idiots," he said. "All Wilderkind are the same to them. They assume you're all in league, and they took it upon themselves to exact revenge for the attack on our choir." \u000a\u000a[["Why did you leave Carillon City?"|why leave]]\u000a\u000a[["Why is Orit here now?"|why Orit]]\u000a\u000a[["What now?"|what now]]
 p605
 sg23
 Vidiots
@@ -2019,7 +2019,7 @@ Tiddler
 p618
 (dp619
 g21
-V"What now?" you ask the both of them. \u000a\u000a"Orcut came here to make peace," Alda says. "There's a conclave meeting of wilderkind elders, at Echomount. I'm going to bring him there, lend him my voice, and let him plead his case." \u000a\u000a[[...|case]]
+V"What now?" you ask the both of them. \u000a\u000a"Orit came here to make peace," Alda says. "There's a conclave meeting of wilderkind elders, at Echomount. I'm going to bring him there, lend him my voice, and let him plead his case." \u000a\u000a[[...|case]]
 p620
 sg23
 Vwhat now
@@ -2069,7 +2069,7 @@ Tiddler
 p633
 (dp634
 g21
-VYou turn to Orcut. "How exactly are you going to persuade them? After all..."\u000a\u000a[["...people are frightened, because of the drought."|frightened]]\u000a\u000a[["...they're right to be angry that you're stealing the rains."|angry]]
+VYou turn to Orit. "How exactly are you going to persuade them? After all..."\u000a\u000a[["...people are frightened, because of the drought."|frightened]]\u000a\u000a[["...they're right to be angry that you're stealing the rains."|angry]]
 p635
 sg23
 Vcase
@@ -2219,7 +2219,7 @@ Tiddler
 p678
 (dp679
 g21
-V"The drought isn't our fault!" Orcut protests. "We've always called the rains to the city. If we do it more now, it's because the drought affects us as well What would you have us do?"
+V"The drought isn't our fault!" Orit protests. "We've always called the rains to the city. If we do it more now, it's because the drought affects us as well What would you have us do?"
 p680
 sg23
 Vfault
@@ -2269,7 +2269,7 @@ Tiddler
 p693
 (dp694
 g21
-V"It wasn't an accusation, Orcut," Alda says, sternly. "It's a fact - people here are scared, and fear makes people do awful things. \u000a\u000a"If you're going to make peace, your first concern can't be proving that you're side is right. \u000a\u000a[[...|apology]]
+V"It wasn't an accusation, Orit," Alda says, sternly. "It's a fact - people here are scared, and fear makes people do awful things. \u000a\u000a"If you're going to make peace, your first concern can't be proving that you're side is right. \u000a\u000a[[...|apology]]
 p695
 sg23
 Vfrightened2
@@ -2319,7 +2319,7 @@ Tiddler
 p708
 (dp709
 g21
-V"You'll face worse than that at the conclave," Alda says calmly. "You won't make peace answering anger with anger, Orcut." \u000a\u000a[[...|apology]]
+V"You'll face worse than that at the conclave," Alda says calmly. "You won't make peace answering anger with anger, Orit." \u000a\u000a[[...|apology]]
 p710
 sg23
 Vangry2
@@ -2369,7 +2369,7 @@ Tiddler
 p723
 (dp724
 g21
-V"...you're right. I'm sorry." Orcut looks at you. "Please excuse me." \u000a\u000aAlda nods approvingly. She turns to study you, examining you closely in the dim light cast by Orcut's bell. \u000a\u000a[[...|come]]
+V"...you're right. I'm sorry." Orit looks at you. "Please excuse me." \u000a\u000aAlda nods approvingly. She turns to study you, examining you closely in the dim light cast by Orit's bell. \u000a\u000a[[...|come]]
 p725
 sg23
 Vapology
@@ -2469,7 +2469,7 @@ Tiddler
 p753
 (dp754
 g21
-V"I know you have work to do here. So do I. But it could all be for nothing if there's war in the city. Traveling won't be safe anymore, especially for a Wilderkind and a Caroler traveling together. I'm not as young as I used to be, and Orcut's a good Ringer, but he's no warrior. \u000a\u000a[["Of course, Alda."|journey]]\u000a\u000a[["My fields will suffer..."|work to do]]\u000a\u000a[["I'm not sure I want peace..."|mission doubts]]
+V"I know you have work to do here. So do I. But it could all be for nothing if there's war in the city. Traveling won't be safe anymore, especially for a Wilderkind and a Caroler traveling together. I'm not as young as I used to be, and Orit's a good Ringer, but he's no warrior. \u000a\u000a[["Of course, Alda."|journey]]\u000a\u000a[["My fields will suffer..."|work to do]]\u000a\u000a[["I'm not sure I want peace..."|mission doubts]]
 p755
 sg23
 Vwhy me
@@ -2569,7 +2569,7 @@ Tiddler
 p783
 (dp784
 g21
-V"I'm not sure I want peace..." you say, looking sidelong at Orcut. "Not if it means that nothing changes, that the Carolers call the rains away while the lakes dry up and our crops die." \u000a\u000aAlda nods. "I understand. And I can promise you, that's not the kind of peace we're fighting for. Right, Orcut?"\u000a\u000a[[...|doubts 2]]
+V"I'm not sure I want peace..." you say, looking sidelong at Orit. "Not if it means that nothing changes, that the Carolers call the rains away while the lakes dry up and our crops die." \u000a\u000aAlda nods. "I understand. And I can promise you, that's not the kind of peace we're fighting for. Right, Orit?"\u000a\u000a[[...|doubts 2]]
 p785
 sg23
 Vmission doubts
@@ -2719,7 +2719,7 @@ Tiddler
 p828
 (dp829
 g21
-VOrcut frowns, not pleased by this turn of conversation - but he nods. "On my mother's behalf, I'm authorized to discuss changes in how we call the rains," Orcut says. "Personally, I don't believe the drought has anything to do with our rain calling. But as a show of good faith, we're willing to discuss it." \u000a\u000a[[...|doubts 3]]
+VOrit frowns, not pleased by this turn of conversation - but he nods. "On my mother's behalf, I'm authorized to discuss changes in how we call the rains," Orit says. "Personally, I don't believe the drought has anything to do with our rain calling. But as a show of good faith, we're willing to discuss it." \u000a\u000a[[...|doubts 3]]
 p830
 sg23
 Vdoubts 2
@@ -2969,7 +2969,7 @@ Tiddler
 p903
 (dp904
 g21
-V"Alda. I may have heard the name. Who's that with you?" \u000a\u000a"My neighbor Jes," she says, gesturing to you. There's a barely perceptible pause; this is the tricky bit. "Orcut from Carillon City. He has a message from a master there." \u000a\u000a[[...|whistle]]
+V"Alda. I may have heard the name. Who's that with you?" \u000a\u000a"My neighbor Jes," she says, gesturing to you. There's a barely perceptible pause; this is the tricky bit. "Orit from Carillon City. He has a message from a master there." \u000a\u000a[[...|whistle]]
 p905
 sg23
 Vwho else
@@ -3069,7 +3069,7 @@ Tiddler
 p933
 (dp934
 g21
-VAlda crosses her arms. "I have a right to speak at the conclave, young man," she says. "I can't imagine the elders would look to kindly on your turning Wilderkind away." \u000a\u000a"And I don't think they'd look kindly on you bringing a caroler to Echomount," he shoots back. "You know, a force of them raided my settlement a few days back? Do you have any idea what those barbarians are doing to our people? What they did to my family?" \u000a\u000a[[...|orcut]]
+VAlda crosses her arms. "I have a right to speak at the conclave, young man," she says. "I can't imagine the elders would look to kindly on your turning Wilderkind away." \u000a\u000a"And I don't think they'd look kindly on you bringing a caroler to Echomount," he shoots back. "You know, a force of them raided my settlement a few days back? Do you have any idea what those barbarians are doing to our people? What they did to my family?" \u000a\u000a[[...|Orit]]
 p935
 sg23
 Voutrage
@@ -3119,10 +3119,10 @@ Tiddler
 p948
 (dp949
 g21
-V"I don't know," Orcut says, "but I can imagine. And I'm sorry. I'm hear to make sure the same thing doesn't happen to anyone else." \u000a\u000a"You mean you're here to save your people from our revenge," the man growls. "Well, I won't allow it." \u000a\u000a[["Don't do this, brother!"|attacked][$saying = "Don't do this, brother"]]\u000a\u000a[["Calm down - we'll go."|attacked][$saying = "Calm down - we'll go"]]\u000a\u000a[["Yeah? What are you going to do about it?"|attacked][$saying = "Yeah? What are you going to do about it?"]]
+V"I don't know," Orit says, "but I can imagine. And I'm sorry. I'm hear to make sure the same thing doesn't happen to anyone else." \u000a\u000a"You mean you're here to save your people from our revenge," the man growls. "Well, I won't allow it." \u000a\u000a[["Don't do this, brother!"|attacked][$saying = "Don't do this, brother"]]\u000a\u000a[["Calm down - we'll go."|attacked][$saying = "Calm down - we'll go"]]\u000a\u000a[["Yeah? What are you going to do about it?"|attacked][$saying = "Yeah? What are you going to do about it?"]]
 p950
 sg23
-Vorcut
+VOrit
 p951
 sg25
 g26
@@ -3269,7 +3269,7 @@ Tiddler
 p993
 (dp994
 g21
-V"She's a Ringer!" cries one of the sentries. "Careful!" \u000a\u000aAlda steps back over to you and Orcut. "I have to get to the conclave," she says. "They'll put a stop to this foolishness."\u000a\u000a"We'll never make it," Orcut says, shaking his head. "It's too far. I can't... I won't be able to run that far."\u000a\u000a[[...|defend]]
+V"She's a Ringer!" cries one of the sentries. "Careful!" \u000a\u000aAlda steps back over to you and Orit. "I have to get to the conclave," she says. "They'll put a stop to this foolishness."\u000a\u000a"We'll never make it," Orit says, shaking his head. "It's too far. I can't... I won't be able to run that far."\u000a\u000a[[...|defend]]
 p995
 sg23
 Vbell
@@ -3319,7 +3319,7 @@ Tiddler
 p1008
 (dp1009
 g21
-V"You don't have to. I'll run to the conclave; Jes, you stay here and keep them off Orcut." \u000a\u000aYou frown. "That'll never work, Alda..."\u000a\u000a[["...they'll catch you."|catch alda]]\u000a\u000a[["...I can't keep them at bay with just my shields."|shield v shield]]
+V"You don't have to. I'll run to the conclave; Jes, you stay here and keep them off Orit." \u000a\u000aYou frown. "That'll never work, Alda..."\u000a\u000a[["...they'll catch you."|catch alda]]\u000a\u000a[["...I can't keep them at bay with just my shields."|shield v shield]]
 p1010
 sg23
 Vdefend
@@ -3469,7 +3469,7 @@ Tiddler
 p1053
 (dp1054
 g21
-VYou look down at the simple silver bell as though it's a snake. "I can't... I'm not a... "I don't know how to..."\u000a\u000a"You must," she says, laying a hand on your should. "And you can." \u000a\u000a"Him!" You gesture at Orcut. "He can do it!" \u000a\u000a[[...|how do I]]
+VYou look down at the simple silver bell as though it's a snake. "I can't... I'm not a... "I don't know how to..."\u000a\u000a"You must," she says, laying a hand on your should. "And you can." \u000a\u000a"Him!" You gesture at Orit. "He can do it!" \u000a\u000a[[...|how do I]]
 p1055
 sg23
 Vwtf a bell
@@ -3619,7 +3619,7 @@ Tiddler
 p1098
 (dp1099
 g21
-VThe sentry stumbles and ends up running in a wide orbit around you, cursing.\u000a\u000a"You did it," Orcut says, eyes wide. "She's right. Bell and voice, together... the implications..."\u000a\u000aYou don't have time to think about them. The sentries are closing in. "Stay behind me," you tell him. \u000a\u000a[[...|action2]]
+VThe sentry stumbles and ends up running in a wide orbit around you, cursing.\u000a\u000a"You did it," Orit says, eyes wide. "She's right. Bell and voice, together... the implications..."\u000a\u000aYou don't have time to think about them. The sentries are closing in. "Stay behind me," you tell him. \u000a\u000a[[...|action2]]
 p1100
 sg23
 Vyou did it
@@ -3706,10 +3706,1405 @@ tp1122
 (dp1123
 tp1124
 Rp1125
-sbsasS'scale'
-p1126
+sbsa(dp1126
+g14
+I00
+sg15
+(lp1127
+F268.33333333333235
+aF3100.000000000002
+asg17
+(itiddlywiki
+Tiddler
+p1128
+(dp1129
+g21
+VSuddenly a great //boom// passes over the battlefield, nearly knocking you off your feet. You, the sentries and Orit all look up toward Echomount - and see a cluster of elders standing together. One stands at the front; he's the one who unleashed that incredible yell. \u000a\u000a"What," he shouts - at a fearsome but natural volume - "can possibly be the meaning of this?!" \u000a\u000a[[...|sentry apology]]
+p1130
+sg23
+Velders
+p1131
+sg25
+g26
+((I2015
+I4
+I19
+I17
+I22
+I18
+I6
+I109
 I1
+tp1132
+(dp1133
+tp1134
+Rp1135
+sg31
+(lp1136
+sg33
+g26
+((I2015
+I4
+I19
+I17
+I13
+I1
+I6
+I109
+I1
+tp1137
+(dp1138
+tp1139
+Rp1140
+sbsa(dp1141
+g14
+I00
+sg15
+(lp1142
+F405.33333333333303
+aF3098.3333333333317
+asg17
+(itiddlywiki
+Tiddler
+p1143
+(dp1144
+g21
+VThe sentry's leader - leaning on one his sentries for support, you notice with satisfaction - looks cowed. "They... they brought a caroler here. And that one is a caroler, too!" He points at Alda, standing with the other elders. "She had a bell!" \u000a\u000a"Yes, she was born in the City, you nitwit," the old man says, quieter now but his voice still laced with venom. "And then she moved out here and spent the last decade growing grain with her bare hands." \u000a\u000a[[...|elder apology]]
+p1145
+sg23
+Vsentry apology
+p1146
+sg25
+g26
+((I2015
+I4
+I19
+I17
+I34
+I44
+I6
+I109
+I1
+tp1147
+(dp1148
+tp1149
+Rp1150
+sg31
+(lp1151
+sg33
+g26
+((I2015
+I4
+I19
+I17
+I22
+I20
+I6
+I109
+I1
+tp1152
+(dp1153
+tp1154
+Rp1155
+sbsa(dp1156
+g14
+I00
+sg15
+(lp1157
+F546.6666666666667
+aF3100.0000000000005
+asg17
+(itiddlywiki
+Tiddler
+p1158
+(dp1159
+g21
+V"I just thought, with all the raids..." \u000a\u000a"Get. Out. Of Here," the elder says emphatically. "Go home, and stay there. " He turns away from the sentry, who starts to slink away. \u000a\u000aThe elder turns to Orit. "My apologies for the treatment you've received. For you to come here on a mission of peace, and be greeted like this..." \u000a\u000a[[...|Orit speech]]
+p1160
+sg23
+Velder apology
+p1161
+sg25
+g26
+((I2015
+I4
+I19
+I17
+I35
+I34
+I6
+I109
+I1
+tp1162
+(dp1163
+tp1164
+Rp1165
+sg31
+(lp1166
+sg33
+g26
+((I2015
+I4
+I19
+I17
+I27
+I27
+I6
+I109
+I1
+tp1167
+(dp1168
+tp1169
+Rp1170
+sbsa(dp1171
+g14
+I00
+sg15
+(lp1172
+F687.0000000000002
+aF3099.999999999999
+asg17
+(itiddlywiki
+Tiddler
+p1173
+(dp1174
+g21
+VOrit is standing right beside you. You hear him take a deep breath; you're not sure anyone else does. But when he speaks there's not trace of uncertainty or hesitation. \u000a\u000a"There's no apology necessary," he says. "I myself have witnessed violence just as reprehensible, practiced by my people against yours. \u000a\u000a"I'm not here to cast blame or demand an apology. All I want is to make it end - to ensure that this is the last time our people fight without reason." \u000a\u000a[[...|oration]]\u000a\u000a
+p1175
+sg23
+VOrit speech
+p1176
+sg25
+g26
+((I2015
+I4
+I19
+I18
+I49
+I1
+I6
+I109
+I1
+tp1177
+(dp1178
+tp1179
+Rp1180
+sg31
+(lp1181
+sg33
+g26
+((I2015
+I4
+I19
+I17
+I35
+I36
+I6
+I109
+I1
+tp1182
+(dp1183
+tp1184
+Rp1185
+sbsa(dp1186
+g14
+I00
+sg15
+(lp1187
+F825.0000000000005
+aF3096.6666666666674
+asg17
+(itiddlywiki
+Tiddler
+p1188
+(dp1189
+g21
+V"In Carillon City we haven't been good neighbors to you, of late," he says, addressing the elders. "We have told ourselves that your problems were our own, and that if we could believe we weren't to blame that there was nothing we needed to do." \u000a\u000aThat lack of neighborliness has led to misunderstanding, which has nearly led us into disaster. I speak for the masters of Carillon City when I tell you..."\u000a\u000a[[...|for effect]]
+p1190
+sg23
+Voration
+p1191
+sg25
+g26
+((I2015
+I4
+I19
+I18
+I52
+I10
+I6
+I109
+I1
+tp1192
+(dp1193
+tp1194
+Rp1195
+sg31
+(lp1196
+sg33
+g26
+((I2015
+I4
+I19
+I17
+I42
+I18
+I6
+I109
+I1
+tp1197
+(dp1198
+tp1199
+Rp1200
+sbsa(dp1201
+g14
+I00
+sg15
+(lp1202
+F965.3333333333336
+aF3096.6666666666642
+asg17
+(itiddlywiki
+Tiddler
+p1203
+(dp1204
+g21
+VHe pauses for effect. They lean in to hear what comes next. He's good. \u000a\u000a"...that we will do, not just what it takes to pull us back from disaster, but what we must to be true neighbors, and friends, to the Wilderkind."\u000a\u000a[[...|if we must]]
+p1205
+sg23
+Vfor effect
+p1206
+sg25
+g26
+((I2015
+I4
+I19
+I18
+I54
+I32
+I6
+I109
+I1
+tp1207
+(dp1208
+tp1209
+Rp1210
+sg31
+(lp1211
+sg33
+g26
+((I2015
+I4
+I19
+I18
+I52
+I13
+I6
+I109
+I1
+tp1212
+(dp1213
+tp1214
+Rp1215
+sbsa(dp1216
+g14
+I00
+sg15
+(lp1217
+F1103.6666666666674
+aF3096.666666666669
+asg17
+(itiddlywiki
+Tiddler
+p1218
+(dp1219
+g21
+V"What about the rains?" calls a woman from among the elders. "You call the rains to yourselves, and they pass us by while the ground grows parched and the crops fail."\u000a\u000a"You're calling too far and too damn loudly with your bells!" says a man. "My family lives nearby the city, and there's no peace! Music should be a sacred and a private thing!" \u000a\u000aYou see Alda frown where she stands beside the leader of the elders. Will Orit lose his temper?\u000a\u000a[[...|no he won't]]
+p1220
+sg23
+Vif we must
+p1221
+sg25
+g26
+((I2015
+I4
+I19
+I18
+I58
+I22
+I6
+I109
+I1
+tp1222
+(dp1223
+tp1224
+Rp1225
+sg31
+(lp1226
+sg33
+g26
+((I2015
+I4
+I19
+I18
+I54
+I35
+I6
+I109
+I1
+tp1227
+(dp1228
+tp1229
+Rp1230
+sbsa(dp1231
+g14
+I00
+sg15
+(lp1232
+F1238.3333333333335
+aF3098.333333333334
+asg17
+(itiddlywiki
+Tiddler
+p1233
+(dp1234
+g21
+VHe doesn't in the slightest. "If being good neighbors means we have to be more careful about calling the rains, we are ready to discuss it," he says. "If it means we have to be respectful with the peals of our bells - which are as sacred for us as the privacy of your songs are to you - then we are hear to listen to what you need. \u000a\u000a"Provided," he adds, raising a cautioning finger, "that you are ready to do the same." \u000a\u000a[[...|my friend]]
+p1235
+sg23
+Vno he won't
+p1236
+sg25
+g26
+((I2015
+I4
+I19
+I19
+I3
+I55
+I6
+I109
+I1
+tp1237
+(dp1238
+tp1239
+Rp1240
+sg31
+(lp1241
+sg33
+g26
+((I2015
+I4
+I19
+I18
+I58
+I25
+I6
+I109
+I1
+tp1242
+(dp1243
+tp1244
+Rp1245
+sbsa(dp1246
+g14
+I00
+sg15
+(lp1247
+F1508.6666666666633
+aF3090.0000000000014
+asg17
+(itiddlywiki
+Tiddler
+p1248
+(dp1249
+g21
+VIt's not that easy, of course.\u000a\u000aThe discussion goes on for hours, including a recess and a return to Echomount proper. You are excited to see it, never having made the journey before; a bowl of a volcanic crater, with eerily good acoustics so the elders don't need to shout to be heard - though of course, that doesn't necessarily stop them. \u000a\u000a[[...|diverse views]]
+p1250
+sg23
+Vnot that easy
+p1251
+sg25
+g26
+((I2015
+I4
+I19
+I19
+I2
+I37
+I6
+I109
+I1
+tp1252
+(dp1253
+tp1254
+Rp1255
+sg31
+(lp1256
+sg33
+g26
+((I2015
+I4
+I19
+I19
+I0
+I57
+I6
+I109
+I1
+tp1257
+(dp1258
+tp1259
+Rp1260
+sbsa(dp1261
+g14
+I00
+sg15
+(lp1262
+F1647.3333333333321
+aF3086.6666666666647
+asg17
+(itiddlywiki
+Tiddler
+p1263
+(dp1264
+g21
+VGetting Wilderkind to agree on anything is a chore, and Orit takes more angry invective with patience and grace while the more conciliatory elders work on their peers. It's the early hours of the morning when something like an accord is reached. Not a treaty, quite, not a final agreement - but a committment, to stop the violence and to talk more. \u000a\u000aOrit and Alda both find you before bed. \u000a\u000a[[...|orit]]
+p1265
+sg23
+Vdiverse views
+p1266
+sg25
+g26
+((I2015
+I4
+I19
+I19
+I9
+I45
+I6
+I109
+I1
+tp1267
+(dp1268
+tp1269
+Rp1270
+sg31
+(lp1271
+sg33
+g26
+((I2015
+I4
+I19
+I19
+I2
+I40
+I6
+I109
+I1
+tp1272
+(dp1273
+tp1274
+Rp1275
+sbsa(dp1276
+g14
+I00
+sg15
+(lp1277
+F1372.0000000000002
+aF3095.0000000000005
+asg17
+(itiddlywiki
+Tiddler
+p1278
+(dp1279
+g21
+V"Jes here" - he puts a hand on your shoulder, the familiarity of the gesture catching you offguard - "just saved my life. She did it with a song in her throat and a bell in her hand. We should be the same way: bell and song, City and Wilderlands, solving our problems together. \u000a\u000a"That is the message - and the pledge - I bring from the masters of Carillon City." \u000a\u000a[[...|not that easy]]
+p1280
+sg23
+Vmy friend
+p1281
+sg25
+g26
+((I2015
+I4
+I19
+I19
+I6
+I46
+I6
+I109
+I1
+tp1282
+(dp1283
+tp1284
+Rp1285
+sg31
+(lp1286
+sg33
+g26
+((I2015
+I4
+I19
+I19
+I3
+I58
+I6
+I109
+I1
+tp1287
+(dp1288
+tp1289
+Rp1290
+sbsa(dp1291
+g14
+I00
+sg15
+(lp1292
+F1791.9999999999998
+aF3088.3333333333344
+asg17
+(itiddlywiki
+Tiddler
+p1293
+(dp1294
+g21
+VOrit shakes your hand. "Thank you," he says. "For everything. For saving me, and for taking a chance on me. Really, thank you. "\u000a\u000a[["Thank you for taking a chance on us."|chance]]\u000a\u000a[["That was extraordinary."|praise orit]]\u000a\u000a[["Maybe things will get back to normal now."|normal]]
+p1295
+sg23
+Vorit
+p1296
+sg25
+g26
+((I2015
+I4
+I19
+I19
+I22
+I18
+I6
+I109
+I1
+tp1297
+(dp1298
+tp1299
+Rp1300
+sg31
+(lp1301
+sg33
+g26
+((I2015
+I4
+I19
+I19
+I9
+I48
+I6
+I109
+I1
+tp1302
+(dp1303
+tp1304
+Rp1305
+sbsa(dp1306
+g14
+I00
+sg15
+(lp1307
+F1647.0000000000007
+aF2941.6666666666665
+asg17
+(itiddlywiki
+Tiddler
+p1308
+(dp1309
+g21
+VYou shake your head. "Thank you for taking a chance on us," you say. "Being on the receiving end of those sentries attack - they'd made up their mind and nothing was going to change it. I'm glad there are people in Carillon City who are more open-minded." \u000a\u000a"Well, for my part, I'm just as glad that there are people like you and Alda in the Wilderlands." He frowns. "We all have a lot of work ahead of us, not just now but for years to come, if we want to come out ahead of people like those sentries - or like the raiders back at your house."\u000a\u000aHis serious expression breaks into a bright smile. "But the job will be a lot easier, partnering with people like you." \u000a\u000a[[...|alda talk]]
+p1310
+sg23
+Vchance
+p1311
+sg25
+g26
+((I2015
+I4
+I19
+I19
+I36
+I40
+I6
+I109
+I1
+tp1312
+(dp1313
+tp1314
+Rp1315
+sg31
+(lp1316
+sg33
+g26
+((I2015
+I4
+I19
+I19
+I18
+I50
+I6
+I109
+I1
+tp1317
+(dp1318
+tp1319
+Rp1320
+sbsa(dp1321
+g14
+I00
+sg15
+(lp1322
+F1786.9999999999993
+aF2936.6666666666674
+asg17
+(itiddlywiki
+Tiddler
+p1323
+(dp1324
+g21
+V"That was extraordinary," you tell him. "Dealing with one elder is hard enough, let alone all of them."\u000a\u000aHe laughs; he's more relaxed now than you've seen him before. "I can well believe it. Honestly, that was refreshing compared to dealing with a room full of masters. They're more polite, but that just means you never know what they're thinking."\u000a\u000a"Definitely not a problem with our elders," you say. The two of you share a smile. \u000a\u000a[[...|alda talk]]
+p1325
+sg23
+Vpraise orit
+p1326
+sg25
+g26
+((I2015
+I4
+I19
+I19
+I36
+I43
+I6
+I109
+I1
+tp1327
+(dp1328
+tp1329
+Rp1330
+sg31
+(lp1331
+sg33
+g26
+((I2015
+I4
+I19
+I19
+I18
+I50
+I6
+I109
+I1
+tp1332
+(dp1333
+tp1334
+Rp1335
+sbsa(dp1336
+g14
+I00
+sg15
+(lp1337
+F1791.9999999999986
+aF3225.000000000001
+asg17
+(itiddlywiki
+Tiddler
+p1338
+(dp1339
+g21
+V"Yes - I'd forgotten all about your farm." He frowns, looking genuinely worried. "I hope you haven't lost too much ground - and with the drought and everything too. Please, when you get home, send me word. If you incurred any great loss on my behalf - on my city's behalf - well, I promise you I'll make it right."\u000a\u000aIt's a kind offer, kind enough that you aren't quite sure what to respond. "What did you leave undone, back in Carillon City?" you ask. "You must have a life besides this."\u000a\u000a[[...|normal2]]\u000a
+p1340
+sg23
+Vnormal
+p1341
+sg25
+g26
+((I2015
+I4
+I19
+I19
+I34
+I57
+I6
+I109
+I1
+tp1342
+(dp1343
+tp1344
+Rp1345
+sg31
+(lp1346
+sg33
+g26
+((I2015
+I4
+I19
+I19
+I18
+I50
+I6
+I109
+I1
+tp1347
+(dp1348
+tp1349
+Rp1350
+sbsa(dp1351
+g14
+I00
+sg15
+(lp1352
+F1925.3333333333312
+aF3224.9999999999995
+asg17
+(itiddlywiki
+Tiddler
+p1353
+(dp1354
+g21
+VHe smiles. "I serve at the pleasure of the masters, which is a great honor. My mother hopes I'll become one someday, and I may yet. But, the truth is... I have a business, a small one, and I //am// looking forward to getting back. \u000a\u000a"I'm no good with big spells, like you or Alda, but I have a talent for small ones, one that require more subtlety than strength. I can find people, or lost objects, or make light, or fix things." He laughs. "A handyman, more or less. But, you know. With magic." He grins sheepishly. "I have to admit, though, I can't wait to get back to it."\u000a\u000a[[...|alda talk]]
+p1355
+sg23
+Vnormal2
+p1356
+sg25
+g26
+((I2015
+I4
+I19
+I19
+I36
+I24
+I6
+I109
+I1
+tp1357
+(dp1358
+tp1359
+Rp1360
+sg31
+(lp1361
+sg33
+g26
+((I2015
+I4
+I19
+I19
+I34
+I22
+I6
+I109
+I1
+tp1362
+(dp1363
+tp1364
+Rp1365
+sbsa(dp1366
+g14
+I00
+sg15
+(lp1367
+F248.3333333333334
+aF3459.999999999998
+asg17
+(itiddlywiki
+Tiddler
+p1368
+(dp1369
+g21
+VOrit excuses himself - you can see that he's exhausted, and already a line of elders is forming to talk to him one-on-one. He's got work to do yet before he sleeps. You let him go. \u000a\u000aAlda approaches you, smiling warmly. "You," she says, "did extremely well, Jes. I'm sorry I left you with a bell and hardly any instruction - but you rose to the occasion admirably. I'm proud of you."\u000a\u000a[["I wish you'd told me about where you were from."|origin]]\u000a\u000a[["Could you teach me more about the bell?"|the bell]]\u000a\u000a[["Back at you - Orit couldn't have done it without you."|proud]]
+p1370
+sg23
+Valda talk
+p1371
+sg25
+g26
+((I2015
+I4
+I19
+I19
+I49
+I48
+I6
+I109
+I1
+tp1372
+(dp1373
+tp1374
+Rp1375
+sg31
+(lp1376
+sg33
+g26
+((I2015
+I4
+I19
+I19
+I36
+I27
+I6
+I109
+I1
+tp1377
+(dp1378
+tp1379
+Rp1380
+sbsa(dp1381
+g14
+I00
+sg15
+(lp1382
+F246.99999999999994
+aF3318.333333333333
+asg17
+(itiddlywiki
+Tiddler
+p1383
+(dp1384
+g21
+V"I wish you'd told me about where you were from," you tell her. "That wasn't the way I would have chosen to get to know you better, Alda." \u000a\u000aShe nods. "I'm sorry about that. I wanted to leave all of it behind. Being out here, among the Wilderkind, it felt good. But some people, at first, were like that sentry - I was just a caroler to them." She shrugs. "I got used to not talking about it. \u000a\u000a"But I should have told you. I guess Carillon City isn't the only one that needs to think about being a better neighbor. Tell you what - when we get back, I'll tell you all about it - while we dig out your irrigation ditch."\u000a\u000aYou laugh. "I //will// hold you to that."\u000a\u000a[[...|to carillon]]\u000a\u000a 
+p1385
+sg23
+Vorigin
+p1386
+sg25
+g26
+((I2015
+I4
+I19
+I20
+I52
+I14
+I6
+I109
+I1
+tp1387
+(dp1388
+tp1389
+Rp1390
+sg31
+(lp1391
+sg33
+g26
+((I2015
+I4
+I19
+I19
+I49
+I52
+I6
+I109
+I1
+tp1392
+(dp1393
+tp1394
+Rp1395
+sbsa(dp1396
+g14
+I00
+sg15
+(lp1397
+F397.00000000000006
+aF3318.333333333333
+asg17
+(itiddlywiki
+Tiddler
+p1398
+(dp1399
+g21
+VShe nods. "I'm glad I could help. I'm glad we both were. This is what will make this peace work, Jes. People like you and me chipping in and doing what we can when problems come our way."\u000a\u000a[[...|to carillon]]\u000a\u000a
+p1400
+sg23
+Vproud
+p1401
+sg25
+g26
+((I2015
+I4
+I19
+I20
+I52
+I9
+I6
+I109
+I1
+tp1402
+(dp1403
+tp1404
+Rp1405
+sg31
+(lp1406
+sg33
+g26
+((I2015
+I4
+I19
+I19
+I49
+I52
+I6
+I109
+I1
+tp1407
+(dp1408
+tp1409
+Rp1410
+sbsa(dp1411
+g14
+I00
+sg15
+(lp1412
+F246.99999999999991
+aF3593.3333333333335
+asg17
+(itiddlywiki
+Tiddler
+p1413
+(dp1414
+g21
+V"Could you teach me more about the bell?" you ask, a little reluctant. \u000a\u000aShe raises an eyebrow. "I'd be very happy to do that. I thought you might not want to keep using it. I know it's not quite the way that most Wilderkind prefer to use magic. A bell is not a private instrument." \u000a\u000a"No," you say, "but now that I've used one, I don't think it's such a bad thing." \u000a\u000a"When we get back home," she says, "I will teach you everything that you want to know. While we dig out your irrigation ditch." \u000a\u000aYou laugh. "I //will// hold you to that."\u000a\u000a[[...|to carillon]]
+p1415
+sg23
+Vthe bell
+p1416
+sg25
+g26
+((I2015
+I4
+I19
+I20
+I52
+I4
+I6
+I109
+I1
+tp1417
+(dp1418
+tp1419
+Rp1420
+sg31
+(lp1421
+sg33
+g26
+((I2015
+I4
+I19
+I19
+I49
+I52
+I6
+I109
+I1
+tp1422
+(dp1423
+tp1424
+Rp1425
+sbsa(dp1426
+g14
+I00
+sg15
+(lp1427
+F758.3333333333334
+aF3650.000000000001
+asg17
+(itiddlywiki
+Tiddler
+p1428
+(dp1429
+g21
+VThere's a large camp set up near the Echomount, and a place is found for the three of you to sleep. \u000a\u000aThe next morning, Orit finds you over breakfast. "I'm heading back to Carillon City today with a few of the elders," he tells you. "A bigger delegation will follow us, but with violence looming we don't want to lose any time. \u000a\u000a"You've already done a lot for me and for the peace process - but I'd like you to come." \u000a\u000a[["I'd be honored."|honored]]\u000a\u000a[["I'd like to see the city..."|adventure]]\u000a\u000a[["I'll do it if you think I could help."|needed]]\u000a\u000a
+p1430
+sg23
+Vto carillon
+p1431
+sg25
+g26
+((I2015
+I4
+I19
+I20
+I51
+I52
+I6
+I109
+I1
+tp1432
+(dp1433
+tp1434
+Rp1435
+sg31
+(lp1436
+sg33
+g26
+((I2015
+I4
+I19
+I19
+I55
+I1
+I6
+I109
+I1
+tp1437
+(dp1438
+tp1439
+Rp1440
+sbsa(dp1441
+g14
+I00
+sg15
+(lp1442
+F13.333333333333329
+aF574.9999999999995
+asg17
+(itiddlywiki
+Tiddler
+p1443
+(dp1444
+g21
+V/* Wilderkind */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	font-size: 12pt;\u000a	background-image: url("Art/Futurama_portraits/futurama_bg3.png"); \u000a	background-repeat: no-repeat;\u000a    background-position: 30px 20px; \u000a}\u000a\u000a\u000a.passage{\u000a\u000a}\u000a\u000a.passage a {\u000a	/* This affects passage links */\u000a	color:#3C6954\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}\u000a\u000a#passages {\u000a	max-width: 800px;\u000a	border-left: 0px; \u000a	padding-left: 0;\u000a	position: absolute;\u000a	top: 50px;\u000a	left: 10px;\u000a}\u000a#sidebar { \u000a	position: absolute;\u000a	top: 50px;\u000a	left: 50px;\u000a	content:url("Art/Futurama_portraits/Leela_oval3.png");\u000a	border: 0;\u000a	\u000a}
+p1445
+sg23
+Vwilderkind stylsheet
+p1446
+sg25
+g26
+((I2015
+I4
+I19
+I20
+I22
+I22
+I6
+I109
+I1
+tp1447
+(dp1448
+tp1449
+Rp1450
+sg31
+(lp1451
+Vstylesheet
+p1452
+aVwilderkind
+p1453
+asg33
+g26
+((I2015
+I4
+I19
+I20
+I21
+I18
+I6
+I109
+I1
+tp1454
+(dp1455
+tp1456
+Rp1457
+sbsa(dp1458
+g14
+I00
+sg15
+(lp1459
+F8.333333333333332
+aF721.6666666666662
+asg17
+(itiddlywiki
+Tiddler
+p1460
+(dp1461
+g21
+V/*City */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	font-size: 12pt;\u000a	background-image: url("Art/Futurama_portraits/futurama_bg4.png"); \u000a	background-repeat: no-repeat;\u000a    background-position: 30px 20px; \u000a}\u000a\u000a\u000a.passage{\u000a\u000a}\u000a\u000a.passage a {\u000a	/* This affects passage links */\u000a	color:#18ACB5\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}\u000a\u000a#passages {\u000a	max-width: 800px;\u000a	border-left: 0px; \u000a	padding-left: 0;\u000a	position: absolute;\u000a	top: 50px;\u000a	left: 10px;\u000a}\u000a#sidebar { \u000a	position: absolute;\u000a	top: 50px;\u000a	left: 50px;\u000a	content:url("Art/Futurama_portraits/Leela_oval3.png");\u000a	border: 0;\u000a	\u000a}
+p1462
+sg23
+Vcity stylesheet
+p1463
+sg25
+g26
+((I2015
+I4
+I19
+I20
+I22
+I51
+I6
+I109
+I1
+tp1464
+(dp1465
+tp1466
+Rp1467
+sg31
+(lp1468
+Vstylesheet
+p1469
+aVcity
+p1470
+asg33
+g26
+((I2015
+I4
+I19
+I20
+I22
+I38
+I6
+I109
+I1
+tp1471
+(dp1472
+tp1473
+Rp1474
+sbsa(dp1475
+g14
+I00
+sg15
+(lp1476
+F903.6666666666661
+aF3643.3333333333326
+asg17
+(itiddlywiki
+Tiddler
+p1477
+(dp1478
+g21
+V"I'll do it if you think I could help," you tell him. "I have to get back home - but I'll see this through, if I'm needed."\u000a\u000aHe nods. "I understand. I wouldn't ask it, but I think having you there will make the negotiations easier. It's a story that will mean something to both sides - the Wilderkind who saved a caroler with bell and voice together. It really seems to mean something to the elders. I think it will to the masters as well." \u000a\u000aYou nod hesitantly. "I never set out to be a symbol. But if it will help bring peace...."\u000a\u000aHe smiles. "//Thank you.//\u000a\u000a<<display prepare>>
+p1479
+sg23
+Vneeded
+p1480
+sg25
+g26
+((I2015
+I4
+I19
+I21
+I3
+I56
+I6
+I109
+I1
+tp1481
+(dp1482
+tp1483
+Rp1484
+sg31
+(lp1485
+sg33
+g26
+((I2015
+I4
+I19
+I20
+I51
+I56
+I6
+I109
+I1
+tp1486
+(dp1487
+tp1488
+Rp1489
+sbsa(dp1490
+g14
+I00
+sg15
+(lp1491
+F903.6666666666662
+aF3508.333333333333
+asg17
+(itiddlywiki
+Tiddler
+p1492
+(dp1493
+g21
+V"I'd be honored," you tell him.\u000a\u000a"Excellent!" He beams. "It'll be good to have you along - and to be honest, I think having you there will make things go smoother. It's a good story - the Wilderkind who saved a Caroler with bell and voice together. \u000a\u000a<<display prepare>>\u000a
+p1494
+sg23
+Vhonored
+p1495
+sg25
+g26
+((I2015
+I4
+I19
+I21
+I4
+I56
+I6
+I109
+I1
+tp1496
+(dp1497
+tp1498
+Rp1499
+sg31
+(lp1500
+sg33
+g26
+((I2015
+I4
+I19
+I20
+I51
+I56
+I6
+I109
+I1
+tp1501
+(dp1502
+tp1503
+Rp1504
+sbsa(dp1505
+g14
+I00
+sg15
+(lp1506
+F905.3333333333328
+aF3786.6666666666665
+asg17
+(itiddlywiki
+Tiddler
+p1507
+(dp1508
+g21
+V"I'd like to see the city..." you admit. "The closest I've ever gotten to seeing it is a smudge on the horizon, and the distant sound of bells..." \u000a\u000aHe beams. "And I'd be delighted to show you my city. It's a very beautiful place. \u000a\u000a<<display prepare>>
+p1509
+sg23
+Vadventure
+p1510
+sg25
+g26
+((I2015
+I4
+I19
+I20
+I58
+I27
+I6
+I109
+I1
+tp1511
+(dp1512
+tp1513
+Rp1514
+sg31
+(lp1515
+sg33
+g26
+((I2015
+I4
+I19
+I20
+I51
+I56
+I6
+I109
+I1
+tp1516
+(dp1517
+tp1518
+Rp1519
+sbsa(dp1520
+g14
+I00
+sg15
+(lp1521
+F1060.0000000000005
+aF3635.0
+asg17
+(itiddlywiki
+Tiddler
+p1522
+(dp1523
+g21
+V"Finish your breakfast and come find us on the Echomount - we'll be marshalling there."\u000a\u000a[[...|walking to carillon]]
+p1524
+sg23
+Vprepare
+p1525
+sg25
+g26
+((I2015
+I4
+I19
+I21
+I20
+I8
+I6
+I109
+I1
+tp1526
+(dp1527
+tp1528
+Rp1529
+sg31
+(lp1530
+sg33
+g26
+((I2015
+I4
+I19
+I20
+I55
+I15
+I6
+I109
+I1
+tp1531
+(dp1532
+tp1533
+Rp1534
+sbsa(dp1535
+g14
+I01
+sg15
+(lp1536
+F1208.6666666666677
+aF3638.33333333333
+asg17
+(itiddlywiki
+Tiddler
+p1537
+(dp1538
+g21
+V
+p1539
+sg23
+Vwalking to carillon
+p1540
+sg25
+g26
+((I2015
+I4
+I19
+I21
+I20
+I21
+I6
+I109
+I1
+tp1541
+(dp1542
+tp1543
+Rp1544
+sg31
+(lp1545
+sg33
+g1544
+sbsasS'scale'
+p1546
+F0.6000000000000001
 sS'snapping'
-p1127
+p1547
 I00
 ss.
