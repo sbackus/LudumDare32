@@ -27,11 +27,14 @@ var contextPlayer = document.getElementById("playerCanvas").getContext("2d");
 var contextBackground = document.getElementById("backgroundCanvas").getContext("2d");
 
 //Sounds
-var hit = new Howl({urls: ['././Audio/Hit.wav'], volume: 0.5 });  //plays when you are struck with a bola
-var chimes = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/131979__juskiddink__chimes.wav'], loop: true }); //looping background music
-var bounce = new Howl({urls: ['././Audio/Bounce.wav']}); //plays when you redirect a bola
-var strike = new Howl({urls: ['././Audio/Strike.wav']}); //plays when a redirected bola hits an enemy
+var hit = new Howl({urls: ['././Audio/47356__fotoshop__oof.wav'], volume: 0.1 });  //plays when you are struck with a bola
+var chimes = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/131979__juskiddink__chimes.wav'], loop: true, volume: 0.2 }); //looping background music
+var bounce = new Howl({urls: ['././Audio/198116__editor-adp__clang-1.wav'], volume: 0.2 }); //plays when you redirect a bola
+var strike = new Howl({urls: ['././Audio/196733__paulmorek__crash-02.wav'], volume: 0.1 }); //plays when a redirected bola hits an enemy
 var sadBell = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/59535__juskiddink__bell2.wav']}); //plays on game over
+var lowNote = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/122680__juskiddink__gong-2.wav']}); //plays on game over
+var song = new Howl({urls: ['././Audio/11078__maerkunst__female-voice/176118__maerkunst__short-song-1_edit.wav'], volume: 0 }).play(); //plays while shields are up via fadeIn/Out functions
+var lowNote2 = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/122680__juskiddink__gong-2.wav'], loop: true, volume: 0.2}); //looping background
 
 var keys = [];
 
@@ -63,6 +66,7 @@ var game_over = false;
 
 function init(){
 	chimes.play();
+	lowNote2.play();
 	player = new Player();
 	loop();
 	// DON'T PUT ANYTHING AFTER THE GAME LOOP STARTS!
@@ -132,8 +136,10 @@ function loop(){
 		contextBackground.font = "bold 50px monaco";
 		contextBackground.fillStyle = "white";
 		contextBackground.fillText("Game Over",(width/2)-165,(height/2)-80);
-		chimes.stop().fadeOut( 0, 2000 )
-		sadBell.play();
+		chimes.stop().fadeOut( 0, 2000 );
+		lowNote2.stop().fadeOut( 0, 2000 );
+		sadBell.play().fadeOut( 0, 3000 );
+		lowNote.play().fadeOut( 0, 5000 );
 		return 0;
 	}
 }
