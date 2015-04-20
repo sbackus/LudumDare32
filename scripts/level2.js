@@ -78,7 +78,6 @@ function init(){
 	chimes.play();
 	lowNote2.play();
 	
-	// wilderkin = wilderkin.concat(new Wilderkind(images[1], width/2, height/2));
 	player = new Player();
 	loop();
 	// DON'T PUT ANYTHING AFTER THE GAME LOOP STARTS! IT WON'T RUN!
