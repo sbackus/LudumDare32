@@ -12,7 +12,7 @@ function Shield(){
 	this.update = function(){
 		if(keys[key.space]&&this.power >= 0 && !this.recharging){
 			if(!this.on){
-				song.fadeIn( 0.2, 1000 );  //Shields Up Sound
+				song.fadeIn( 0.2, 300 );  //Shields Up Sound
 				this.switched = true;
 			}else{
 				this.switched = false;
@@ -25,7 +25,7 @@ function Shield(){
 			}
 		} else {
 			if(this.on){
-				song.fadeOut( 0 , 3000 );  //Fade Out Shields
+				song.fadeOut( 0 , 500 );  //Fade Out Shields
 				this.switched = true;
 				
 			}else{
