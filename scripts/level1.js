@@ -228,10 +228,14 @@ var wilderkin = [];
 var game_over = false;
 
 function init(){
+	//Howler Test
+	var chimes = new Howl({urls: ['././Audio/5069__juskiddink__bells-and-gongs/131979__juskiddink__chimes.wav']}).play();
+	
 	player = new Player();
 	for(var i=0; i < 5; i++){
 	    carolers = carolers.concat(new Caroler(images[0], i*85+40, 10));
 	}
+	
 	loop();
 	// DON'T PUT ANYTHING AFTER THE GAME LOOP STARTS!
 }
