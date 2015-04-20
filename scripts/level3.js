@@ -191,6 +191,10 @@ function loop(){
 		contextBackground.font = "bold 50px monaco";
 		contextBackground.fillStyle = "white";
 		contextBackground.fillText("Game Over",(width/2)-165,(height/2)-80);
+		contextBackground.fillText("Retry?",(width/2)-165,(height/2));
+		canvas.addEventListener('click', function(evt) {
+	        location.reload();
+		});
 	}
 }
 
