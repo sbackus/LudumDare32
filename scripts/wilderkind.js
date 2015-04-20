@@ -9,6 +9,7 @@ function Wilderkind(image,x,y) {
 	this.destroyed = false;
 	this.speed = 0.7;
 	this.bounce_speed=0;
+	this.pulled = false;
 	this.draw = function(){
 		contextPlayer.clearRect(this.x,this.y,this.width,this.height);
 		contextPlayer.drawImage(this.image,this.x,this.y);

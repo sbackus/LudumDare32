@@ -41,6 +41,8 @@ var contextBackground = document.getElementById("backgroundCanvas").getContext("
       canvas.addEventListener('click', function(evt) {
         var mousePos = getMousePos(canvas, evt);
         var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+		bells = bells.concat(new Bell(mousePos.x, mousePos.y));
+
         console.log(message);
       }, false);
 
@@ -69,6 +71,7 @@ $(document).keyup(function(e){
 });
 
 var wilderkin = [];
+var bells = [];
 var game_over = false;
 
 function init(){
@@ -90,6 +93,10 @@ function update(){
 		wilderkin = wilderkin.concat(new Wilderkind(images[1], Math.random()*width, randomChoice([-10,height])));
 	}
 
+	bells.forEach(function(bell){
+		bell.update()
+	});
+
 	wilderkin.forEach(function(wilderkind) {
 	    wilderkind.update();
 	    if (collision(wilderkind,player)){
@@ -105,7 +112,7 @@ function update(){
 	});
 
 	//delete references to offscreen objects
-	[wilderkin].forEach(function(list){  
+	[wilderkin,bells].forEach(function(list){  
 		for (i = 0; i < list.length; ++i) {
 		    if (list[i].cleanup()) {
 		        list.splice(i--, 1);
@@ -118,6 +125,10 @@ function update(){
 function render(){
 	contextBackground.clearRect(0,0,width,height);
 	player.draw();
+
+	bells.forEach(function(bell){
+		bell.draw();
+	});
 
 	wilderkin.forEach(function(wilderkind) {
 	    wilderkind.draw();
