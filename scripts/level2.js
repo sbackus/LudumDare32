@@ -99,7 +99,7 @@ function update(){
 				hit.play();
 	    	}else{
 	    		player.shield.power = 0;
-				reflect.play();
+				reflect.play()
 	    	}
 	    }
 	});
