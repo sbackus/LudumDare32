@@ -28,7 +28,7 @@ function loop(){
 		show_game_over_screen();
 	}
 	else if(game_won){
-		["#playerCanvas","#backgroundCanvas","#projectileCanvas","statusCanvas"].forEach(function(canvas){
+		["#playerCanvas","#backgroundCanvas","#projectileCanvas","#statusCanvas"].forEach(function(canvas){
 			$(canvas).fadeOut(900);
 		});
 	}
