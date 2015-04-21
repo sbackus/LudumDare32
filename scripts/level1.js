@@ -124,6 +124,6 @@ contextBackground.font = "bold 50px monaco";
 contextBackground.fillStyle = "white";
 contextBackground.fillText("loading",width/2-100,height/2);
 
-loadImages(["Art/test_ship_shields_up.png", "Art/test_ship_shields_down.png", "Art/note.png", "Art/noteAlt.png" ]);
+loadImages(["Art/Icons/Player_shield.png", "Art/Icons/Player.png", "Art/note.png", "Art/noteAlt.png" ]);
 
 checkImages();
