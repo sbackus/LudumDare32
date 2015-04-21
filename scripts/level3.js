@@ -147,13 +147,13 @@ function update(){
 	}
 	player.update();
 	if (Math.random()<=0.009){
-		wilderkind = new Wilderkind(images[1], Math.random()*width, height);
+		wilderkind = new Wilderkind(images[5], Math.random()*width, height);
 		wilderkind.update = new_wilderkind_update;
 		wilderkind.direction = randomChoice([180,170,190,200,160]);
 		wilderkin = wilderkin.concat(wilderkind);
 	}
 	if (Math.random()<=0.009 && carolers.length < 3 ){
-		carolers = carolers.concat(new Caroler(images[0], Math.random()*width, -10));
+		carolers = carolers.concat(new Caroler(images[4], Math.random()*width, -10));
 	}
 
 	bells.forEach(function(bell){
@@ -263,6 +263,6 @@ contextBackground.font = "bold 50px monaco";
 contextBackground.fillStyle = "white";
 contextBackground.fillText("loading",width/2-100,height/2);
 
-loadImages(["Art/test_ship_shields_up.png", "Art/test_ship_shields_down.png","Art/note.png", "Art/noteAlt.png" ]);
+loadImages(["Art/Icons/Player_shield.png", "Art/Icons/Player.png", "Art/Icons/projectile.png", "Art/Icons/projectile_converted.png", "Art/Icons/Attacking_Caroller.png", "Art/Icons/Attacking_Wilderkind.png" ]);
 
 checkImages();

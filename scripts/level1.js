@@ -126,6 +126,6 @@ contextBackground.font = "bold 50px monaco";
 contextBackground.fillStyle = "white";
 contextBackground.fillText("loading",width/2-100,height/2);
 
-loadImages(["Art/Icons/Player_shield.png", "Art/Icons/Player.png", "Art/note.png", "Art/noteAlt.png", "Art/Icons/Attacking_Caroller.png" ]);
+loadImages(["Art/Icons/Player_shield.png", "Art/Icons/Player.png", "Art/Icons/projectile.png", "Art/Icons/projectile_converted.png", "Art/Icons/Attacking_Caroller.png" ]);
 
 checkImages();
