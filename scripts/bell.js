@@ -1,8 +1,8 @@
 
-function Bell(x,y) {
+function Bell(x,y,size) {
 	this.x = x;
 	this.y = y;
-	this.size = 50;
+	this.size = size;
 	this.width = this.size;
 	this.height = this.size;
 	this.destroyed = false;
@@ -13,7 +13,7 @@ function Bell(x,y) {
 		contextBackground.clearRect(this.x-this.width,this.y-this.height,this.width*2,this.height*2);
  		contextBackground.beginPath();
  		contextBackground.strokeStyle = 'white';
-       	contextBackground.arc(this.x+this.size/2, this.y+this.size/2, this.time%this.size, 0, 2 * Math.PI, false);
+       	contextBackground.arc(this.x, this.y, this.time%this.size, 0, 2 * Math.PI, false);
        	contextBackground.stroke();
 	};
 	this.update = function(){

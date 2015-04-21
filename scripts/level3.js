@@ -41,8 +41,8 @@ var contextBackground = document.getElementById("backgroundCanvas").getContext("
       canvas.addEventListener('click', function(evt) {
         var mousePos = getMousePos(canvas, evt);
         var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
-		if(bells.length<5){
-			bells = bells.concat(new Bell(mousePos.x, mousePos.y));
+		if(bells.length<50){
+			bells = bells.concat(new Bell(mousePos.x-40, mousePos.y-40),80);
 			bellCall.play();
 		}
 		else{
@@ -101,21 +101,41 @@ function new_wilderkind_update(){
 		if(!(this.bell == null) && this.bell.time>=this.bell.duration){
 			this.pulled = false;
 			this.bounce_speed = 0
-			// if (wilderkin.length>=2){
-			// 	for (i = 0; i < wilderkin.length; i++) { 
-			//     	for (j = i+1; j < wilderkin.length; j++) { 
-			//     		w1 = wilderkin[i];
-			//     		w2 = wilderkin[j];
-			//     		if (collision(w1,w2)){
-			//     			if(w1.pulled || w2.pulled){
-			//     				contextPlayer.clearRect(this.x-20,this.y-20,this.width+40,this.height+40);
-			//     				w1.destroyed = true;
-			//     				w2.destroyed = true;
-			//     			}
-			//     		}
-			//     	}
-			// 	}
-			// }
+		}
+		if (this.bounce_speed > 0.01){
+			this.bounce_speed -= 0.009; 
+		}
+
+		if (this.pulled && !(this.bell == null)){
+			xdiff = this.bell.x - this.x;
+			ydiff = this.bell.y - this.y;
+			this.direction = Math.atan(xdiff/ydiff)*180/Math.PI;
+			if (ydiff > 0){
+				this.x += offset_x(this.direction,this.speed-this.bounce_speed)
+				this.y += offset_y(this.direction,this.speed-this.bounce_speed)
+			} else{
+				this.x -= offset_x(this.direction,this.speed-this.bounce_speed)
+				this.y -= offset_y(this.direction,this.speed-this.bounce_speed)
+			}
+		} else{
+			this.x += offset_x(this.direction,this.speed-this.bounce_speed)
+			this.y += offset_y(this.direction,this.speed-this.bounce_speed)
+		}
+
+	}
+};
+
+function new_caroler_update(){
+	if (this.destroyed){
+		this.destroyed_count++;
+	}else{
+		this.bolas.update();
+		this.drawn = false;
+	}
+	if(!this.destroyed){
+		if(!(this.bell == null) && this.bell.time>=this.bell.duration){
+			this.pulled = false;
+			this.bounce_speed = 0
 		}
 		if (this.bounce_speed > 0.01){
 			this.bounce_speed -= 0.009; 
@@ -157,7 +177,16 @@ function update(){
 		wilderkin = wilderkin.concat(wilderkind);
 	}
 	if (Math.random()<=0.009 && carolers.length < 3 ){
-		carolers = carolers.concat(new Caroler(images[4], Math.random()*width, -10));
+		caroler = new Caroler(images[4], Math.random()*width, -10);
+		caroler.update = new_caroler_update;
+		caroler.direction = 0;
+		caroler.bounce_speed=0;
+		caroler.pulled = false;
+		caroler.bell = null;
+		caroler.speed = 0.25;
+		console.log(caroler.speed);
+		carolers = carolers.concat(caroler);
+
 	}
 
 	bells.forEach(function(bell){
@@ -216,6 +245,15 @@ function update(){
 	});
 
 	bells.forEach(function(bell){
+		carolers.forEach(function(caroler) {
+			if(collision(bell,caroler)){
+				if(!caroler.pulled){
+					caroler.bounce_speed = -2;
+					caroler.pulled = true;
+					caroler.bell = bell;
+				}
+			}
+		});
 		wilderkin.forEach(function(wilderkind) {
 			if(collision(bell,wilderkind)){
 				if(!wilderkind.pulled){
