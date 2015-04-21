@@ -6,9 +6,6 @@ function Bolas(x,y){
 	this.y =  y;
 	this.width =  this.image.width;
 	this.height =  this.image.height;
-	//this.width = 6;
-	//this.height = 6;
-	//this.size = 3;
 	this.speed = 6;
 	this.rotation = randomChoice([4,-4,5,-5]);
 	if (this.rotation<0){
