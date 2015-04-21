@@ -41,7 +41,7 @@ var contextBackground = document.getElementById("backgroundCanvas").getContext("
       canvas.addEventListener('click', function(evt) {
         var mousePos = getMousePos(canvas, evt);
         var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
-		if(bells.length<1){
+		if(bells.length<5){
 			bells = bells.concat(new Bell(mousePos.x, mousePos.y));
 			bellCall.play();
 		}
@@ -142,6 +142,10 @@ function new_wilderkind_update(){
 
 function update(){
 	timer++;
+
+	if (casualties > 50){
+		game_over = true;
+	}
 	if(timer > game_duration){
 		game_won = true;
 	}
@@ -198,7 +202,7 @@ function update(){
 				console.log(game_won)
 				caroler.bolas.rotation = caroler.bolas.rotation * -1
 				caroler.bolas.direction = caroler.bolas.direction * -1
-				caroler.bolas.y = height +100;
+				caroler.bolas.y = height + 300;
 				caroler.bolas.reversed = true;
 				bounce.play();
 			} else{
@@ -250,6 +254,9 @@ function update(){
 
 function render(){
 	contextBackground.clearRect(0,0,width,height);
+	contextBackground.font = "bold 30px monaco";
+	contextBackground.fillStyle = "black";
+	contextBackground.fillText("casualties: " + casualties,10,30);
 	player.draw();
 
 	[wilderkin,bells,carolers].forEach(function(list){  

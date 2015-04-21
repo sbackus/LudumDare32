@@ -44,7 +44,7 @@ var contextBackground = document.getElementById("backgroundCanvas").getContext("
       canvas.addEventListener('click', function(evt) {
         var mousePos = getMousePos(canvas, evt);
         var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
-		if(bells.length<1){
+		if(bells.length<3){
 			bells = bells.concat(new Bell(mousePos.x, mousePos.y));
 			bellCall.play();
 		}
