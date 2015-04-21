@@ -57,7 +57,7 @@ var wilderkin = [];
 var game_over = false;
 var game_won = false;
 var timer = 0;
-var game_duration = 10800;
+var game_duration = 3600;
 
 function init(){
 	chimes.play();
