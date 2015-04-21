@@ -101,8 +101,7 @@ function update(){
 		ahhh.play().fadeOut( 0, 4000 );
 	}
 	player.update();
-	if (Math.random()<=0.003){ 
-		wilderkin = wilderkin.concat(new Wilderkind(images[5], Math.random()*width, randomChoice([-10,height])));
+	if (Math.random()<=0.003){
 		wilderkin = wilderkin.concat(new Wilderkind(images[5], Math.random()*width, randomChoice([-10,height])));
 	}
 
