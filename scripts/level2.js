@@ -23,7 +23,7 @@ var images = [];
 var doneImages = 0;
 var requiredImages = 0;
 var timer = 0;
-var game_duration = 108;
+var game_duration = 10800;
 var game_won = false;
 
 var mouse_x = 0;

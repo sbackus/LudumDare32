@@ -81,7 +81,7 @@ var game_over = false;
 var game_won = false;
 var casualties = 0;
 var timer = 0;
-var game_duration = 108;
+var game_duration = 10800;
 
 
 function init(){
