@@ -6617,7 +6617,7 @@ Tiddler
 p2047
 (dp2048
 g21
-V"I wasn't sure you would want to keep using a bell," Alda remarks as the two of you sit on the hilltop watching the sky afterward. You think you feel the air getting a little cooler.\u000a\u000aYou shrug. "It's all music," you say. "That's what I learned, from meeting Orit and visiting the City, I think. We're all just people, and we all make music." \u000a\u000aAlda smiles. "I felt the same way, the first time I was lucky enough to be allowed to listen to one of my neighbor's songs." \u000a\u000aThe two of you are quiet for a moment. The wind picks up; the weather is changing. 
+V"I wasn't sure you would want to keep using a bell," Alda remarks as the two of you sit on the hilltop watching the sky afterward. You think you feel the air getting a little cooler.\u000a\u000aYou shrug. "It's all music," you say. "That's what I learned, from meeting Orit and visiting the City, I think. We're all just people, and we all make music." \u000a\u000aAlda smiles. "I felt the same way, the first time I was lucky enough to be allowed to listen to one of my neighbor's songs." \u000a\u000aThe two of you are quiet for a moment. The wind picks up; the weather is changing. \u000a\u000a[[...|Credits]]
 p2049
 sg23
 Vbell4
@@ -6627,9 +6627,9 @@ g26
 ((I2015
 I4
 I20
-I16
-I43
-I1
+I21
+I25
+I15
 I0
 I110
 I1
@@ -7020,10 +7020,116 @@ tp2169
 (dp2170
 tp2171
 Rp2172
+sbsa(dp2173
+g14
+I00
+sg15
+(lp2174
+F1146.6666666666667
+aF4953.333333333333
+asg17
+(itiddlywiki
+Tiddler
+p2175
+(dp2176
+g21
+VCredits:\u000a\u000aJavascript Wizard:..........Sam Backus\u000aArtist Extraordinaire:......Suzi Curran\u000aDashing Writer:.............Dave Rogers\u000aThat One Guy:...............James Curran\u000a\u000aWith Audio Assets from Maerkunst's Female Voice Pack and Juskiddink's Bells and Gongs Pack. Played through the magic of  Howler.js\u000a\u000aThanks for Playing!\u000a\u000a\u000a\u000a[[Start Over|Start]]
+p2177
+sg23
+VCredits
+p2178
+sg25
+g26
+((I2015
+I4
+I20
+I21
+I26
+I57
+I0
+I110
+I1
+tp2179
+(dp2180
+tp2181
+Rp2182
+sg31
+(lp2183
+Vcredit
+p2184
+asg34
+g26
+((I2015
+I4
+I20
+I21
+I13
+I58
+I0
+I110
+I1
+tp2185
+(dp2186
+tp2187
+Rp2188
+sbsa(dp2189
+g14
+I00
+sg15
+(lp2190
+F11.66666666666719
+aF1181.6666666666679
+asg17
+(itiddlywiki
+Tiddler
+p2191
+(dp2192
+g21
+V/* Your story will use the CSS in this passage to style the page.\u000aGive this passage more tags, and it will only affect passages with those tags.\u000aExample selectors: */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	font-size: 12pt;\u000a	\u000a}\u000a.passage {\u000a	/* This only affects passages */\u000a	position: absolute;\u000a	max-width: 600px;\u000a	Left: 200px;\u000a	\u000a}\u000a.passage a {\u000a	/* This affects passage links */\u000a	\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}\u000a\u000a#sidebar { \u000a	display: none; \u000a}\u000a  \u000a#passages { \u000a	margin-left: 0;\u000a	border-left: 0px; \u000a	padding-left: 0;  \u000a}
+p2193
+sg23
+VCredit Style
+p2194
+sg25
+g26
+((I2015
+I4
+I20
+I21
+I24
+I20
+I0
+I110
+I1
+tp2195
+(dp2196
+tp2197
+Rp2198
+sg31
+(lp2199
+Vstylesheet
+p2200
+aVcredit
+p2201
+asg34
+g26
+((I2015
+I4
+I20
+I21
+I19
+I59
+I0
+I110
+I1
+tp2202
+(dp2203
+tp2204
+Rp2205
 sbsasS'scale'
-p2173
+p2206
 F0.6000000000000001
 sS'snapping'
-p2174
+p2207
 I00
 ss.
