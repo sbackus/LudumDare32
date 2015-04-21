@@ -58,10 +58,6 @@ var timer = 0;
 var game_duration = 108;
 
 function init(){
-	timer++;
-	if(timer > game_duration){
-		game_won = true;
-	}
 	chimes.play();
 	lowNote2.play();
 	player = new Player();
@@ -71,6 +67,10 @@ function init(){
 }
 
 function update(){
+	timer++;
+	if(timer > game_duration){
+		game_won = true;
+	}
 	player.update();
 	if (Math.random()<=0.009 && carolers.length < 3 ){
 		carolers = carolers.concat(new Caroler(images[0], Math.random()*width, -10));
