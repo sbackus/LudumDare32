@@ -78,6 +78,7 @@ var wilderkin = [];
 var carolers = [];
 var bells = [];
 var game_over = false;
+var casualties = 0;
 
 function init(){
 	//backgound music go
@@ -156,9 +157,21 @@ function update(){
 	carolers.forEach(function(caroler){
 		wilderkin.forEach(function(wilderkind) {
 			if(collision(caroler,wilderkind)){
+				casualties += 2;
 				caroler.destroyed = true;
 				wilderkind.destroyed = true;
 				contextPlayer.clearRect(wilderkind.x-20,wilderkind.y-20,wilderkind.width+40,wilderkind.height+40);
+			}
+			else if(collision(wilderkind,caroler.bolas)){
+				if(randomChoice([true,false])){
+					casualties +=1
+					contextPlayer.clearRect(wilderkind.x-20,wilderkind.y-20,wilderkind.width+40,wilderkind.height+40);
+					wilderkind.destroyed = true;
+				} else{
+					caroler.bolas.rotation = caroler.bolas.rotation * -1
+					caroler.bolas.direction = caroler.bolas.direction * -1
+					caroler.bolas.reversed = true;
+				}
 			}
 		});
 
