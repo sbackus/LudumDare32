@@ -95,21 +95,21 @@ function new_wilderkind_update(){
 		if(!(this.bell == null) && this.bell.time>=this.bell.duration){
 			this.pulled = false;
 			this.bounce_speed = 0
-			if (wilderkin.length>=2){
-				for (i = 0; i < wilderkin.length; i++) { 
-			    	for (j = i+1; j < wilderkin.length; j++) { 
-			    		w1 = wilderkin[i];
-			    		w2 = wilderkin[j];
-			    		if (collision(w1,w2)){
-			    			if(w1.pulled || w2.pulled){
-			    				contextPlayer.clearRect(this.x-20,this.y-20,this.width+40,this.height+40);
-			    				w1.destroyed = true;
-			    				w2.destroyed = true;
-			    			}
-			    		}
-			    	}
-				}
-			}
+			// if (wilderkin.length>=2){
+			// 	for (i = 0; i < wilderkin.length; i++) { 
+			//     	for (j = i+1; j < wilderkin.length; j++) { 
+			//     		w1 = wilderkin[i];
+			//     		w2 = wilderkin[j];
+			//     		if (collision(w1,w2)){
+			//     			if(w1.pulled || w2.pulled){
+			//     				contextPlayer.clearRect(this.x-20,this.y-20,this.width+40,this.height+40);
+			//     				w1.destroyed = true;
+			//     				w2.destroyed = true;
+			//     			}
+			//     		}
+			//     	}
+			// 	}
+			// }
 		}
 		if (this.bounce_speed > 0.01){
 			this.bounce_speed -= 0.009; 
@@ -167,6 +167,7 @@ function update(){
 					casualties +=1
 					contextPlayer.clearRect(wilderkind.x-20,wilderkind.y-20,wilderkind.width+40,wilderkind.height+40);
 					wilderkind.destroyed = true;
+					hit.play();
 				} else{
 					caroler.bolas.rotation = caroler.bolas.rotation * -1
 					caroler.bolas.direction = caroler.bolas.direction * -1
@@ -176,9 +177,9 @@ function update(){
 		});
 
 
-
 		if(collision(caroler,caroler.bolas) && caroler.bolas.reversed){
 			caroler.destroyed = true;
+			casualties += 1;
 			caroler.bolas.y = height + 100;
 			strike.play();
 		}
@@ -186,6 +187,7 @@ function update(){
 			if (player.shield.on){
 				caroler.bolas.rotation = caroler.bolas.rotation * -1
 				caroler.bolas.direction = caroler.bolas.direction * -1
+				caroler.bolas.y = height +100;
 				caroler.bolas.reversed = true;
 				bounce.play();
 			} else{
