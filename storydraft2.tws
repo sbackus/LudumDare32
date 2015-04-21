@@ -4069,7 +4069,7 @@ Tiddler
 p1263
 (dp1264
 g21
-V/* Orit */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	font-size: 12pt;\u000a	background-image: url("Art/Futurama_portraits/futurama_bg_blue.png"); \u000a	background-repeat: no-repeat;\u000a    background-position: 30px 20px; \u000a}\u000a\u000a\u000a.passage{\u000a\u000a}\u000a\u000a.passage a {\u000a	/* This affects passage links */\u000a	color:#685208\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}\u000a\u000a#passages {\u000a	max-width: 800px;\u000a	border-left: 0px; \u000a	padding-left: 0;\u000a	position: absolute;\u000a	top: 50px;\u000a	left: 10px;\u000a}\u000a#sidebar { \u000a	position: absolute;\u000a	top: 50px;\u000a	left: 50px;\u000a	content:url("Art/Futurama_portraits/Leela_oval3.png");\u000a	border: 0;\u000a	\u000a}
+V/* Orit */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	font-size: 12pt;\u000a	background-image: url("Art/Futurama_portraits/futurama_bg_blue.png"); \u000a	background-repeat: no-repeat;\u000a    background-position: 30px 20px; \u000a}\u000a\u000a\u000a.passage{\u000a\u000a}\u000a\u000a.passage a {\u000a	/* This affects passage links */\u000a	color:#685208\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}\u000a\u000a#passages {\u000a	max-width: 800px;\u000a	border-left: 0px; \u000a	padding-left: 0;\u000a	position: absolute;\u000a	top: 50px;\u000a	left: 10px;\u000a}\u000a#sidebar { \u000a	position: absolute;\u000a	top: 50px;\u000a	left: 50px;\u000a	content:url("Art/Portraits/orit_portrait.png");\u000a	border: 0;\u000a	\u000a}
 p1265
 sg23
 Vorit stylesheet
@@ -4079,9 +4079,9 @@ g26
 ((I2015
 I4
 I20
-I18
-I34
-I24
+I21
+I2
+I32
 I0
 I110
 I1
