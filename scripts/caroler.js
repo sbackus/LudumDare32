@@ -13,14 +13,14 @@ function Caroler(image,x,y) {
 		if(this.destroyed){
 			
 			if(this.destroyed_count%4==1||this.destroyed_count%4==2){
-				contextPlayer.clearRect(this.x,this.y,this.width,this.height);
+				contextPlayer.clearRect(this.x-10,this.y-10,this.width+15,this.height+10);
 				contextPlayer.drawImage(this.image,this.x,this.y);
 			}else{
 				contextPlayer.clearRect(this.x,this.y,this.width,this.height);
 			}
 		} else {
 			if(!this.drawn){
-				contextPlayer.clearRect(this.x,this.y,this.width,this.height);
+				contextPlayer.clearRect(this.x-10,this.y-10,this.width+15,this.height+10);
 				contextPlayer.drawImage(this.image,this.x,this.y);
 				this.drawn = true;
 			}

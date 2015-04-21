@@ -4,7 +4,7 @@ function Player() {
 	this.x =  width/2 -10;
 	this.y =  height/2 -10;
 	this.width = this.shielded_image.width;
-	this.height =  this.shielded_image.width;
+	this.height =  this.shielded_image.height;
 	this.drawn = false;
 	this.speed = 6;
 	this.shield = new Shield();
@@ -22,7 +22,7 @@ function Player() {
 		contextBackground.fillRect(this.x+9, this.y+this.height +15, this.health, 5);
 
 		if(!this.drawn){
-			contextPlayer.clearRect(this.x-10,this.y-10,this.width+20,this.height+30);
+			contextPlayer.clearRect(this.x-20,this.y-20,this.width+30,this.height+40);
 			
 			if (this.shield.on){
 				contextPlayer.drawImage(this.shielded_image,this.x,this.y);
