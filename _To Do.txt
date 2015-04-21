@@ -1,0 +1,2 @@
+- Change font in action games to match twine text
+- Get portrait images working in live copy
