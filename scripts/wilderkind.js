@@ -12,9 +12,11 @@ function Wilderkind(image,x,y) {
 	this.pulled = false;
 	this.bell = null;
 	this.draw = function(){
-		contextPlayer.clearRect(this.x,this.y,this.width,this.height);
-		contextPlayer.drawImage(this.image,this.x,this.y);
-		this.drawn = true;
+		if(!this.destroyed){
+			contextPlayer.clearRect(this.x,this.y,this.width,this.height);
+			contextPlayer.drawImage(this.image,this.x,this.y);
+			this.drawn = true;
+		}
 	};
 	this.update = function(){
 		if(!this.destroyed){

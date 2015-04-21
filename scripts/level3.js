@@ -89,10 +89,57 @@ function init(){
 	// DON'T PUT ANYTHING AFTER THE GAME LOOP STARTS! IT WON'T RUN!
 }
 
+function new_wilderkind_update(){
+	if(!this.destroyed){
+		if(!(this.bell == null) && this.bell.time>=this.bell.duration){
+			this.pulled = false;
+			this.bounce_speed = 0
+			if (wilderkin.length>=2){
+				for (i = 0; i < wilderkin.length; i++) { 
+			    	for (j = i+1; j < wilderkin.length; j++) { 
+			    		w1 = wilderkin[i];
+			    		w2 = wilderkin[j];
+			    		if (collision(w1,w2)){
+			    			if(w1.pulled || w2.pulled){
+			    				contextPlayer.clearRect(this.x-20,this.y-20,this.width+40,this.height+40);
+			    				w1.destroyed = true;
+			    				w2.destroyed = true;
+			    			}
+			    		}
+			    	}
+				}
+			}
+		}
+		if (this.bounce_speed > 0.01){
+			this.bounce_speed -= 0.009; 
+		}
+
+		if (this.pulled && !(this.bell == null)){
+			xdiff = this.bell.x - this.x;
+			ydiff = this.bell.y - this.y;
+			this.direction = Math.atan(xdiff/ydiff)*180/Math.PI;
+			if (ydiff > 0){
+				this.x += offset_x(this.direction,this.speed-this.bounce_speed)
+				this.y += offset_y(this.direction,this.speed-this.bounce_speed)
+			} else{
+				this.x -= offset_x(this.direction,this.speed-this.bounce_speed)
+				this.y -= offset_y(this.direction,this.speed-this.bounce_speed)
+			}
+		} else{
+			this.x += offset_x(this.direction,this.speed-this.bounce_speed)
+			this.y += offset_y(this.direction,this.speed-this.bounce_speed)
+		}
+
+	}
+};
+
 function update(){
 	player.update();
 	if (Math.random()<=0.009){
-		wilderkin = wilderkin.concat(new Wilderkind(images[1], Math.random()*width, height));
+		wilderkind = new Wilderkind(images[1], Math.random()*width, height);
+		wilderkind.update = new_wilderkind_update;
+		wilderkind.direction = randomChoice([180,170,190,200,160]);
+		wilderkin = wilderkin.concat(wilderkind);
 	}
 	if (Math.random()<=0.009 && carolers.length < 3 ){
 		carolers = carolers.concat(new Caroler(images[0], Math.random()*width, -10));
@@ -107,6 +154,16 @@ function update(){
 	});
 
 	carolers.forEach(function(caroler){
+		wilderkin.forEach(function(wilderkind) {
+			if(collision(caroler,wilderkind)){
+				caroler.destroyed = true;
+				wilderkind.destroyed = true;
+				contextPlayer.clearRect(wilderkind.x-20,wilderkind.y-20,wilderkind.width+40,wilderkind.height+40);
+			}
+		});
+
+
+
 		if(collision(caroler,caroler.bolas) && caroler.bolas.reversed){
 			caroler.destroyed = true;
 			caroler.bolas.y = height + 100;
@@ -169,16 +226,10 @@ function render(){
 	contextBackground.clearRect(0,0,width,height);
 	player.draw();
 
-	carolers.forEach(function(caroler) {
-	    caroler.draw();
-	});
-
-	bells.forEach(function(bell){
-		bell.draw();
-	});
-
-	wilderkin.forEach(function(wilderkind) {
-	    wilderkind.draw();
+	[wilderkin,bells,carolers].forEach(function(list){  
+		for (i = 0; i < list.length; ++i) {
+			list[i].draw();
+		}
 	});
 }
 
