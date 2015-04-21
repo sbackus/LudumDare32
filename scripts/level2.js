@@ -97,6 +97,8 @@ function update(){
 	timer++;
 	if(timer > game_duration){
 		game_won = true;
+		ahhh.stop();
+		ahhh.play().fadeOut( 0, 4000 );
 	}
 	player.update();
 	if (Math.random()<=0.009){
