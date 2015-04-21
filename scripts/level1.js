@@ -53,8 +53,15 @@ $(document).keyup(function(e){
 var carolers = [];
 var wilderkin = [];
 var game_over = false;
+var game_won = false;
+var timer = 0;
+var game_duration = 108;
 
 function init(){
+	timer++;
+	if(timer > game_duration){
+		game_won = true;
+	}
 	chimes.play();
 	lowNote2.play();
 	player = new Player();
@@ -111,20 +118,6 @@ function render(){
 	carolers.forEach(function(caroler) {
 	    caroler.draw();
 	});
-}
-
-function loop(){
-
-	if (!game_over){
-		requestAnimFrame(function(){
-			loop();
-		});
-		update();
-		render();
-	}else{
-		show_game_over_screen();
-		return 0;
-	}
 }
 
 contextBackground.font = "bold 50px monaco";

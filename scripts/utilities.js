@@ -16,6 +16,24 @@ function collision(first, second){
 		first.y + first.height < second.y);
 };
 
+function loop(){
+	if (!game_over&&!game_won){
+		requestAnimFrame(function(){
+			loop();
+		});
+		update();
+		render();
+	}
+	else if(game_over){
+		show_game_over_screen();
+	}
+	else if(game_won){
+		["#playerCanvas","#backgroundCanvas","#projectileCanvas"].forEach(function(canvas){
+			$(canvas).fadeOut(900);
+		});
+	}
+}
+
 function show_game_over_screen(){
 	contextBackground.font = "bold 50px monaco";
 	contextBackground.fillStyle = "white";
@@ -25,6 +43,7 @@ function show_game_over_screen(){
 	lowNote2.stop().fadeOut( 0, 2000 );
 	sadBell.play().fadeOut( 0, 3000 );
 	lowNote.play().fadeOut( 0, 5000 );
+	var canvas = document.getElementById('playerCanvas');
 	canvas.addEventListener('click', function(evt) {
         location.reload();
 	});

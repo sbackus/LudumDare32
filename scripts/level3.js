@@ -78,7 +78,11 @@ var wilderkin = [];
 var carolers = [];
 var bells = [];
 var game_over = false;
+var game_won = false;
 var casualties = 0;
+var timer = 0;
+var game_duration = 108;
+
 
 function init(){
 	//backgound music go
@@ -135,6 +139,10 @@ function new_wilderkind_update(){
 };
 
 function update(){
+	timer++;
+	if(timer > game_duration){
+		game_won = true;
+	}
 	player.update();
 	if (Math.random()<=0.009){
 		wilderkind = new Wilderkind(images[1], Math.random()*width, height);
@@ -185,6 +193,7 @@ function update(){
 		}
 		if(collision(caroler.bolas,player)){
 			if (player.shield.on){
+				console.log(game_won)
 				caroler.bolas.rotation = caroler.bolas.rotation * -1
 				caroler.bolas.direction = caroler.bolas.direction * -1
 				caroler.bolas.y = height +100;
@@ -246,18 +255,6 @@ function render(){
 			list[i].draw();
 		}
 	});
-}
-
-function loop(){
-	if (!game_over){
-		requestAnimFrame(function(){
-			loop();
-		});
-		update();
-		render();
-	}else{
-		show_game_over_screen();
-	}
 }
 
 contextBackground.font = "bold 50px monaco";

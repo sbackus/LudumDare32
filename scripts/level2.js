@@ -22,6 +22,9 @@ var height = 515;
 var images = [];
 var doneImages = 0;
 var requiredImages = 0;
+var timer = 0;
+var game_duration = 108;
+var game_won = false;
 
 var mouse_x = 0;
 var mouse_y = 0;
@@ -89,6 +92,10 @@ function init(){
 }
 
 function update(){
+	timer++;
+	if(timer > game_duration){
+		game_won = true;
+	}
 	player.update();
 	if (Math.random()<=0.009){
 		wilderkin = wilderkin.concat(new Wilderkind(images[1], Math.random()*width, randomChoice([-10,height])));
@@ -148,17 +155,6 @@ function render(){
 	});
 }
 
-function loop(){
-	if (!game_over){
-		requestAnimFrame(function(){
-			loop();
-		});
-		update();
-		render();
-	}else{
-		show_game_over_screen();;
-	}
-}
 
 contextBackground.font = "bold 50px monaco";
 contextBackground.fillStyle = "white";
