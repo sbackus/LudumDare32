@@ -5,7 +5,7 @@ VC:\u005cUsers\u005cDave\u005cDocuments\u005cGitHub\u005cLudumDare32\u005cstoryd
 p2
 sS'saveDestination'
 p3
-S'E:\\Git\\LudumDare\\LudumDare32\\storydraft2.tws'
+V/Users/sbackus/Code/LudumDare32/storydraft2.tws
 p4
 sS'metadata'
 p5
@@ -4015,7 +4015,7 @@ Tiddler
 p1246
 (dp1247
 g21
-V/* Jes */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	font-size: 12pt;\u000a	background-image: url("Art/Futurama_portraits/futurama_bg3.png"); \u000a	background-repeat: no-repeat;\u000a    background-position: 30px 20px; \u000a}\u000a\u000a\u000a.passage{\u000a\u000a}\u000a\u000a.passage a {\u000a	/* This affects passage links */\u000a	color:#3C6954\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}\u000a\u000a#passages {\u000a	max-width: 800px;\u000a	border-left: 0px; \u000a	padding-left: 0;\u000a	position: absolute;\u000a	top: 50px;\u000a	left: 10px;\u000a}\u000a#sidebar { \u000a	position: absolute;\u000a	top: 50px;\u000a	left: 50px;\u000a	content:url("Art/Portraits/Jess_Portrait.png");\u000a	border: 0;\u000a	\u000a}
+V/* Jes */\u000a\u000abody {\u000a	/* This affects the entire page */\u000a	font-size: 12pt;\u000a	background-image: url("Art/Futurama_portraits/futurama_bg3.png"); \u000a	background-repeat: no-repeat;\u000a    background-position: 30px 20px; \u000a}\u000a\u000a\u000a.passage{\u000a\u000a}\u000a\u000a.passage a {\u000a	/* This affects passage links */\u000a	color:#3C6954\u000a	\u000a}\u000a.passage a:hover {\u000a	/* This affects links while the cursor is over them */\u000a	\u000a	\u000a}\u000a\u000a#passages {\u000a	max-width: 800px;\u000a	border-left: 0px; \u000a	padding-left: 0;\u000a	position: absolute;\u000a	top: 50px;\u000a	left: 10px;\u000a}\u000a#sidebar { \u000a	position: absolute;\u000a	top: 50px;\u000a	left: 50px;\u000a	content:url("Art/Portraits/jess_portrait.png");\u000a	border: 0;\u000a	\u000a}
 p1248
 sg23
 Vjes stylsheet
@@ -4024,12 +4024,12 @@ sg25
 g26
 ((I2015
 I4
-I20
-I18
-I35
-I7
+I21
+I10
+I25
 I0
-I110
+I1
+I111
 I1
 tp1250
 (dp1251
