@@ -27,8 +27,8 @@ I00
 sS'pos'
 p15
 (lp16
-I10
-aI10
+F10.0
+aF10.0
 asS'passage'
 p17
 (itiddlywiki
@@ -637,7 +637,7 @@ Tiddler
 p207
 (dp208
 g21
-V<<if $my_var is 0>>This is the real start of the game.\u000a<html> \u000a	<div class="Instructions">\u000aSurvive for three minutes\u000a		<br>\u000a		<br>\u000aInstructions:\u000a		<br>\u000a&nbsp;&nbsp;- Use arrow keys or WASD to move\u000a		<br>\u000a&nbsp;&nbsp;- Press space bar to sing the shield song \u000a		<br>\u000a&nbsp;&nbsp;- Projectiles blocked by your shield can injure the enemy\u000a		<br>\u000a		<br>\u000aGood luck!\u000a	</div>\u000a</html>\u000a[[...|caves]]\u000a\u000a<canvas id="playerCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 2;"> </canvas>\u000a\u000a<canvas id="backgroundCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 1;" > </canvas>\u000a\u000a<canvas id="projectileCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 1;" > </canvas>\u000a\u000a<canvas id="statusCanvas" width="1020px" height="660px" style=" position: absolute; left: -10px; top: 0px; z-index: 0; background-image: url(Art/GameBG.png); " > </canvas>\u000a\u000a<<loadJS scripts/bell.js>>\u000a<<loadJS scripts/howler.min.js>>\u000a<<loadJS scripts/sounds.js>>\u000a<<loadJS scripts/wilderkind.js>>\u000a<<loadJS scripts/image_loader.js>>\u000a<<loadJS scripts/shield.js>>\u000a<<loadJS scripts/bolas.js>>\u000a<<loadJS scripts/utilities.js>>\u000a<<loadJS scripts/player.js>>\u000a<<loadJS scripts/caroler.js>>\u000a<<loadJS scripts/level1.js>>\u000a\u000a<<else>>\u000a\u000a<<endif>>
+V<<if $my_var is 0>>You are Victorious!\u000a<html> \u000a	<div class="Instructions">\u000aSurvive for three minutes\u000a		<br>\u000a		<br>\u000aInstructions:\u000a		<br>\u000a&nbsp;&nbsp;- Use arrow keys or WASD to move\u000a		<br>\u000a&nbsp;&nbsp;- Press space bar to sing the shield song \u000a		<br>\u000a&nbsp;&nbsp;- Projectiles blocked by your shield can injure the enemy\u000a		<br>\u000a		<br>\u000aGood luck!\u000a	</div>\u000a</html>\u000a[[...|caves]]\u000a\u000a<canvas id="playerCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 2;"> </canvas>\u000a\u000a<canvas id="backgroundCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 1;" > </canvas>\u000a\u000a<canvas id="projectileCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 1;" > </canvas>\u000a\u000a<canvas id="statusCanvas" width="1020px" height="660px" style=" position: absolute; left: -10px; top: 0px; z-index: 0; background-image: url(Art/GameBG.png); " > </canvas>\u000a\u000a<<loadJS scripts/bell.js>>\u000a<<loadJS scripts/howler.min.js>>\u000a<<loadJS scripts/sounds.js>>\u000a<<loadJS scripts/wilderkind.js>>\u000a<<loadJS scripts/image_loader.js>>\u000a<<loadJS scripts/shield.js>>\u000a<<loadJS scripts/bolas.js>>\u000a<<loadJS scripts/utilities.js>>\u000a<<loadJS scripts/player.js>>\u000a<<loadJS scripts/caroler.js>>\u000a<<loadJS scripts/level1.js>>\u000a\u000a<<else>>\u000a\u000a<<endif>>
 p209
 sg23
 Vfight1
@@ -647,9 +647,9 @@ g26
 ((I2015
 I4
 I20
+I21
+I41
 I20
-I31
-I22
 I0
 I110
 I1
@@ -2871,7 +2871,7 @@ Tiddler
 p894
 (dp895
 g21
-V<<if $my_var is 0>>This is the real start of the game.\u000a<html> \u000a	<div class="Instructions">\u000aSurvive for three minutes\u000a		<br>\u000a		<br>\u000aInstructions:\u000a		<br>\u000a&nbsp;&nbsp;- Use arrow keys or WASD to move\u000a		<br>\u000a&nbsp;&nbsp;- Left click to activate your bell \u000a		<br>\u000a&nbsp;&nbsp;- Enemies near the bell can be drawn together and injured \u000a		<br>\u000a&nbsp;&nbsp;- Use your shield to bounce enemies away from you\u000a		<br>\u000a		<br>\u000aGood luck!\u000a	</div>\u000a</html>\u000a\u000a[[...|elders]]\u000a\u000a<canvas id="playerCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 2;"> </canvas>\u000a\u000a<canvas id="backgroundCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 1;" > </canvas>\u000a\u000a<canvas id="projectileCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 1;" > </canvas>\u000a\u000a<canvas id="statusCanvas" width="1020px" height="660px" style=" position: absolute; left: -10px; top: 0px; z-index: 0; background-image: url(Art/GameBG.png); " > </canvas>\u000a\u000a<<loadJS scripts/bell.js>>\u000a<<loadJS scripts/howler.min.js>>\u000a<<loadJS scripts/sounds.js>>\u000a<<loadJS scripts/wilderkind.js>>\u000a<<loadJS scripts/image_loader.js>>\u000a<<loadJS scripts/shield.js>>\u000a<<loadJS scripts/bolas.js>>\u000a<<loadJS scripts/utilities.js>>\u000a<<loadJS scripts/player.js>>\u000a<<loadJS scripts/caroler.js>>\u000a<<loadJS scripts/level2.js>>\u000a\u000a<<else>>\u000a\u000a<<endif>>
+V<<if $my_var is 0>>You are Victorious!\u000a<html> \u000a	<div class="Instructions">\u000aSurvive for three minutes\u000a		<br>\u000a		<br>\u000aInstructions:\u000a		<br>\u000a&nbsp;&nbsp;- Use arrow keys or WASD to move\u000a		<br>\u000a&nbsp;&nbsp;- Left click to activate your bell \u000a		<br>\u000a&nbsp;&nbsp;- Enemies near the bell can be drawn together and injured \u000a		<br>\u000a&nbsp;&nbsp;- Use your shield to bounce enemies away from you\u000a		<br>\u000a		<br>\u000aGood luck!\u000a	</div>\u000a</html>\u000a\u000a[[...|elders]]\u000a\u000a<canvas id="playerCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 2;"> </canvas>\u000a\u000a<canvas id="backgroundCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 1;" > </canvas>\u000a\u000a<canvas id="projectileCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 1;" > </canvas>\u000a\u000a<canvas id="statusCanvas" width="1020px" height="660px" style=" position: absolute; left: -10px; top: 0px; z-index: 0; background-image: url(Art/GameBG.png); " > </canvas>\u000a\u000a<<loadJS scripts/bell.js>>\u000a<<loadJS scripts/howler.min.js>>\u000a<<loadJS scripts/sounds.js>>\u000a<<loadJS scripts/wilderkind.js>>\u000a<<loadJS scripts/image_loader.js>>\u000a<<loadJS scripts/shield.js>>\u000a<<loadJS scripts/bolas.js>>\u000a<<loadJS scripts/utilities.js>>\u000a<<loadJS scripts/player.js>>\u000a<<loadJS scripts/caroler.js>>\u000a<<loadJS scripts/level2.js>>\u000a\u000a<<else>>\u000a\u000a<<endif>>
 p896
 sg23
 Vaction2
@@ -2881,9 +2881,9 @@ g26
 ((I2015
 I4
 I20
-I20
-I36
-I13
+I21
+I41
+I37
 I0
 I110
 I1
@@ -5727,7 +5727,7 @@ Tiddler
 p1772
 (dp1773
 g21
-V<<if $my_var is 0>>This is the real start of the game.\u000a<html> \u000a	<div class="Instructions">\u000aKeep the two factions from hurting each other for three minutes\u000a		<br>\u000a		<br>\u000aInstructions:\u000a		<br>\u000a&nbsp;&nbsp;- Use arrow keys or WASD to move\u000a		<br>\u000a&nbsp;&nbsp;- Left click to activate your bell \u000a		<br>\u000a&nbsp;&nbsp;- Enemies near the bell can be drawn together and injured \u000a		<br>\u000a&nbsp;&nbsp;- Use your shield to bounce enemies away from you\u000a		<br>\u000a		<br>\u000aGood luck!\u000a	</div>\u000a</html>\u000a[[...|intervention]]\u000a\u000a<canvas id="playerCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 2;"> </canvas>\u000a\u000a<canvas id="backgroundCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 1;" > </canvas>\u000a\u000a<canvas id="projectileCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 1;" > </canvas>\u000a\u000a<canvas id="statusCanvas" width="1020px" height="660px" style=" position: absolute; left: -10px; top: 0px; z-index: 0; background-image: url(Art/GameBG.png); " > </canvas>\u000a\u000a<<loadJS scripts/bell.js>>\u000a<<loadJS scripts/howler.min.js>>\u000a<<loadJS scripts/sounds.js>>\u000a<<loadJS scripts/wilderkind.js>>\u000a<<loadJS scripts/image_loader.js>>\u000a<<loadJS scripts/shield.js>>\u000a<<loadJS scripts/bolas.js>>\u000a<<loadJS scripts/utilities.js>>\u000a<<loadJS scripts/player.js>>\u000a<<loadJS scripts/caroler.js>>\u000a<<loadJS scripts/level3.js>>\u000a\u000a<<else>>\u000a\u000a<<endif>>
+V<<if $my_var is 0>>You have staved off full scale war!\u000a<html> \u000a	<div class="Instructions">\u000aKeep the two factions from hurting each other for three minutes\u000a		<br>\u000a		<br>\u000aInstructions:\u000a		<br>\u000a&nbsp;&nbsp;- Use arrow keys or WASD to move\u000a		<br>\u000a&nbsp;&nbsp;- Left click to activate your bell \u000a		<br>\u000a&nbsp;&nbsp;- Enemies near the bell can be drawn together and injured \u000a		<br>\u000a&nbsp;&nbsp;- Use your shield to bounce enemies away from you\u000a		<br>\u000a		<br>\u000aGood luck!\u000a	</div>\u000a</html>\u000a[[...|intervention]]\u000a\u000a<canvas id="playerCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 2;"> </canvas>\u000a\u000a<canvas id="backgroundCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 1;" > </canvas>\u000a\u000a<canvas id="projectileCanvas" width="1020px" height="515px" style=" position: absolute; left: -10px; top: 0px; z-index: 1;" > </canvas>\u000a\u000a<canvas id="statusCanvas" width="1020px" height="660px" style=" position: absolute; left: -10px; top: 0px; z-index: 0; background-image: url(Art/GameBG.png); " > </canvas>\u000a\u000a<<loadJS scripts/bell.js>>\u000a<<loadJS scripts/howler.min.js>>\u000a<<loadJS scripts/sounds.js>>\u000a<<loadJS scripts/wilderkind.js>>\u000a<<loadJS scripts/image_loader.js>>\u000a<<loadJS scripts/shield.js>>\u000a<<loadJS scripts/bolas.js>>\u000a<<loadJS scripts/utilities.js>>\u000a<<loadJS scripts/player.js>>\u000a<<loadJS scripts/caroler.js>>\u000a<<loadJS scripts/level3.js>>\u000a\u000a<<else>>\u000a\u000a<<endif>>
 p1774
 sg23
 Vaction3
@@ -5737,9 +5737,9 @@ g26
 ((I2015
 I4
 I20
-I20
-I51
-I4
+I21
+I42
+I11
 I0
 I110
 I1
