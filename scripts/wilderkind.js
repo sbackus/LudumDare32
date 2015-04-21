@@ -3,8 +3,8 @@ function Wilderkind(image,x,y) {
 	this.image = image;
 	this.x = x;
 	this.y = y;
-	this.width =  50;
-	this.height =  50;
+	this.width =  this.image.width;
+	this.height =  this.image.height;
 	this.direction = 60;
 	this.destroyed = false;
 	this.speed = 0.7;
@@ -13,7 +13,7 @@ function Wilderkind(image,x,y) {
 	this.bell = null;
 	this.draw = function(){
 		if(!this.destroyed){
-			contextPlayer.clearRect(this.x,this.y,this.width,this.height);
+			contextPlayer.clearRect(this.x-1,this.y-1,this.width+2,this.height+2);
 			contextPlayer.drawImage(this.image,this.x,this.y);
 			this.drawn = true;
 		}
@@ -30,7 +30,7 @@ function Wilderkind(image,x,y) {
 				    		w2 = wilderkin[j];
 				    		if (collision(w1,w2)){
 				    			if(w1.pulled || w2.pulled){
-				    				contextPlayer.clearRect(this.x-20,this.y-20,this.width+40,this.height+40);
+				    				contextPlayer.clearRect(this.x-2,this.y-2,this.width+2,this.height+2);
 				    				w1.destroyed = true;
 				    				w2.destroyed = true;
 				    			}

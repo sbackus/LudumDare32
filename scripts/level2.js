@@ -98,7 +98,7 @@ function update(){
 	}
 	player.update();
 	if (Math.random()<=0.009){
-		wilderkin = wilderkin.concat(new Wilderkind(images[1], Math.random()*width, randomChoice([-10,height])));
+		wilderkin = wilderkin.concat(new Wilderkind(images[4], Math.random()*width, randomChoice([-10,height])));
 	}
 
 	bells.forEach(function(bell){
@@ -160,6 +160,6 @@ contextBackground.font = "bold 50px monaco";
 contextBackground.fillStyle = "white";
 contextBackground.fillText("loading",width/2-100,height/2);
 
-loadImages(["Art/test_ship_shields_up.png", "Art/test_ship_shields_down.png"]);
+loadImages(["Art/Icons/Player_shield.png", "Art/Icons/Player.png", "Art/note.png", "Art/noteAlt.png", "Art/Icons/Attacking_Wilderkind.png" ]);
 
 checkImages();
