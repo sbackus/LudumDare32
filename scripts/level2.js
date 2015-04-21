@@ -70,10 +70,12 @@ var key = {
 }
 
 $(document).keydown(function(e){
+	e.preventDefault();
 	keys[e.keyCode ? e.keyCode : e.which] = true;
 });
 
 $(document).keyup(function(e){
+	e.preventDefault();
 	delete keys[e.keyCode ? e.keyCode : e.which];
 });
 
