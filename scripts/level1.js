@@ -73,7 +73,7 @@ function update(){
 	}
 	player.update();
 	if (Math.random()<=0.009 && carolers.length < 3 ){
-		carolers = carolers.concat(new Caroler(images[0], Math.random()*width, -10));
+		carolers = carolers.concat(new Caroler(images[4], Math.random()*width, -10));
 	}
 
 	carolers.forEach(function(caroler) {
@@ -124,6 +124,6 @@ contextBackground.font = "bold 50px monaco";
 contextBackground.fillStyle = "white";
 contextBackground.fillText("loading",width/2-100,height/2);
 
-loadImages(["Art/Icons/Player_shield.png", "Art/Icons/Player.png", "Art/note.png", "Art/noteAlt.png" ]);
+loadImages(["Art/Icons/Player_shield.png", "Art/Icons/Player.png", "Art/note.png", "Art/noteAlt.png", "Art/Icons/Attacking_Caroller.png" ]);
 
 checkImages();
