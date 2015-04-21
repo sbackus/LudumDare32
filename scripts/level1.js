@@ -72,9 +72,12 @@ function update(){
 	timer++;
 	if(timer > game_duration){
 		game_won = true;
+		chimes.fadeOut( 0, 2000 );
+		lowNote2.fadeOut( 0, 2000 );
+		ahhh.play().fadeOut( 0, 4000 );
 	}
 	player.update();
-	if (Math.random()<=0.009 && carolers.length < 3 ){
+	if (Math.random()<=0.009 && carolers.length < 15 ){
 		carolers = carolers.concat(new Caroler(images[4], Math.random()*width, -10));
 	}
 

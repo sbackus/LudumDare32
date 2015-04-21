@@ -5,7 +5,7 @@ function Caroler(image,x,y) {
 	this.width =  this.image.width;
 	this.height =  this.image.height;
 	this.drawn = false;
-	this.speed = 0.25;
+	this.speed = 1;
 	this.bolas = new Bolas(this.x,this.y+15)
 	this.destroyed = false;
 	this.destroyed_count = 0;

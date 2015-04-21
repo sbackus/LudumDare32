@@ -25,7 +25,7 @@ function Bolas(x,y){
 	};
 	this.update = function(){
 		this.x += offset_x(this.direction,this.speed);
-		this.y += 0.25
+		this.y += 1
 		this.y += offset_y(this.direction,this.speed);
 		this.direction += this.rotation;
 	};
